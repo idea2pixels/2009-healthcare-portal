@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<title>Alere HTML Framework - Full Recipe</title>
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="cmn/css/global.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/modules.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/article.css" type="text/css" media="all">
+
+	<link rel="stylesheet" href="cmn/css/skins/fedex.css" type="text/css" media="all">
+	<!--[if IE]>
+		<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="cmn/css/global_ie.css" type="text/css" media="all">
+	<![endif]-->
+	</head>
+<body>	<div class="container">
+		<div class="utility span-31">
+					<strong class="welcome">Hello, Suzanne.</strong>
+		<ul>
+			<li class="home"><a href="/">Home</a></li>
+			<li class="messages"><a href="#">Messages: <strong>2</strong></a></li>
+			<li><a href="#">Account</a></li>
+			<li><a href="#">Feedback</a></li>
+			<li><a href="#">Logout</a></li>
+		</ul>
+		<div class="help"><a href="#">Help</a></div>		</div>
+		<div class="header">
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+			<div class="header-bg"> <!-- for skinning purposes only, background for header -->
+							<h2 class="logo"><a href="/">GE</a></h2>
+				
+				<!-- 
+					Main Menu Nav
+					Integration Notes:
+						- The first menu item should have class="first"
+						- the last menu item should have class="last"
+						- JavaScript is used to show / hide sub menus. If JS is not available, fall back landing pages should be provided to guide the user to subsections
+				-->
+				<ul id="top-nav" class="nav top">
+					<li class="first">
+						<a href="#">Healthy Living</a>
+						<div class="top-nav-sub two-col">
+							<ul>
+								<li><a href="#">Food and Recipes</a></li>
+								<li><a href="#">Nutrition</a></li>
+								<li><a href="#">Active Living</a></li>
+							</ul>
+							<ul class="last">
+								<li><a href="#">Stress Management</a></li>
+								<li><a href="#">Weight Management</a></li>
+								<li><a href="#">Smoking Cessation</a></li>
+							</ul>
+							<h5>Tools</h5>
+							<ul>
+								<li><a href="tg_hlp_pt_weight.html">Progress Tracker</a></li>
+								<li><a href="tg_hlp_mealplanner-s-nohlp.html">Meal Planner</a></li>
+								<li><a href="tg_hlp_dietmanager-s-nohlp.html">Diet Manager</a></li>
+							</ul>
+							<ul>
+								<li><a href="tg_hlp_fitnessplanner-s-nohlp.html">Fitness Planner</a></li>
+								<li><a href="tg_hlp_walkingchallenge-s-nohlp.html">Walking Challenge</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">Diseases &amp; Conditions</a>
+						<div class="top-nav-sub two-col">
+							<ul>
+								<li><a href="#">Allergies</a></li>
+								<li><a href="#">Arthritis</a></li>
+								<li><a href="#">Asthma</a></li>
+								<li><a href="#">Back Pain</a></li>
+								<li><a href="#">Cancer</a></li>
+								<li><a href="#">Depression</a></li>
+								<li><a href="#">Diabetes</a></li>
+								<li><a href="#">Digestive Disorders</a></li>
+								<li><a href="#">Heart Disease</a></li>
+
+							</ul>
+							<ul>
+								<li><a href="#">High Cholesterol</a></li>
+								<li><a href="#">High Blood Pressure</a></li>
+								<li><a href="#">Irritable Bowel</a></li>
+								<li><a href="#">Kidney Disease</a></li>
+								<li><a href="#">Migraine</a></li>
+								<li><a href="#">Obesity</a></li>
+								<li><a href="#">Osteoporosis</a></li>
+								<li><a href="#">Respiratory Disease</a></li>
+								<li><a href="#">Sleep Disorders</a></li>
+								<li class="all"><a href="#">All Conditions</a></li>
+								
+							</ul>
+							<h5>Other Resources</h5>
+							<ul>
+								<li><a href="#">Surgeries &amp; Procedures</a></li>
+								<li><a href="#">Medications</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Symptom Checker</a></li>
+								<li><a href="#">Health Tools</a></li>				
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">Personal &amp; Family Health</a>
+						<div class="top-nav-sub two-col">
+							<ul>
+								<li><a href="#">Women's Health</a></li>
+								<li><a href="#">Men's Health</a></li>
+								<li><a href="#">50+ Health</a></li>
+								<li><a href="#">Healthy Kids</a></li>
+								<li><a href="#">Home Care/First Aid</a></li>
+							</ul>
+							
+							<ul>
+								<li><a href="#">Pregnancy</a></li>
+								<li><a href="#">Navigating Healthcare</a></li>
+								<li><a href="#">Supplements/Herbals</a></li>
+								<li><a href="#">Alternative Therapies</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">Tools &amp; Media</a>
+						<div class="top-nav-sub">
+							<ul>
+								<li><a href="#">Interactive Tools</a></li>
+								<li><a href="#">Trackers</a></li>
+								<li><a href="#">Quizzes/Assessments</a></li>
+								<li><a href="#">Calculators</a></li>
+								<li><a href="#">Video</a></li>
+								<li><a href="#">Audio</a></li>
+								<li><a href="#">Games</a></li>
+								<li><a href="#">Conversations</a></li>
+								<li><a href="#">Online Seminars</a></li>
+							</ul>
+						</div>	
+					</li>
+				</ul>
+				<form id="search">
+					<label for="search-query">Search</label>
+					<input type="text" name="search-query" title="Search" class="example-text" id="search-query">
+					<input type="submit" name="search-submit" value="" id="search-submit">
+				</form>			</div>
+			<div class="module-cap-bottom"></div> <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+		<div class="content">
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+			<div class="breadcrumb-bar">
+				<ol>
+					<li><a href="#">Healthy Living</a> ></li>
+					<li><a href="#">Food &amp; Nutrition</a> ></li>
+					<li><a href="#">Recipes</a> ></li>
+					<li class="selected">Main Dishes</li>
+				</ol>
+				<ul>
+					<li class="email"><a href="#">Email</a></li>
+					<li class="print"><a href="#">Print</a></li>
+					<li class="font-sizer">
+						<a class="decrease" href="#" title="Decrease font-size">A</a>
+						<a class="increase" href="#" title="Increase font-size">A</a>
+					</li>
+				</ul>
+			</div>
+			<div class="sidebar span-7">
+				<div class="module home-btn">
+					<a href="#">Home</a>
+				</div>
+				
+				<div class="module alt-nav">
+					<h4>Recipes</h4>
+					<ul class="alt">
+						<li><a href="#">Recipe Info</a></li>
+						<li><a href="#">Lorem Ipsum</a></li>
+						<li><a href="#">Lorem Ipsum</a></li>
+						<li class="selected last"><a href="#">Main Dishes</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-well recipe span-17">				
+				<h1>Beef Stroganoff</h1>
+ 
+                <p>Serves 5</p>
+                
+
+				
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 lb. lean beef (top round), cubed</li>
+                    <li>2 tsp. vegetable oil</li>
+                    <li>3/4 Tbsp. finely chopped onion</li>
+                    <li>1 lb. sliced mushrooms</li>
+                    <li>1/4 tsp. salt</li>
+                    <li>Black pepper to taste</li>
+                    <li>1/4 tsp. nutmeg</li>
+                    <li>1/2 tsp. dried basil</li>
+                    <li>1/4 cup white wine</li>
+                    <li>1 plain, low-fat yogurt </li>
+                    <li>6 cups cooked macaroni, cooked in unsalted water</li> 
+                </ul>
+
+
+ 
+				<h4>Instructions</h4>
+<p>Cut beef into 1-inch cubes. Heat 1 teaspoon oil in a non-stick skillet. Saute onion for 2 minutes. Add beef and saute for additional 5 minutes. Turn to brown evenly. Remove from pan and keep hot. Add remaining oil to pan; saute mushrooms. Add beef and onions to pan with seasonings. Add wine, yogurt; gently stir in. Heat, but do not boil. Serve with macaroni. </p>
+
+<p><strong>Note:</strong> If thickening is desired, use 2 teaspoons cornstarch; calories are the same as flour, but it has double thickening power. These calories are not figured into the nutrients per serving. </p>
+
+				<div class="footnote">
+							
+				<p class="last-reviewed">Last Reviewed May 2008</p>
+			
+					
+				</div>
+			</div>
+			<div class="alt-sidebar span-6 last">
+				<div class="recommend-btn">
+					<a href="#">Recommend this article <span>435 recommendations</span></a>
+				</div>
+		
+				<h5>Nutritional Info.</h5>			
+				<ul>
+					<li class="selected"><a href="#">Per Serving</a></li>
+					<li>Calories: 423</li>
+					<li>% Calories from fat: 20</li>
+					<li>Fat (gm): 9</li>
+                    <li>Saturated fat (gm): 3</li>
+                    <li>Cholesterol (mg): 57</li>
+                    <li>Sodium (mg): 199</li>
+                    <li>Protein (gm): 33</li>
+                    <li>Carbohydrate (gm): 48</li>
+				</ul>
+ 
+			</div>
+			<div class="module-cap-bottom"></div>  <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+		<div class="footer">
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+				<div class="footer-bg"><!-- for skinning purposes only, footer background -->
+					<div class="alere">
+						<p class="powered-by">Powered by</p>
+						<h3>Alere</h3>
+						<p>&copy; 2009 Alere. All rights reserved. Alere is a trademark of the Inverness Medical group of companies.</p>
+					</div>
+				</div>
+			<div class="module-cap-bottom"></div> <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+	</div>
+	<!-- Leave Scripts at the bottom to make sure they don't block the initial paint -->
+	<script src="cmn/js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="cmn/js/jquery-delegate.js"></script>
+	<script src="cmn/js/jquery_example/jquery.example.min.js"></script>
+	<script src="cmn/js/global.js"></script>
+	</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<title>Alere HTML Framework</title>
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="cmn/css/incentives.css" type="text/css" media="all">
+	
+	<link rel="stylesheet" href="cmn/css/global.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/modules.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/article.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/sign-in_register.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/hpa.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/hpa-test.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/search.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/bioIQ.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/incentives.css" type="text/css" media="all">
+	<!-- 
+		Integration Note:
+			Generally you would only include a single skin style sheet which overrides
+			all the default in global.css and modules.css as necessary.
+			
+			For debug/demo purposes all the style sheets are include here so that they can
+			be toggled using the style sheet switcher (to see the style sheet switch add ?debug=1)
+	-->
+	<link rel="stylesheet" href="cmn/css/skins/ge.css" type="text/css" media="all" title="ge">
+	<link rel="stylesheet alternate" href="cmn/css/skins/cisco.css" type="text/css" media="all" title="cisco">
+	<link rel="stylesheet alternate" href="cmn/css/skins/fedex.css" type="text/css" media="all" title="fedex">
+	<link rel="stylesheet alternate" href="cmn/css/skins/blue-cross.css" type="text/css" media="all" title="blue-cross">
+	<!--[if IE]>
+		<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="cmn/css/global_ie.css" type="text/css" media="all">
+	<![endif]-->
+	</head>
+<body>	<div class="container">
+
+
+		<div class="content">
+
+			<div class="sidebar span-7">
+
+				<div class="module alt-nav">
+					<h5>
+					<ol>
+					<li>This shows the HLP Progress Trackers.</li>
+					<li>Next step: content team to write final copy.</li>
+					<li>Next step: annotated specs.</li>
+					<li>Next step: post 5/1 to design remaining trackers</li>
+					</ol>
+					</h5>				
+				</div>
+
+				<!-- End Sub Nav -->
+			
+			</div>
+			<div class="main-well span-21">
+
+
+
+				<h1 class="what-next">Start view...</h1>
+				<!--
+					Integration Note: 
+						All modules should be included here
+				-->
+
+
+
+				<!-- Included from: cmn/inc/modules/meal_plan_signup.inc.php-->
+				<div class="module b option-select-with-image">
+					<img class="icon" src="cmn/img/modules/tmp/module-b-icon-steps.png" width="36" height="36" alt="Module Icon">
+					<h2>Track Your Progress!</h2>
+					<p>Use the Progress Tracker to keep yourself on target to achieve your goals. Pick a category to get started!</p>
+					<form id="meal-plan">
+						<label class="first" for="meal-plan-cancer">
+							<input type="radio" id="meal-plan-cancer" name="foods"> 
+							Weight
+						</label>
+		
+						<label class="second" for="meal-plan-heart">
+							<input type="radio" id="meal-plan-heart" name="foods"> 
+							Nutrition
+						</label>
+		
+						<label class="third" for="meal-plan-veg">
+							<input type="radio" id="meal-plan-veg" name="foods">
+							Exercise
+						</label>
+		
+						<label class="fourth last" for="meal-plan-peak">
+							<input type="radio" id="meal-plan-peak" name="foods">
+							Stress
+						</label>
+					</form>
+					<ul class="utility-nav">
+						<li class="first dont-show">
+							<a href="#">Don't show again</a>
+							<div class="dont-show-confirm">
+								<h5>Don't show again</h5>
+								<p>"Click "Remove" if you don’t want this option to appear for you in the future.</p>
+								<br>
+								<span><a class="keep" title="Keep" href="#">Keep</a> | <a href="#" title="Remove">Remove</a></span>
+								</p>
+							</div>
+							
+						</li>
+						<li class="last tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+					</ul>
+					<a href="#" class="action-button alt"><strong><em>Start Tracking</em></strong></a>
+					
+					<div class="more">
+						
+						<h5>What is the Progress Tracker</h5>
+						<p>The Progress Tracker is a one-stop resource for updating and tracking your behavior. If you use it frequently, you can gain valuable knowledge that can help you as you try to get healthier.</p>
+
+						<h5>Why should I use it?</h5>
+						<p>You can use the Progress Tracker to update information about your lifestyle habits such as your weight, eating habits, exercise routine or stress level. Keeping a daily journal can help you understand your habits. And it can help motivate you to improve.</p>
+
+					</div>
+					
+				</div>
+
+
+				<h1 class="what-next">Engaged view...</h1>
+				
+
+
+				<!-- Included from: cmn/inc/modules/option_select_with_image_and_input.inc.php-->
+				<div class="module b option-select-with-image five-options">
+					<img class="icon" src="cmn/img/modules/tmp/module-b-icon_happyface.png" width="36" height="36" alt="Module Icon">				<h2>Track Your Stress</h2>
+					<p><strong>How are you feeling now?</strong></p>
+					<form id="how-are-you-feeling">
+						<label class="first" for="how-are-you-feeling-great">
+							<input type="radio" id="how-are-you-feeling-great" name="how-are-you-feeling-feeling"> 
+							
+						</label>
+
+						<label class="second" for="how-are-you-feeling-good">
+							<input type="radio" id="how-are-you-feeling-good" name="how-are-you-feeling-feeling"> 
+							
+						</label>
+
+						<label class="third" for="how-are-you-feeling-ok">
+							<input type="radio" id="how-are-you-feeling-ok" name="how-are-you-feeling-feeling">
+							
+						</label>
+		
+						<label class="fourth" for="how-are-you-feeling-eh">
+							<input type="radio" id="how-are-you-feeling-eh" name="how-are-you-feeling-feeling">
+							
+						</label>
+		
+						<label class="fifth" for="how-are-you-feeling-awful">
+							<input type="radio" id="how-are-you-feeling-awful" name="how-are-you-feeling-feeling">
+							
+						</label>
+
+						<label class="text-entry last" for="how-are-you-feeling-why">
+							 Why?
+							Be specific about <br>anything that may be <br>causing stress.
+							<textarea id="how-are-you-feeling-why" name="how-are-you-feeling-why" rows="8" cols="40"></textarea>
+							
+						</label>
+					</form>
+						<ul class="utility-nav">
+							<li class="first"><a href="#">View all trackers</a></li>
+							<li class="dont-show">
+								<a href="#">Don't show again</a>
+								<div class="dont-show-confirm">
+									<h5>Don't show again</h5>
+									<p>"Click "Remove" if you don’t want this option to appear for you in the future.</p>
+									<br>
+									<span><a class="keep" title="Keep" href="#">Keep</a> | <a href="#" title="Remove">Remove</a></span>
+									</p>
+								</div>
+
+							</li>
+							<li class="last tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+						</ul>
+
+					<a href="#" class="action-button alt"><strong><em>Save</em></strong></a>
+					
+					<div class="more">				
+						<p>Recording your stress level can be a valuable way to help you understand the causes that lead to stress.</p>
+						
+						<p>Try to be as specific as possible about the circumstances when you feel stress, how long it lasted and what (if anything) you did to try to feel better.</p>
+					</div>
+				
+				</div>
+				
+				<h1 class="what-next">Engaged view (saved data)...</h1>
+				
+
+
+				<!-- Included from: cmn/inc/modules/option_select_with_image_and_input.inc.php-->
+				<div class="module b option-select-with-image five-options">
+					<img class="icon" src="cmn/img/modules/tmp/module-b-icon_happyface.png" width="36" height="36" alt="Module Icon">				<h2>Track Your Stress</h2>
+					<p><strong>How are you feeling now?</strong></p>
+					<form id="how-are-you-feeling">
+						<label class="first" for="how-are-you-feeling-great">
+							<input type="radio" id="how-are-you-feeling-great" name="how-are-you-feeling-feeling"> 
+							
+						</label>
+
+						<label class="second" for="how-are-you-feeling-good">
+							<input type="radio" id="how-are-you-feeling-good" name="how-are-you-feeling-feeling"> 
+							
+						</label>
+
+						<label class="third" for="how-are-you-feeling-ok">
+							<input type="radio" id="how-are-you-feeling-ok" name="how-are-you-feeling-feeling">
+							
+						</label>
+		
+						<label class="fourth" for="how-are-you-feeling-eh">
+							<input type="radio" id="how-are-you-feeling-eh" name="how-are-you-feeling-feeling">
+							
+						</label>
+		
+						<label class="fifth" for="how-are-you-feeling-awful">
+							<input type="radio" id="how-are-you-feeling-awful" name="how-are-you-feeling-feeling">
+							
+						</label>
+
+						<label class="text-entry last" for="how-are-you-feeling-why">
+							 Why?
+							Be specific about <br>anything that may be <br>causing stress.
+							<textarea id="how-are-you-feeling-why" name="how-are-you-feeling-why" rows="8" cols="40"></textarea>
+							
+						</label>
+						<h5>Your entry has been saved</h5>
+						
+					</form>
+						<ul class="utility-nav">
+							<li class="first"><a href="#">View all trackers</a></li>
+							<li class="dont-show">
+								<a href="#">Don't show again</a>
+								<div class="dont-show-confirm">
+									<h5>Don't show again</h5>
+									<p>"Click "Remove" if you don’t want this option to appear for you in the future.</p>
+									<br>
+									<span><a class="keep" title="Keep" href="#">Keep</a> | <a href="#" title="Remove">Remove</a></span>
+									</p>
+								</div>
+
+							</li>
+							<li class="last tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+						</ul>
+
+					<a href="#" class="action-button alt"><strong><em>Save</em></strong></a>
+					
+					<div class="more">				
+						<p>Recording your stress level can be a valuable way to help you understand the causes that lead to stress.</p>
+						
+						<p>Try to be as specific as possible about the circumstances when you feel stress, how long it lasted and what (if anything) you did to try to feel better.</p>
+					</div>
+				
+			</div>
+			<br><br><br><br><br>
+
+
+			<div class="module-cap-bottom"></div>  <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+		
+	</div>
+	<!-- Leave Scripts at the bottom to make sure they don't block the initial paint -->
+	<script src="cmn/js/jquery-1.3.2.min.js"></script>
+	<script src="cmn/js/jcarousel/lib/jquery.jcarousel.js"></script>
+	<script src="cmn/js/jquery_example/jquery.example.min.js"></script>
+	<script src="cmn/js/global.js"></script>
+	</body>
+</html>

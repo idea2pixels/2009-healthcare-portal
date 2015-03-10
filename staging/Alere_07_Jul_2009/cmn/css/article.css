@@ -1,0 +1,310 @@
+div.article h1 {
+	font-size:1.8em;
+	font-weight:bold;
+	margin-bottom:24px;
+	color:#005499;
+}
+
+div.article h2 {
+	font-size:14px;
+	font-weight:bold;
+	color:#005499;
+}
+
+div.article h4 {
+	font-size:1.2em;
+	font-weight:bold;
+	color:#005499;
+}
+
+div.article h3 {
+	font-size:1.1em;
+	font-weight:bold;
+	color:#222222;
+}
+div.article img {
+	float:left;
+	margin:0 15px 13px 0;
+}
+
+div.article p {
+	font-size:1.2em;
+}
+
+div.article p.tool-overview {
+	font-size:13px;
+	color:#222222;
+	font: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+
+div.article p.tool-overview a {
+		font-size:13px;
+	color:#0084A9;
+font-style:underline;
+}
+
+div.article p.author {
+	font-size:1.1em;
+	color:#444444;
+	margin-top:-20px;
+	margin-bottom:20px;
+	font-size:1.2em;
+}
+
+div.article p.byline {
+	font-size:1.1em;
+	color:#444444;
+	margin-bottom:20px;
+	font-size:1.2em;
+}
+
+div.article p.author a {
+	font-weight:bold;
+	color:#0084a9;
+}
+
+div.article p.abstract {
+	font-weight:bold;
+	color:#444;
+}
+
+div.article ul {
+	margin-left:2;
+	font-size:1.2em;
+}
+
+div.article ul li {
+	list-style:none;
+	padding:3px 0 2px 13px;
+	background:transparent url('../img/skins/default/article_sprite.png') no-repeat 3px -625px;
+}
+
+div.article ol {
+	list-style:none;
+	margin-left:0;
+}
+
+div.article ol li {
+	font-size:1.2em;
+	margin:0 0 1.25em 0;
+}
+
+div.article drugname {
+	font-weight:bold;
+	font-size:1.3em;
+}
+div.article tool-sample {
+		background:transparent url('../img/modules/tmp/tool.png')  no-repeat; 
+}
+
+div.article th {
+background-color:#E6F3FC;
+font:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size:12px;
+color:#222222;
+}
+
+div.article td {
+
+font:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size:11px;
+color:#222222;
+}
+
+
+
+
+
+
+
+/* -- Recommend this Article Button -- */
+div.recommend-btn {
+	font-size:1.0em;
+	border:1px solid #98cddc;
+	text-align:left;
+	display:block;
+	padding:6px 0 5px 5px;
+	margin-bottom:20px;
+	background: #FFFFB7 url('../img/skins/default/module_gradients_bg.png') repeat-x;
+}
+
+div.recommend-btn a {
+	font-weight:bold;
+	color:#0084a9;
+	display:block;
+	padding-left:26px;
+	background:transparent url('../img/skins/default/icon_sprite.png')  no-repeat 0px -1678px; 
+}
+
+div.recommend-btn a span {
+	clear:both;
+	display:block;
+	color:#f49e39;
+}
+
+div.recommend-btn a:hover {
+	text-decoration: none;
+}
+
+/* -- Recipe Template Classes -- */
+div.recipe h1 {
+	font-size:1.8em;
+	font-weight:bold;
+	margin-bottom:24px;
+}
+
+div.recipe img {
+	float:left;
+	margin:0 15px 13px 0;
+}
+
+div.recipe p {
+	font-size:1.2em;
+}
+
+
+div.recipe p.abstract {
+	font-weight:bold;
+	color:#444;
+}
+
+div.recipe h2 {
+	font-weight:bold;
+	font-size:1.3em;
+}
+
+div.recipe h4 {
+	font-weight:bold;
+}
+
+div.recipe ul {
+	margin-left:2;
+	font-size:1.2em;
+}
+
+div.recipe ul li {
+	list-style:none;
+	padding:3px 0 2px 13px;
+}
+
+div.recipe ol {
+	margin-left:3;
+}
+
+div.recipe ol li {
+	list-style:decimal;
+	font-size:1.2em;
+	padding:3px 0 2px 13px;
+}
+
+
+/* -- Alt Sidebar -- */
+
+div.alt-sidebar h5 {
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	background:#e6f3fc;
+	padding:8px;
+	line-height:100%;
+	margin-bottom:10px;
+}
+
+div.alt-sidebar ul {
+	list-style:none;
+	margin-left:9px;
+	font-weight:bold;
+	padding:0; /* -- changes -- */
+}
+
+div.alt-sidebar li a {
+	color:#0084a9;
+}
+
+div.alt-sidebar li {
+	margin-bottom:5px;
+}
+
+/* -- Footnote -- */
+div.footnote {
+	margin-bottom:20px;
+	color:#999999;
+}
+
+div.footnote a {
+	color:#0084a9;
+	/*display:block; */
+	font-weight:bold;
+	font-size:1.1em;
+	
+}
+
+div.footnote p,
+div.footnote cite {
+	display:block;
+	font-size:100%;
+	font-style:normal;
+	font-family: Arial, sans-serif;
+	margin-top:4px;
+}
+
+div.footnote cite ol {
+	margin-left:2;
+}
+
+div.footnote cite ol li {
+	list-style:decimal;
+	font-size:1.2em;
+	padding:3px 0 2px 13px;
+}
+
+div.footnote p.med-review {
+	display:block;
+	font-size:100%;
+	font-weight:bold;
+	font-style:normal;
+	font-family: Arial, sans-serif;
+	color:#000;
+	margin-top:4px;
+}
+div.footnote p.med-review a {
+	color:#0084a9;
+	display:block; 
+	font-weight:bold;
+	font-size:1.1em;
+	
+}
+div.footnote p.authors {
+	display:block;
+	font-size:100%;
+	font-weight:bold;
+	font-style:normal;
+	font-family: Arial, sans-serif;
+	color:#000;
+	margin-top:4px;
+}
+div.footnote p.authors a {
+	color:#0084a9;
+	display:block; 
+	font-weight:bold;
+	font-size:1.1em;
+	
+}
+div.footnote p.copyright {
+	color:#333;
+	text-align:left;
+}
+
+
+div.footnote p.last-reviewed {
+	text-align:right;
+	font-weight:bold;
+	color:#222;
+	font-size:1.1em;
+}
+
+div.legal-image {
+	text-align: center;	
+	display: block;
+	margin-bottom: 10px;
+}

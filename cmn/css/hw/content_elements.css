@@ -1,0 +1,795 @@
+/* ------------------------------- ContentHeader -------------------------------  */
+
+.HwTypeActionset .HwContentHeader,  /* Rounded corner boxes. */
+.HwTypeITool .HwContentHeader,
+.HwTypeConditionCenter .HwContentHeader,
+.HwTypeDecisionPoint .HwContentHeader,
+.HwTypeSymptom .HwContentHeader
+{
+	display:block; /* Overrides display:none in "content_layout.css" */
+	margin:10px 0;
+	padding:0;
+	background:#5192b3;
+	font-size:1.7em;
+	color: #ffffff;
+}
+
+.HwTypeActionset .HwContentHeader p, 
+.HwTypeITool .HwContentHeader p,
+.HwTypeConditionCenter .HwContentHeader p,
+.HwTypeDecisionPoint .HwContentHeader p,
+.HwTypeSymptom .HwContentHeader p
+{
+	padding-left:.5em;
+	line-height:normal;
+}
+
+.HwOrderedList th
+{
+  font-weight: normal;
+  vertical-align: top;
+  text-align: right;
+  padding-left: 1em;
+}
+
+
+/* ------------------------------- Standard page elements -------------------------------  */
+
+.HwContentNavigationPrev
+{
+	background: transparent url(../custom/images/NavigationPrevious.gif) no-repeat scroll left center;
+	padding-left: 20px;
+}
+
+.HwContentNavigationPrev a:link
+{
+	text-decoration:none;
+}
+
+.HwContentNavigationPrev a:Hover
+{
+	text-decoration:underline;
+}
+
+.HwContentNavigationPrev a:visited
+{
+	text-decoration:none;
+}
+
+.HwContentNavigationNext 
+{
+	background: transparent url(../custom/images/NavigationNext.gif) no-repeat scroll right center;
+	padding-right: 20px;
+}
+
+.HwContentNavigationNext a:link
+{
+	text-decoration:none;
+}
+
+.HwContentNavigationNext a:Hover
+{
+	text-decoration:underline;
+}
+
+.HwContentNavigationNext a:visited
+{
+	text-decoration:none;
+}
+
+.HwEmergencyNumber
+{
+	color: Red;
+	font-weight: bold;
+}
+
+/* ------------------------------------- Link tags (camera/info/...) --------------------------------------------- */
+
+.HwLinkCalculator,
+.HwLinkDefinition,
+.HwLinkExternal,
+.HwLinkMultiMedia
+{
+	cursor: pointer; /* IE correction to show hand instead of arrow. */
+    text-decoration:none; /* Underline gets reapplied to HwLinkText, this removes underline from images */
+}
+
+.HwLinkCalculator .HwLinkText,
+.HwLinkDefinition .HwLinkText,
+.HwLinkExternal .HwLinkText,
+.HwLinkMultiMedia .HwLinkText
+{
+	padding-right:.25em;
+}
+
+.HwLinkText
+{
+	text-decoration:underline;
+}
+
+.HwQuizOpen .HwLinkDefinition
+{
+	display:inline-block;
+	padding:0;
+	background:none;
+}
+
+
+/* This will wrap text to the right of a medical image */
+p .HwMedicalImage { float: left; }
+div.HwMedicalImage { float: left; }
+
+div.HwNavigationSection div.HwMedicalImage
+{
+  padding: 0 6px 6px 0;
+}
+
+.HwNavigationSection 
+{
+	clear:left;
+	padding-bottom:1em;
+}
+
+.Size1
+{
+	font-size:0.83em; /* 10px */
+}
+.HwNavigationSection p br
+{
+	clear:left;
+}
+
+
+/* ----------------------------- Interface images --------------------------------------- */
+
+.HwActionsetIcon,
+.HwDecisionPointIcon 
+{
+	vertical-align: middle;
+	padding-right:.83em;
+}
+
+
+/* ------------------------------- Condition centers -------------------------------- */
+
+
+
+#ConditionCenter 
+{
+	padding-top:1.9em;
+}
+
+.HwTypeConditionCenter .HwContentNavigation
+{
+	display: none;
+}
+
+#ConditionCenterMenu 
+{
+	display: none;
+}
+
+/* TODO remove in XSL */
+.HwTypeConditionCenter #HwNavigationWrapper 
+{
+	display: none;
+}
+
+.HwTypeConditionCenter .HwNavigationSection li a:Link
+{
+	text-decoration: none;
+}
+
+.HwTypeConditionCenter .HwNavigationSection li a:hover
+{
+	text-decoration: underline;
+}
+
+.HwTypeConditionCenter .HwNavigationSection li a:visited
+{
+	text-decoration: none;
+}
+
+.HwTypeConditionCenter .HwContent ul li
+{
+	clear: both;
+}
+
+
+.HwConditionCenterSection
+{
+	padding:.9em 0;
+}
+
+/* Open/close handle */
+.HwConditionCenterOpen h3 a { background: url(../custom/images/LearningCenterDown.png) no-repeat left center; }
+.HwConditionCenterClosed h3 a { background: url(../custom/images/LearningCenterSide.png) no-repeat left center; }
+.HwConditionCenterOpenAction h3 a { background: url(../custom/images/LearningCenterDown.png) no-repeat left center; }
+.HwConditionCenterClosedAction h3 a { background: url(../custom/images/LearningCenterSide.png) no-repeat left center; }
+
+
+.HwConditionCenterSection h3 
+{
+	padding:.4em 0;
+	font-size:1.33em; /*16px*/
+	font-weight: bold;
+	line-height:normal;
+}
+
+.HwConditionCenterSection h3 a 
+{
+	padding-left:1.3em;
+	margin-left:.5em;
+}
+
+.HwConditionCenterClosed, /* Rounded corner boxes. */
+.HwConditionCenterOpen
+{ 
+	width:99%; /* Keeps content from exceeding width of container on expansion of ActionSet. */
+	padding:0;
+	background:#eef4f8;
+	border:solid 2px #d4e4ec;
+}
+
+/* Dark closed box */
+.HwConditionCenterClosedAction, /* Rounded corner boxes. */
+.HwConditionCenterOpenAction
+{ 
+	width:99%; /* Keeps content from exceeding width of container on expansion of ActionSet. */
+	padding:0;
+	background:#cadee8;
+	border:solid 2px #abcbda;
+}
+
+.HwConditionCenterContent
+{
+	padding:.9em;
+}
+
+.HwConditionCenterContentInner /* Rounded corner box. */
+{
+	width:99%; /* Keeps content from exceeding width of container on expansion of ActionSet. */
+	padding:0;
+	background:#fff;
+}
+
+.HwConditionCenterContent ul
+{
+	margin:0;
+	padding:0 10px;
+}
+
+.HwConditionCenterSection ul li 
+{
+	background-image:none; /* undo default bullets */
+	line-height:1.17em;
+	margin:0;
+	padding:0 0 0.5em;
+}
+
+.HwConditionCenterClosed .HwConditionCenterContent,
+.HwConditionCenterClosedAction .HwConditionCenterContent
+{
+	display: none;
+}
+
+a.HwLinkConditionCenterShow:link, a.HwLinkConditionCenterShow:visited
+{
+	text-decoration: none;
+	color: #007dc3;
+}
+
+.HwConditionCenterContent li a:hover
+{
+	text-decoration:underline;
+}
+.HwConditionCenterContent li a:link
+{
+	text-decoration:none;
+}
+
+.HwConditionCenterContent li a:visited
+{
+	text-decoration:none;
+}
+
+
+
+/* -------------------------------  Actionsets -------------------------------  */
+.HwActionset 
+{
+	margin-top: 10px;
+}
+
+.HwActionsetSection 
+{
+	margin-bottom: 10px;
+}
+
+.HwActionsetExtra 
+{
+	clear: both;
+	height:0;
+	background:#eef4f8; /* Must match the bg of HwActionsetContent. */
+}
+
+.HwActionsetExtra div
+{
+	height: 10px;
+}
+
+.HwActionsetInner 
+{
+	padding:10px 15px;
+}
+
+#ActionsetWhere .HwActionsetInner 
+{
+	padding-bottom: 10px; /* The "Where" section does not have a link so re-adjust the bottom padding */
+}
+
+.HwActionsetContent > h3 
+{
+	display: none;
+}
+
+.HwActionsetHeader /* Rounded corner box. */ 
+{
+	z-index:1; /* Layers div on top of .HwActionsetContent. */
+	float:left; /* Forces container to wrap around nested floated elements (FF). */
+	width:100%;
+	margin-bottom:10px;
+	padding:0;
+	background:#5192b3;
+	color:#fff;
+	font-weight:bold;
+}
+
+.HwActionsetHeader dt
+{
+	float: left;
+	margin:0;
+	padding:4px 0 4px 6px;
+	font-size:1.3em;
+	font-weight:bold;
+}
+
+.HwActionsetHeader dt a
+{
+	padding-left: 15px;
+}	
+
+.HwActionsetHeader dd
+{
+	clear:none;
+	float: left;
+	width:70%;
+	padding: 6px 0 0 15px;
+	font-weight: normal;
+}
+
+
+/* Open/close handle */
+.HwActionsetOpen dt a { background: transparent url(../custom/images/ActionSetDown.png) no-repeat 0px center; }
+.HwActionsetClosed dt a { background: transparent url(../custom/images/ActionSetSide.png) no-repeat 4px center; }
+
+/* Content area */
+.HwActionsetContent /* Rounded corner box. */
+{
+	position:relative;
+	top:-10px;
+	width:99%; /* Keeps content from exceeding width of container on expansion of ActionSet. */
+	margin-bottom:10px;
+	padding:0;
+	background:#eef4f8;
+	border:solid 2px #d4e4ec;
+}
+
+.HwActionsetClosed .HwActionsetContent
+{
+	display: none;
+}
+
+.HwTypeActionset .HwContentNavigation
+{
+	display: none;
+}
+
+a.HwLinkShowActionset:link, a.HwLinkShowActionset:visited
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+.HwActionsetNavigation 
+{
+	font-size:1.17em; /*14px*/
+	overflow: hidden;
+	width: 100%;
+	text-align: right;
+	margin-top: 10px;
+}
+
+.HwActionsetNavigation a:link 
+{
+	text-decoration: none;
+}
+
+.HwActionsetNavigation a 
+{
+	background: url(../custom/images/NavigationMore.gif) no-repeat right center;
+	padding-right: 10px;
+}
+
+.HwActionsetNavigation a:visited 
+{
+	text-decoration: none;
+}
+
+.HwActionsetNavigation a:Hover 
+{
+	text-decoration: underline;
+}
+
+
+/* This is applied in some cases to actionset with large images in them */
+.HwActionsetReducePadding  
+{
+  margin-left: -15px;
+}
+
+/* -------------------------------  Quiz elements -------------------------------  */
+
+.HwQuiz /* Rounded corner box. */
+{
+	position:relative;
+	z-index:3;
+	margin:20px 0 10px;
+	padding:0;
+	background:#fff;
+}
+
+.HwQuiz h4 
+{
+	padding-left:10px;
+	font-size:1.33em; /*16px*/
+	font-weight: bold;
+	color: #007DC3;
+}
+
+.HwQuiz li {
+	margin: 0;
+	padding: 0;
+}
+
+.HwQuizQuestion 
+{
+	position:relative;
+	z-index:4;
+	padding:0 10px;
+}
+
+.HwQuizQuestion  p 
+{
+	font-weight: bold;
+}
+
+.HwQuizQuestions 
+{ 
+	padding:10px;
+}
+
+.HwQuizQuestionsInner /* Rounded corner box. */
+{
+	position:relative;
+	z-index:3;
+	padding:0;
+	background:#eef4f8;
+}
+
+ul.HwQuizAnswers li 
+{
+	padding-left:0;
+	background:none;
+}
+
+.HwQuizClosed div 
+{
+	display:none;
+}
+
+.HwQuizAnswer div
+{
+	margin:0 5px 10px 0;
+	padding:5px;
+	background-color:#fff;
+	border:solid 1px #5192B3;
+	font-weight:normal;
+}
+
+.HwQuizAnswer div p
+{
+	font-weight: normal;
+}
+
+.HwQuizAnswer > a:link 
+{
+	color: black;
+	text-decoration: none;
+}
+
+/* this will do the above for IE6 which does not support child selectors */
+.HwLinkShowInnerLayer
+{
+	color: black;
+	text-decoration: none;
+}
+
+.HwQuizOpen a
+{
+	display: block;
+	padding-left: 15px;
+	background: url(../custom/images/QuizSelected.png) no-repeat scroll left center;
+}
+
+.HwQuizClosed a
+{
+	display: block;
+	padding-left: 15px;
+	background: url(../custom/images/QuizNeutral.png) no-repeat scroll left center;
+}
+
+
+/* -------------------------------  Symptom topics -------------------------------  */
+
+.HwCysClosed .HwWhenToSee 
+{
+	display: none;
+}
+
+.HwWhenToSee 
+{
+	margin-top: 10px;
+}
+
+table.HwSymptomHeader td.HwSymptomAnswer
+{
+	padding: 10px 10px 10px 40px;
+	font-size:1em;
+	font-weight:normal;
+}
+
+table.HwSymptomHeader td.HwSymptomQuestion
+{
+	padding-top: 10px;	
+	font-size:1em;
+	font-weight:normal;
+}
+
+.HwSeverityEmergency
+{
+	margin-bottom: 10px;
+}
+
+.HwSeverityAnswer a
+{
+	margin-right: 10px;
+}
+
+.HwCysQuestions li
+{
+	padding: 0px; 
+	margin: 0px;
+}
+
+.HwCysQuestions h3 
+{
+	font-size:1em;
+	font-weight: normal;
+	margin: 10px;
+	line-height:1.17em; /*14px*/
+}
+
+.HwWhenToSee 
+{
+	background-color: #ffffff;
+	padding-left: 10px;
+}
+
+.HwSeverityEmergency dd 
+{
+	padding-left: 50px;
+	padding-bottom: 10px;
+	position: relative;
+	top: -0.5em;
+}
+
+.HwSeverityEmergency dt 
+{
+	position: relative;
+	top: 1em;
+	left: 5px;
+}
+
+.HwSeverityQuestions li
+{
+	list-style: none;
+}
+
+div.HwSeveritys1 
+{
+	background: #eef4f8 url(../custom/images/SymptomRed.gif) no-repeat scroll 10px 10px;
+	border: solid 1px #5192b3;
+	margin: 5px; 
+}
+
+div.HwSeveritys2 
+{
+	background: #eef4f8 url(../custom/images/SymptomYellow.gif) no-repeat scroll 10px 10px;
+	border: solid 1px #5192b3;
+	margin: 5px; 
+}
+
+div.HwSeveritys3 
+{
+	background: #eef4f8 url(../custom/images/SymptomGreen.gif) no-repeat scroll 10px 10px;
+	border: solid 1px #5192b3;
+	margin: 5px; 
+}
+
+div.HwSeveritys4
+{
+	background: #eef4f8 url(../custom/images/SymptomBlack.gif) no-repeat scroll 10px 10px;
+	border: solid 1px #5192b3;
+	margin: 5px; 
+}
+
+.HwCenterSeverity p
+{
+	margin-left: 35px;
+	margin-top: 10px;
+}
+
+.HwNote p
+{
+	margin-left: 0px;
+}
+.HwSeverityQuestions li
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 5px;
+	background: none;
+}
+
+
+
+.HwEmergencyQuestion,
+.HwSeverityQuestion 
+{
+	padding-bottom: 10px;
+}
+
+.HwEmergencyQuestion
+{
+	padding-bottom: 10px;
+	padding-top: 6px;
+}
+	
+
+/* ------------------------- iTools Icon and Start button style ---------------------- */
+
+.HwIToolImageArea
+{
+	width:182px;
+	float: left;
+	margin-right: 8px;
+	position: relative;
+}
+
+.HwIToolImageArea h3
+{
+	background: transparent url(../custom/images/IToolTop.png) no-repeat left top;
+	font-family:Arial;
+	font-weight:normal;
+	font-size:1em;
+	color:#007DC3;
+	padding: 15px 15px 10px 15px;
+	line-height:1.17em; /*14px*/
+}
+
+div.HwIToolImageInner
+{
+	background: transparent url(../custom/images/IToolBottom.png) no-repeat left bottom;
+	height: 205px;
+}
+
+.HwIToolImageLower
+{
+	height: 24px;
+	position: absolute;
+	bottom: 12px;
+	left: 46px;
+}
+
+.HwIToolImageStartButton
+{
+	background: transparent url(../custom/images/IToolStartBtn.gif) no-repeat left bottom;
+	width: 82px;
+	height: 20px;
+	display: block;
+}
+
+
+/* -------------------------------  Drug Details -------------------------------  */
+table.HwDrugNames
+{
+	margin-bottom: 20px;
+	border-collapse: collapse;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+table.HwDrugNames tr, table.HwDrugNames td
+{
+	border: 1px solid #5192B3;
+}
+
+th.HwDrugHeader
+{
+	padding: 2px 10px 2px 5px;
+}
+
+.HwDrugNames th
+{
+	border-left-style: hidden;
+	border-right-style: hidden;
+	border-top-style: hidden;
+	padding-left: 5px;
+	padding-right: 15px;
+	text-align: left;
+}
+
+td.HwDrugGenericName, td.HwDrugBrandName
+{
+	padding: 2px 10px 2px 5px;
+}
+
+/* -------------------------------  Medical Tests -------------------------------  */
+.HwMedicalTestSynonyms
+{
+	font-family: Verdana, Arial, sans-serif;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	color: white;
+	font-weight: bold;
+	font-size:1.17em; /*14px*/
+}
+
+/* -------------------------------  Non-Multum Slide Show -------------------------------  */
+
+
+.HwSlide
+{
+	text-align:left;
+}
+
+
+.HwSlideButtonInformation
+{
+	padding: 5px 0px 15px 0px;
+}
+
+.HwSlideShowArea
+{
+	text-align:center;
+}
+
+/* -------------------------------  Frame Tables -------------------------------  */
+
+.HwTypeFrame table.HwStripAlignCenter caption
+{
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+

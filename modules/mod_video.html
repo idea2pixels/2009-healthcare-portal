@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<title>Alere HTML Framework</title>
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="cmn/css/incentives.css" type="text/css" media="all">
+	
+	<link rel="stylesheet" href="cmn/css/global.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/modules.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/article.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/sign-in_register.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/hpa.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/hpa-test.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/search.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/bioIQ.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/incentives.css" type="text/css" media="all">
+	<!-- 
+		Integration Note:
+			Generally you would only include a single skin style sheet which overrides
+			all the default in global.css and modules.css as necessary.
+			
+			For debug/demo purposes all the style sheets are include here so that they can
+			be toggled using the style sheet switcher (to see the style sheet switch add ?debug=1)
+	-->
+	<link rel="stylesheet" href="cmn/css/skins/ge.css" type="text/css" media="all" title="ge">
+	<link rel="stylesheet alternate" href="cmn/css/skins/cisco.css" type="text/css" media="all" title="cisco">
+	<link rel="stylesheet alternate" href="cmn/css/skins/fedex.css" type="text/css" media="all" title="fedex">
+	<link rel="stylesheet alternate" href="cmn/css/skins/blue-cross.css" type="text/css" media="all" title="blue-cross">
+	<!--[if IE]>
+		<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="cmn/css/global_ie.css" type="text/css" media="all">
+	<![endif]-->
+	</head>
+<body>	<div class="container">
+
+
+		<div class="content">
+
+			<div class="sidebar span-7">
+
+				<div class="module alt-nav">
+					<h5>
+					<ol>
+					<li>This shows a video module.</li>
+					<li>Appears video vendor, Healthology, requires their own popup player.</li>
+					</ol>
+					</h5>				
+				</div>
+				<!-- End Sub Nav -->
+			
+			</div>
+			<div class="main-well span-21">
+
+
+
+				<h1 class="what-next">What you can do next...</h1>
+				<!--
+					Integration Note: 
+						All modules should be included here
+				-->
+
+
+
+				<!-- Included from: cmn/inc/modules/video.inc.php-->
+				<div class="module b has-video">
+					<img class="icon" src="cmn/img/modules/tmp/module-b-icon-read.png" width="35" height="26" alt="Module Icon">
+					<h2>Watch Videos About Diabetes</h2>
+					<p>Robert Bazell reports that two drugs, already on the market to treat some cancers, could hold the key to putting diabetes patients into permanent remission. <a href="#">Watch the video now</a>.</p>
+					
+					<ul class="article-list">
+						<li><a href="#">Are you depressed?</a> <a href="#" class="favorited" title="Favorites">450</a></li>
+						<li><a href="#">How well do you bounce back?</a> <a class="favorited" href="#" title="Favorites">125</a></li>
+						<li><a href="#">What is your stress level?</a> <a class="favorited" href="#" title="Favorites">70</a></li>					
+					</ul>
+					
+					<p class="sub-copy"><a href="#" class="favorited">363 People liked this</a></p>
+					
+					<img class="powered-by" src="cmn/img/modules/tmp/logo-nbc.png">
+					<div class="video"><img src="cmn/img/modules/tmp/video.png" width="190" height="142" alt="Video"></div>
+					<ul class="utility-nav">
+						<li class="first"><a href="#">Show more like this</a></li>
+						<li class="last"><a href="#">Show this later</a></li>
+					</ul>
+					 <a href="#" class="more">More Videos &raquo;</a>
+				</div>
+
+				
+			</div>
+
+
+			<div class="module-cap-bottom"></div>  <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+		
+	</div>
+	<!-- Leave Scripts at the bottom to make sure they don't block the initial paint -->
+	<script src="cmn/js/jquery-1.3.2.min.js"></script>
+	<script src="cmn/js/jcarousel/lib/jquery.jcarousel.js"></script>
+	<script src="cmn/js/jquery_example/jquery.example.min.js"></script>
+	<script src="cmn/js/global.js"></script>
+	</body>
+</html>

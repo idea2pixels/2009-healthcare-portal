@@ -1,0 +1,21 @@
+/*  This is the default css for Healthwise HTML  */
+/*  Created by Healthwise, Incorporated          */
+
+/* Layout */
+@import url("hw/layout.css");
+@import url("hw/content_layout.css");
+@import url("hw/overlays.css");
+
+/* General look and feel */
+@import url("hw/global_text.css");       /* font definitions and basic text spacing */
+
+/* Page specific styling */
+@import url("hw/page_listcategory.css");       /* list and category pages */
+@import url("hw/page_landing.css");            /* landing page (default.html) */
+
+/* Content area */
+@import url("hw/content_elements.css");  /* content area elements */
+@import url("hw/third_party.css");  /* third party documents */
+
+/* Customizations */
+@import url("hw/custom.css");

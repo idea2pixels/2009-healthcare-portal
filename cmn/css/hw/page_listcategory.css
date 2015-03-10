@@ -1,0 +1,256 @@
+
+/* Start A to Z List Pages */
+
+.HwListBrowseList .HwContent p
+{
+	padding: 0;
+}
+	
+#HwListTitle
+{
+	font-size:1.67em; /* 20px*/
+	font-weight: bold;
+	color: Black;
+	border: none;
+}
+
+#HwListIndex .HwClear 
+{
+	height: 5px;
+}
+
+#HwListIndex ol
+{
+	margin:0;
+	padding:0 .5em;
+}
+
+#HwListIndex li
+{
+	list-style-type: none;
+	float:left;
+	margin:.2em .1em;
+	padding:.2em;
+	background:#bfd6e3 url(../custom/images/ListNumber.gif) repeat-x top left;
+	border:solid 1px #99ccff;
+}
+
+
+#HwListIndex a
+{
+	display:block;
+	font-family:Verdana, Arial, Helvetica, Sans-Serif;
+	color:#007dc3;
+	font-weight:bold;
+	text-decoration:none;
+	line-height:1em;
+	white-space:nowrap;
+	text-align:center; /* For IE6. */
+}
+
+#HwListIndex a:visited
+{
+	color: #61116A;
+	text-decoration: none;
+}
+
+#HwListIndex a:hover
+{
+	text-decoration: underline;
+}
+
+
+#HwListIndex .HwIndexItemCurrent
+{
+	background:#fdc652 url(../custom/images/ListLetterSelected.gif) no-repeat center center;
+	line-height:1em;
+	font-weight:bold;
+	white-space:nowrap;
+  color: white;
+}
+
+#HwListIndex .HwNumberItemCurrent
+{
+	background: transparent url(../custom/images/ListNumberSelected.gif) no-repeat left top;
+	line-height:1em;
+	font-weight:bold;
+	white-space:nowrap;
+}
+
+.HwListIndexInner /* Rounded corner box. */
+{
+	margin-bottom:10px;
+	padding:0;
+	background:#f1edea;
+}
+
+#HwListSubIndex 
+{
+	border-bottom: solid 2px #7d6a55;
+	margin-bottom: 10px;
+	width:100%;
+}
+
+#HwListSubIndex li 
+{
+	list-style-type: none;
+	background: none;
+	float: left;
+	margin: 0 0 0 10px;
+	padding: 0;
+	white-space:nowrap;
+}
+
+
+#HwListSubIndex a:link
+{
+	text-decoration: none;
+}
+
+#HwListSubIndex a:visited
+{
+	color: #61116A;
+	text-decoration: none;
+}
+
+#HwListSubIndex a:hover
+{
+	text-decoration: underline;
+}
+
+.HwListSection
+{
+	position: relative; /* For positioning HwTopLink. */
+	margin-top: 20px;
+}
+
+.HwListSectionHeader /* Rounded corner box. */
+{
+	padding:0;
+	background:#f1edea;
+}
+
+.HwListSection h3
+{
+	padding:0 0 0 .5em;
+	color:#705E3E;
+	font-weight: bold;
+	font-size:1em;
+	line-height:normal;
+}
+
+.HwTopLink
+{
+	position: absolute;
+	right: 10px;
+	top:0;
+	text-decoration: none;
+	font-weight: bold;
+	font-size:.83em; /*10px*/
+	line-height:normal;
+}
+
+.HwListSection ol
+{
+  clear: left;
+  padding: 10px 10px 0 10px;
+}
+
+.HwListSection li
+{
+	background: none;
+	list-style: none;
+	margin: 0;
+	line-height: normal;
+}
+
+.HwListSection .HwClear 
+{
+	height: 1px;
+}
+
+.HwListSection a:link
+{
+	text-decoration: none;
+}
+
+.HwListSection a:visited
+{
+	color: #61116A;
+	text-decoration: none;
+}
+
+.HwListSection a:hover
+{
+	text-decoration: underline;
+}
+
+/* End A to Z List Pages  */
+
+
+/* Start Category Pages  */
+
+.HwCategoryList /* Rounded corner box. */
+{
+	margin:10px 0 15px 0; /* Left/right margin accomodates for 2px border. */
+	padding:0;
+	background:#eef4f8;
+	border:solid 2px #c9dee7;
+}
+
+.HwCategoryList ol 
+{
+	margin:0;
+	padding:.5em 1em 0 1em;
+}
+
+/* This will create two columns inside the category list box. 
+     To have one column remove this style defintion. */
+.HwTypeCategoryList .HwCategoryList ol
+{
+	float: left;
+	width: 44%;
+}
+
+.HwCategoryList li
+{
+	margin:0;
+	padding:0 0 .4em 0;
+	list-style: none;
+    line-height: normal;
+}
+
+.HwCategoryList li a:Link
+{
+	text-decoration: none;
+}
+
+.HwCategoryList li a:visited
+{
+	text-decoration: none;
+	color: #61116A;
+}
+
+.HwCategoryList li a:hover
+{
+	text-decoration: underline;
+}
+
+
+.HwCategoryList h3 
+{ 
+	padding: 0;
+}
+
+.HwTypeCategoryList .HwContentNavigation, 
+.HwTypeCategory .HwContentNavigation
+{
+	display: none;
+}
+
+.HwCategoryListEnd 
+{
+	clear: both;
+}
+
+/* End Category Pages */

@@ -1,0 +1,82 @@
+.HwTypeNci table
+{
+	max-width: 460px;
+}
+
+.HwTypeShc .TopTable, 
+.HwTypeCam .TopTable,
+.HwTypeCamSupport .TopTable
+{
+	border: hidden;	
+}
+
+.HwTypeShc .TopTable td, 
+.HwTypeCam .TopTable td,
+.HwTypeCamSupport .TopTable td
+{
+	border: hidden;	
+}
+
+
+
+/* blue theme only */
+.HwTypeNci .HwContentTitle h1, 
+.HwTypeCam .HwContentTitle h1, 
+.HwTypeCamSupport .HwContentTitle h1
+{
+	margin-bottom: 10px;
+}
+
+
+.HwOrgTitle
+{
+	padding-bottom: 10px;
+	padding-left: 10px;
+	color: black;
+	font-weight: bold;
+	font-size:1.17em; /*14px*/
+	border-bottom : 1px solid #D8D0C7;
+}
+
+.HwTypeNord h2.HwSectionTitle,
+.HwTypeCam h2.HwSectionTitle,
+.HwTypeCamSupport h2.HwSectionTitle,
+.HwTypeNci h2.HwSectionTitle,
+.HwTypeMultum h2.HwSectionTitle
+{
+	padding-top: 0.5em;
+	border-bottom: none;
+}
+
+.HwTypeMultum table 
+{
+	margin-left: 0;
+	margin-right: auto;
+}
+
+.HwTypeMultum td 
+{
+    vertical-align: middle;
+    line-height: 1.5em;
+}
+
+.Red
+{
+	color: Red;
+}
+
+.HwSizeminus
+{
+	font-size:.83em; /*10px*/
+}
+
+.Sizeminus
+{
+	font-size:.83em; /*10px*/
+}
+
+.HwTypeMultum blockquote,
+.HwTypeNord blockquote
+{
+	padding-left: 35px;
+}

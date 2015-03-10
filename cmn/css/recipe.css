@@ -1,0 +1,140 @@
+div.article h1 {
+	font-size:1.8em;
+	font-weight:bold;
+	margin-bottom:24px;
+}
+
+div.article img {
+	float:left;
+	margin:0 15px 13px 0;
+}
+
+div.article p {
+	font-size:1.2em;
+}
+
+div.article p.author {
+	font-size:1.1em;
+	color:#444444;
+	margin-top:-20px;
+	margin-bottom:20px;
+	font-size:1.2em;
+}
+
+div.article p.author a {
+	font-weight:bold;
+	color:#0084a9;
+}
+
+div.article p.abstract {
+	font-weight:bold;
+	color:#444;
+}
+
+div.article h4 {
+	font-weight:bold;
+}
+
+div.article ul {
+	margin-left:0;
+	list-style:none;
+	font-size:1.2em;
+}
+
+div.article ol {
+	list-style:none;
+	margin-left:0;
+}
+
+div.article ol li {
+	font-size:1.2em;
+	margin:0 0 1.25em 0;
+}
+
+/* -- Recommend this Article Button -- */
+div.recommend-btn {
+	font-size:1.0em;
+	border:1px solid #98cddc;
+	text-align:left;
+	display:block;
+	padding:6px 0 5px 5px;
+	margin-bottom:20px;
+	background: #FFFFB7 url('../img/skins/default/module_gradients_bg.png') repeat-x;
+}
+
+div.recommend-btn a {
+	font-weight:bold;
+	color:#0084a9;
+	display:block;
+	padding-left:26px;
+	background:transparent url('../img/skins/default/icon_sprite.png')  no-repeat 0px -1678px; 
+}
+
+div.recommend-btn a span {
+	clear:both;
+	display:block;
+	color:#f49e39;
+}
+
+div.recommend-btn a:hover {
+	text-decoration: none;
+}
+
+/* -- Alt Sidebar -- */
+
+div.alt-sidebar h5 {
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	background:#e6f3fc;
+	padding:8px;
+	line-height:100%;
+	margin-bottom:10px;
+}
+
+div.alt-sidebar ul {
+	list-style:none;
+	margin-left:9px;
+	font-weight:bold;
+}
+
+div.alt-sidebar li a {
+	color:#0084a9;
+}
+
+div.alt-sidebar li {
+	margin-bottom:5px;
+}
+
+/* -- Footnote -- */
+div.footnote {
+	margin-bottom:20px;
+	color:#999999;
+}
+
+div.footnote a {
+	color:#0084a9;
+	display:block;
+	font-weight:bold;
+	font-size:1.1em;
+	
+}
+
+div.footnote p,
+div.footnote cite {
+	display:block;
+	font-size:100%;
+	font-style:normal;
+	font-family: Arial, sans-serif;
+	margin-top:4px;
+}
+
+div.footnote p.copyright {
+	margin-bottom:.5em;
+}
+
+div.footnote p.last-reviewed {
+	text-align:right;
+	font-weight:bold;
+	color:#222;
+}

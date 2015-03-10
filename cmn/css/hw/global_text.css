@@ -1,0 +1,310 @@
+
+/*************************************************************************
+ General text properties
+*************************************************************************/
+
+body
+{
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 75%; /* 12px */
+	color: black;
+}
+
+td
+{
+	font-size: 98%;
+	color: black;
+}
+
+/* For IE6 the font needs to be set different */
+*html .HwTypeDecisionPoint td
+{
+	font-size:1.08em; /*13px*/
+}
+
+th
+{
+	padding: .2em;
+}
+
+h1 
+{
+	font-size:1.33em; /*16px*/
+	font-weight: bold;
+	color: #5192B3;
+	padding-top: 0.5em;
+}
+
+h3,
+h4 
+{
+	font-size: 1.17em; /*14px*/
+	font-weight: bold;
+	padding-top:.42em;
+}
+
+h2+dl
+{
+	padding:.4em 0 1em;
+}
+
+dl
+{
+	padding-bottom: .3em;
+}
+
+h2.HwSectionTitle
+{
+	padding-top: 0.5em;
+}
+
+h2.HwSectionTitle>img
+{
+	vertical-align:bottom;
+}
+
+.HwNavigationSection h2.HwSectionTitle
+{
+	color:#000000;
+	font-size:1.5em; /*18px*/
+	padding-top: 0;
+}
+
+h3.HwSubSectionTitle
+{
+	color: #705E3E;
+}
+
+a
+{
+	color: #007DC3;
+}
+
+ol,
+ul
+{
+	padding-bottom:.75em; /*9px*/
+}
+
+li
+{
+	line-height:1.17em; /*14px*/
+}
+
+/*************************************************************************
+ HwNavigation: Topic navigation area
+*************************************************************************/
+
+#HwTopicNavigation h1 
+{
+	font-size:1.5em; /*18px*/
+	color: #705E3E;
+}
+
+.HwNavigationItemCurrent a
+{
+	color: #000;
+	font-weight: bold;
+}
+
+
+/*************************************************************************
+ HwContent: Content area text styling
+*************************************************************************/
+
+.HwContentTitle h1 
+{
+	padding-top:0;
+	font-size: 2.17em; /*26px*/
+	font-weight: bold;
+	color: #705E3E;
+}
+
+.HwContent li {
+	margin-left: 3.5em;
+	line-height:1.33em; /*16px*/
+	padding: .1em 0 .42em;
+}
+
+.HwContent ul li {
+	list-style: none;
+	background: transparent url(../custom/images/Bullet1.gif) no-repeat scroll;
+	background-position: 0em 0.3em;
+	padding-left: 1.4em;
+	margin-left: 0.8em;
+}
+
+.HwContent ul li ul li
+{
+	list-style: none;
+	background: transparent url(../custom/images/Bullet2.gif) no-repeat scroll;
+	background-position: 0em 0.8em;
+	padding-left: 0.8em;
+	margin-left: 1em;
+}
+
+.HwContent p
+{
+	padding: 0.2em 0 .83em 0;
+	line-height:1.33em; /*16px*/
+}
+
+.HwContent h2  
+{
+	margin-bottom:.5em;
+	padding-bottom: 0.5em;
+	border-bottom:solid 1px #D8D0C7;
+	color:#705E3E;
+	font-size:1.33em; /*16px*/
+}
+
+.HwNavigationSection .HwStripAlignLeft
+{
+	float:left;
+	padding:0 .83em .83em 0;
+}
+
+.HwUnderline 
+{
+    text-decoration: underline;
+}
+
+/* Allows the word wrap style to break URLs as needed in the References section if they are too long 
+and don't contain spaces to wrap */
+.HwReferenceUrl 
+{
+	word-break: break-all;
+}
+
+/*************************************************************************
+ HwContent: Special cases and doctype specific styling 
+*************************************************************************/
+
+/* DecisionPoints: Makes the image next to headers align correctly */
+.HwTypeDecisionPoint .HwSectionTitle { padding-bottom: 1em; }
+.HwTypeDecisionPoint .HwSectionTitle > img { margin-bottom: -1em; }
+
+
+/***************************************************************************
+ HwSectionTitles special case when it is an action set.
+****************************************************************************/
+
+.HwTypeActionset h2.HwSectionTitle
+{ 
+	border-top: solid 1px #D8D0C7;
+	border-bottom:none;
+	color: #705E3E;
+	font-size: 1em; /* 12px */
+	font-weight: bold;
+	padding-top: 0.75em; 
+	padding-bottom:0;
+	margin-top:.75em;
+}
+
+/*************************************************************************
+ HwContentInformation: Credits and last updated section
+*************************************************************************/
+
+.HwContentInformation 
+{
+	font-size: 0.83em; /*10px*/
+}
+
+
+* html .HwLastUpdated a 
+{ /* IE6 exception: Does not catch td+td selector which makes second column non-bold, so instead
+     just make everything bold.*/
+	font-weight: bold;
+}
+
+/*************************************************************************
+ HwContentNavigation: Next/Prev navigation under content area
+*************************************************************************/
+
+.HwContentNavigation li
+{
+	font-weight: bold;
+}
+
+.HwContentNavigation a
+{
+	font-weight: normal;
+}
+
+
+/*************************************************************************
+ HwContentMenu: Print/Email/Help functions under content area
+*************************************************************************/
+
+.HwContentMenu
+{
+	margin-top: 10px;
+	font-size: 0.83em; /*10px*/
+	text-transform: uppercase;
+	color: Blue;
+}
+
+.HwContentMenu ul
+{
+	float:left;
+	width: 100%;
+	padding:1.25em 0;
+	background-color: #EFE9E5;
+}
+
+.HwContentMenu ul li 
+{
+	display: inline;
+	width: 49%;
+	float: left;
+	text-align: center;
+}
+
+.HwContentMenu ul li+li /* Doesn't work in IE6. */
+{
+	border-left: solid 1px black;
+}
+
+.HwContentMenu li a:link
+{
+	text-decoration: none;
+}
+
+.HwContentMenu li a:visited
+{
+	text-decoration: none;
+}
+
+.HwContentMenu li a:hover
+{
+	text-decoration: underline;
+}
+
+.HwActionLinkPrint
+{
+	background: transparent url(../custom/images/MenuPrint.png) no-repeat scroll center left;
+	padding: 2px 0 3px 25px; 
+}
+
+.HwActionLinkHelp
+{
+	background: transparent url(../custom/images/MenuHelp.png) no-repeat scroll center left;
+	padding: 2px 0 3px 20px; 
+}
+
+
+/*************************************************************************
+ HwFooter: Logo, disclaimer and copyright
+*************************************************************************/
+
+.HwDisclaimer 
+{
+	font-size: 0.83em; /*10px*/
+}
+
+.HwCopyright 
+{
+	font-size: 0.83em; /*10px*/
+}
+
+

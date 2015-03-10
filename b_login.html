@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<title>Alere HTML Framework</title>
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/print.css" type="text/css" media="print">
+	
+	
+	<link rel="stylesheet" href="cmn/css/global.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/modules.css" type="text/css" media="all">
+
+	<link rel="stylesheet" href="cmn/css/sign-in_register.css" type="text/css" media="all">
+
+	<link rel="stylesheet" href="cmn/css/skins/blue-cross.css" type="text/css" media="all">
+	<!--[if IE]>
+		<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="cmn/css/global_ie.css" type="text/css" media="all">
+	<![endif]-->
+   
+        
+	</head>
+<body>	<div class="container">
+
+		<div class="header">
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+			<div class="header-bg hpa"> <!-- for skinning purposes only, background for header -->
+							<h2 class="logo"><a href="b_home-e.html">blue healthcare</a></h2>
+			</div>
+			<div class="module-cap-bottom"></div> <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+		<div class="content login">
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+			<div class="span-30 last">
+				<div class="breadcrumb-bar utils-only">
+					<ul>
+						<li class="font-sizer">
+							<a class="decrease" href="#" title="Decrease font-size">A</a>
+							<a class="increase" href="#" title="Increase font-size">A</a>
+						</li>
+					</ul>
+				</div>			
+			</div>
+			<div class="sign-in span-8">
+				<form>
+					<fieldset>
+						<legend>Sign In</legend>
+						<p>If you have already created a personal profile, simply enter your username and password here.</p>
+						<label for="user_name">User Name</label>
+						<input type="text" name="user_name" id="user_name">
+						<label for="password">Password</label>
+						<input type="text" name="password" id="password">
+						<p class="form-help">
+                        <a href="#">Forgot your password?</a><br />
+                        <a href="b_home.html">Demo Login First Time</a><br />
+                        <a href="b_home-e.html">Demo Login Engaged</a></p>
+						<button class="reset" type="submit"><span class="action-button alt"><strong><em>Sign-in</em></strong></span></button>
+					</fieldset>
+				</form>
+			</div>
+			<div class="register span-9">
+				<form>
+					<fieldset>
+						<legend>Register</legend>
+						<p>If you don't have a sign in, you can register for an account.</p>
+						<label for="registering_as">Registering as</label>
+						<select id="registering_as">
+							<option value="option1">option1</option>
+							<option value="option2">option2</option>
+						</select>
+						<p class="form-help"><a href="#">What does this mean?</a></p>
+						<label for="employee_id">Employee ID</label>
+						<input type="text" name="employee_id" id="employee_id" class="example-text" title="123-45-6789">
+						<p class="form-help"><a href="#">Don't know your employee ID?</a></p>
+						<button class="reset" type="submit"><span class="action-button alt"><strong><em>Register</em></strong></span></button>
+					</fieldset>
+				</form>
+			</div>
+			<div class="why-register span-10 last">
+				<h3>Why Register</h3>
+				<ul>
+					<li><span>Registered users of the site can take part 
+					in company wide challenges, identify ways 
+					to improve their lifestyle and use the site 
+					to establish healthier patterns.</span></li>
+					<li><span>Earning credits will help you track your 
+					progress, set health goals and earn 
+					rewards as acknowledgements of your 
+					achievements.</span></li>
+				</ul>
+			</div>	
+
+			<div class="module-cap-bottom"></div>  <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+		<div class="footer">
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+				<div class="footer-bg"><!-- for skinning purposes only, footer background -->
+					<ul>
+						<li class="first"><a href="#">About Alere</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Editorial Policy</a></li>
+					</ul>
+					<div class="alere">
+						<p class="powered-by">Powered by</p>
+						<h3>Alere</h3>
+						<p>&copy; 2009 Alere. All rights reserved. Alere is a trademark of the Inverness Medical group of companies.</p>
+					</div>
+					
+					<div class="certification">
+						<img src="cmn/img/footer/urac-logo.png" width="78" height="73" alt="URAC">
+						<img src="cmn/img/footer/hon-code-logo.png" width="49" height="72" alt="HON Code">
+						<p>
+							We comply with the <a href="#">HONcode standard for the trustworthy health</a> information: <a href="#">verify here</a>
+						</p>
+					</div>
+				</div>
+			<div class="module-cap-bottom"></div> <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+	</div>
+	<!-- Leave Scripts at the bottom to make sure they don't block the initial paint -->
+	<script src="cmn/js/jquery-1.3.2.min.js"></script>
+	<script src="cmn/js/jcarousel/lib/jquery.jcarousel.js"></script>
+	<script src="cmn/js/jquery_example/jquery.example.min.js"></script>
+	<script src="cmn/js/global.js"></script>
+	</body>
+</html>

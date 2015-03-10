@@ -1,0 +1,279 @@
+
+/* Layout specific stuff */
+
+
+.HwLandingLinks li 
+{
+	width: 180px;
+}
+
+.HwTypeLanding .HwLandingContent
+{
+	padding: 5px;
+}
+
+.HwLandingLinksSymptomChecker, 
+.HwLandingLinksDrugInteraction,
+.HwLandingLinksOSHG
+{
+    display: none;
+}
+
+.HwTypeLanding h1 
+{
+	font-size:2em; /*24px*/
+	color: #705E3E;
+	line-height:1.16em; /*28px*/
+}
+
+.HwTypeLanding h2 
+{
+	float: left;
+	width:58%;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	font-weight: bold;
+	border: none;
+}
+
+.HwTypeLanding .HwBrand 
+{
+	float: right;
+	width:40%;
+	margin-top: 20px;
+	font-size: 0.9em; 
+	color: #7d6a55;
+	text-align:right;
+}
+
+.HwTypeLanding li 
+{
+	list-style: none;
+	margin: 0;
+}
+
+/* HwLandingMenu */
+
+.HwLandingMenu 
+{
+	margin-top: 10px;
+	font-weight:bold;
+}
+
+.HwLandingMenu ul li
+{
+	float: left;
+	padding: 0;
+	background: none;
+	margin: 0;
+	list-style: none;
+	width: 150px;
+}
+
+.HwLandingMenu h3 
+{
+	font-size:1.33em; /*16px*/
+	padding-bottom: 10px;
+	font-weight: bold;
+	padding-top: 0;
+	padding-right: .4em;
+	word-break: normal;
+	line-height:1.13em; /*18px*/
+}
+.HwLandingMenu h3 a:hover,
+.HwLandingMenu ul li a:hover
+{
+	text-decoration: underline;
+}
+
+.HwLandingMenu h3 a,
+.HwLandingMenu ul li a
+{
+	text-decoration: none;
+}
+
+.HwLandingMenu p 
+{
+	display: inline; 
+	line-height: 1.3em;
+}
+
+.HwLandingMenu p a 
+{
+	background: url(../custom/images/NavigationMore.png) no-repeat right center;
+	padding-right: 10px;
+}
+
+p.HwLandingMenuOption
+{
+	white-space:normal;
+	display: inline; 
+	padding-right: .5em;
+}
+
+ul li.HwLandingMenuManage 
+{
+	padding-right: 5px;
+}
+
+ul li.HwLandingMenuSearch 
+{
+	padding-right: 5px;
+}
+
+ul li.HwLandingMenuTopics 
+{
+}
+
+/* HwLandingBrowse and HwLandingLinks ====================== */
+
+.HwLandingBrowseLinksWrapper /* Rounded corner box. */
+{
+	clear:both;
+	float:left;
+	margin:10px 0 0;
+	padding:0;
+	background:#f1edea;
+	border:solid 5px #f1edea;
+}
+
+.HwClear 
+{
+	clear:both;
+	height:10px;
+}
+
+.HwLandingBrowse 
+{
+	clear: left;
+}
+
+.HwLandingBrowse .HwClear 
+{
+	height:0;
+}
+
+.HwLandingBrowseHeader,  /* Rounded corner boxes. */
+.HwLandingLinksHeader
+{
+	top:5px;
+	z-index:10;
+	margin:0;
+	padding:0;
+	background:#5192b3;
+	font-size:1em;
+	color: #ffffff;
+	font-weight:bold;
+}
+
+.HwLandingBrowseHeader p, 
+.HwLandingLinksHeader p
+{
+	padding:0 0 0 1em;
+	line-height:1em;
+}
+
+.HwLandingBrowseContent
+{
+	float:left;
+	width:100%;
+	margin:0;
+	padding-bottom:15px;
+	background:#fff;
+	border-bottom:solid 5px #f1edea;
+}
+
+div.HwLandingBrowseContent ol li
+{
+	margin: 0 1px 4px 1px;
+}
+
+/* A-Z List */
+.HwTopicsList 
+{
+	margin:0;
+	padding:20px 5px 0;
+}
+.HwTopicsList ol
+{
+	margin:0;
+	padding:0;
+	border-top:solid 1px #fff;
+}
+.HwTopicsList li
+{
+	list-style-type: none;
+	float:left;
+	margin:.2em .1em;
+	padding:.2em .2em;
+	background:#bfd6e3 url(../custom/images/ListNumber.gif) repeat-x top left;
+	border:solid 1px #99ccff;
+}
+
+.HwTopicsList a 
+{
+	display:block;
+	color:#007dc3;
+	font-weight:bold;
+	text-decoration:none;
+	line-height:1em;
+	white-space:nowrap;
+}
+
+.HwTopicsList a:hover {
+	text-decoration:underline;
+}
+
+.HwTopicsList a:visited {
+	color: #61116A;
+	text-decoration: none;
+}
+
+/**/
+
+.HwLandingQuickLinks
+{
+	padding:1.5em 1em .5em;
+	background:#fff;
+}
+
+.HwLandingQuickLinks ol
+{
+	margin:0;
+	padding:0;
+}
+
+.HwLandingLinksContent li 
+{
+	float: left;
+	margin:0;
+	padding:0 0 .5em 1.7em;
+	background: none;
+}
+
+.HwLandingLinksContent .HwClear
+{
+	height:0;
+}
+
+li.HwLandingLinksSymptomChecker { background: transparent url(../custom/images/IconSymptomChecker.png) no-repeat left top; }
+li.HwLandingLinksMedications { background: transparent url(../custom/images/IconMedications.png) no-repeat left top; }
+li.HwLandingLinksMedicalTests { background: transparent url(../custom/images/IconMedicalTests.png) no-repeat left top; }
+li.HwLandingLinksSupportGroups { background: transparent url(../custom/images/IconSupportGroups.png) no-repeat left top; }
+li.HwLandingLinksAlternative { background: transparent url(../custom/images/IconAlternative.png) no-repeat left top; }
+li.HwLandingLinksDrugInteraction { background: transparent url(../custom/images/IconDrugInteraction.png) no-repeat left top; }
+li.HwLandingLinksOSHG { background: transparent url(../custom/images/IconOSHG.png) no-repeat left top; }
+
+
+.HwLandingLinks a:link,
+.HwLandingLinks a:visited
+{
+	text-decoration: none;
+}
+
+.HwLandingLinks a:hover
+{
+	text-decoration: underline;
+}
+
+

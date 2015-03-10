@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<title>Alere HTML Framework</title>
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="cmn/css/incentives.css" type="text/css" media="all">
+	
+	<link rel="stylesheet" href="cmn/css/global.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/modules.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/article.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/sign-in_register.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/hpa.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/hpa-test.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/search.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/bioIQ.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/incentives.css" type="text/css" media="all">
+	<!-- 
+		Integration Note:
+			Generally you would only include a single skin style sheet which overrides
+			all the default in global.css and modules.css as necessary.
+			
+			For debug/demo purposes all the style sheets are include here so that they can
+			be toggled using the style sheet switcher (to see the style sheet switch add ?debug=1)
+	-->
+	<link rel="stylesheet" href="cmn/css/skins/ge.css" type="text/css" media="all" title="ge">
+	<link rel="stylesheet alternate" href="cmn/css/skins/cisco.css" type="text/css" media="all" title="cisco">
+	<link rel="stylesheet alternate" href="cmn/css/skins/fedex.css" type="text/css" media="all" title="fedex">
+	<link rel="stylesheet alternate" href="cmn/css/skins/blue-cross.css" type="text/css" media="all" title="blue-cross">
+	<!--[if IE]>
+		<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="cmn/css/global_ie.css" type="text/css" media="all">
+	<![endif]-->
+	</head>
+
+<body>	<div class="container">
+
+
+		<div class="content">
+
+			<div class="sidebar span-7">
+				<div class="module alt-nav">
+					<h5>
+					<ol>
+					<li>This shows the multi-search module.</li>
+					<li>Call-to-action button leads to search results.</li>
+					</ol>
+					</h5>				
+				</div>
+				<!-- End Sub Nav -->
+			
+			</div>
+			<div class="main-well span-21">
+
+
+
+				<h1 class="what-next">Start view...</h1>
+
+
+				<!-- Included from: cmn/inc/modules/text_input.inc.php-->
+				<div class="module b what-to-eat">
+					<img class="icon" src="cmn/img/modules/tmp/module-b-icon-eat.png" width="35" height="26" alt="Module Icon">
+					<h2>What is there to Eat?</h2>
+					<p>Enter some of the ingredients you have on hand, and we'll suggest healthy recipes for you to cook:</p>
+					<form id="what-to-eat">
+						<input type="text" name="what-to-eat-1" value="" id="what-to-eat-1">
+						<input type="text" name="what-to-eat-2" value="" id="what-to-eat-2">
+						<input type="text" name="what-to-eat-3" value="" id="what-to-eat-3">
+						<input type="text" name="what-to-eat-4" value="" id="what-to-eat-4">
+					</form>
+					<ul class="utility-nav">
+						<li class="first"><a href="#">Always show this</a></li>
+						<li class="last"><a href="#">Don't show again</a></li>
+					</ul>
+					<a href="#" class="action-button alt"><strong><em>Get Recipes</em></strong></a>
+				</div>
+
+
+				
+
+				<h1 class="what-next">Engaged view...</h1>
+					
+					<div class="module"><p>Not applicable</p></div>
+
+				
+
+				<h1 class="what-next">Completed view...</h1>
+					
+					<div class="module"><p>Not applicable</p></div>
+
+					
+
+				
+			</div>
+
+
+			<div class="module-cap-bottom"></div>  <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+		
+	</div>
+	<!-- Leave Scripts at the bottom to make sure they don't block the initial paint -->
+	<script src="cmn/js/jquery-1.3.2.min.js"></script>
+	<script src="cmn/js/jcarousel/lib/jquery.jcarousel.js"></script>
+	<script src="cmn/js/jquery_example/jquery.example.min.js"></script>
+	<script src="cmn/js/global.js"></script>
+	</body>
+</html>

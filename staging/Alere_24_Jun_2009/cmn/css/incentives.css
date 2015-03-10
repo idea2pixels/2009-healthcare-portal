@@ -1,0 +1,104 @@
+div.incentives div.incentive-levels {
+	border:2px solid #fdcf5b;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	padding:10px 10px 5px 10px;
+}
+
+
+div.incentives div.overview {
+	border-bottom:1px dashed #;
+}
+
+div.incentives div.overview h1 {
+	font-size:1.8em;
+	font-weight:bold;
+	margin-bottom:12px;
+}
+
+div.incentives div.overview p {
+	font-size:1.3em;
+}
+
+div.incentives div.overview dt {
+	display:block;
+	border-top:2px solid red;
+}
+
+div.incentives div.incentive-levels ul {
+	list-style:none;
+	margin:0;
+}
+
+div.incentives div.incentive-levels ul li {
+	border-top:1px solid #fee6ad;
+	margin:5px 0;
+	font-size:1.3em;
+	font-weight:bold;
+	padding-top:5px;	
+}
+
+div.incentives div.incentive-levels ul li span {
+	color:#666;
+	margin-left:8px;
+	padding-left:20px;
+	background:transparent url('../img/skins/default/icon_sprite.png')  no-repeat 0px -2484px; 
+}
+
+div.incentives div.incentive-levels ul li.silver span {
+	background-position:0px -2544px;
+}
+
+div.incentives div.incentive-levels ul li.gold span {
+	background-position:0px -2604px;
+}
+
+div.incentives div.incentive-levels h3 {
+	margin-bottom:0;
+	font-size:1.1em;
+	font-weight:bold;
+	
+}
+
+/*-- Main well --*/
+div.incentives div.main-well h5.how-close {
+	text-align:left;
+	font-size:1.3em;
+	font-weight:bold;
+	padding-top:10px;
+	margin-top:15px;
+	border-top:1px dotted #bcbcbc;
+}
+
+/*----------------------------
+	Completion Page
+ ----------------------------*/
+
+div.incentives.completion div.progress-module  {
+	margin-bottom:100px;
+}
+
+div.incentives.completion div.overview p.welcome-message {
+	font-size:100%;
+}
+
+div.incentives.completion div.message p {
+	background-image:url('../img/skins/default/message_bg_sprite.png');
+	background-position:17px -139px;
+	padding:20px 20px 20px 71px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

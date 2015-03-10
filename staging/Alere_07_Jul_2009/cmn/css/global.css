@@ -1,0 +1,1398 @@
+/* For debug only */
+div#overlay {
+	display:none;
+	opacity:.5;
+	z-index:999999;
+	position:absolute;
+	top:0;
+	left:0;
+	margin:auto;
+	height:1000px;
+	width:950px; /* 950px - padding */
+	background:url('../img/tmp/overlay.png');
+}
+
+/* Blueprint overrides */
+h1, h2, h3, h4, h5, h6 {color:#222;}
+fieldset { padding:0; margin:0; border:0; }
+
+
+/*----------------------------
+	General Styles
+ ----------------------------*/
+body {
+	font-size: 62.5%; /* Font sizing in ems from here on out */
+	padding-top:10px;
+	color:#222;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+}
+.bodymargin{
+	margin:0;!important
+	padding:0;!important
+}
+
+ol li {
+	display:list-item;
+	
+}
+
+a {
+	color:#0084a9;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#0084a9;
+	text-decoration:underline;
+}
+
+button.reset {
+	margin:0;
+	display:block;
+	width:auto;
+	padding:0;
+	border:0;
+	background:none;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	cursor:pointer;
+}
+
+/* -- Form example text -- */
+input.example {
+	color:#222;
+}
+
+
+a.tell-me-more {
+	font-size:11px;
+	padding-right:19px;
+	background:url('../img/skins/default/icon_sprite.png')  no-repeat right -141px;
+}
+
+a.tell-me-more:focus {
+	outline:0;
+}
+
+a.tell-me-more.selected {
+	background-position:right -1451px;
+}
+
+
+div.container {
+	padding:10px 16px 17px 20px;
+	margin:auto;
+	background-color:#e6f3fc;
+	position:relative;
+}
+
+div.header, div.content, div.footer {
+	clear:both;
+	position:relative;
+	margin-bottom:6px;
+	padding:15px 10px 18px 15px;
+	background:#fff url('../img/skins/default/module_caps_sprite_bg.png') repeat-y 911px 0;
+}
+
+/*-- To be used for rounded corners on header, content and 
+	 footer divs (using border-radius for all other rounded corners) --*/ 
+div.module-cap-top {
+	height:5px;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background:transparent url('../img/skins/default/module_caps_sprite_bg.png') no-repeat -16px 0;
+}
+
+div.module-cap-bottom {
+	line-height:0;
+	clear:both;
+	height:8px;
+	width:100%;
+	position:absolute;
+	bottom:-1px;
+	left:0;
+	background:transparent url('../img/skins/default/module_caps_sprite_bg.png') no-repeat -16px -22px;
+}
+
+
+/*----------------------------
+	jQuery Carousel
+ ----------------------------*/
+/**
+ * This <div> element is wrapped by jCarousel around the list
+ * and has the classname "jcarousel-container".
+ */
+.jcarousel-container {
+    position: relative;
+}
+
+.jcarousel-clip {
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+	width:100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.jcarousel-list {
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel-list li,
+.jcarousel-item {
+    float: left;
+    list-style: none;
+    /* We set the width/height explicitly. No width/height causes infinite loops. */
+    width: 75px;
+    height: auto;
+}
+
+.list-carousel {
+	list-style:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	width:300px;
+	font-size:11px;
+}
+
+
+
+/*----------------------------
+	Utility Header 
+ ----------------------------*/
+div.utility {
+	position:relative;
+	overflow:auto;
+	font-size:1.1em;
+	margin-bottom:7px;
+
+}
+
+/* -- Welcome message -- */
+div.utility strong.welcome {
+	margin-top:3px;
+	font-size:1.3em;
+	line-height:1em;
+	margin-right:15px;
+	float:left;
+}
+
+/* -- Navigation -- */
+div.utility ul {
+	margin:0;
+	margin-top:4px;
+	padding:0; /* -- Changes -- */
+	float:left;	
+	list-style:none;
+}
+
+div.utility ul li {
+	line-height:1.3em;
+	float:left;
+	display:block;
+	padding:0 9px;
+	background:url('../img/skins/default/border_bg.png') repeat-y;
+}
+
+div.utility ul li a, div.utility div.help a {
+	font-weight:bold;
+	color:#666;
+}
+
+/* -- Nav - Home Btn -- */
+div.utility ul li.home {
+	padding-left:0;
+	background:none;
+}
+
+/* -- Nav - Msgs Btn -- */
+div.utility ul li.messages strong {
+	color:#005499;
+}
+
+div.utility ul li.messages a {
+	padding-left:18px;
+	background:url('../img/skins/default/icon_sprite.png') no-repeat 0 -39px; 
+}
+
+/* -- Nav Help Btn -- */
+div.utility div.help {
+	float:right;
+	background:none;
+	padding:0;
+}
+
+div.utility div.help a {
+	padding:3px 25px 3px 0;
+	display:block;
+	background:url('../img/skins/default/icon_sprite.png') no-repeat right -80px; 
+}
+
+div.utility div.help a:focus {
+	outline:0;
+}
+
+
+/*----------------------------
+	Main Header 
+ ----------------------------*/
+div.header { 
+	position:relative;
+	padding:0;
+	
+}
+
+div.header div.header-bg,
+div.footer div.footer-bg {
+	padding:15px 15px 18px 15px;
+	overflow:visible;
+	height:60px;
+	margin-right:4px;
+}
+
+div.header div.header-bg.hpa {
+	height:95px;
+	background:url('../img/tmp/header_bg.png') no-repeat  616px 7px; 
+}
+
+/* -- Logo --*/
+div.header h2.logo {
+	margin:0;
+	
+	
+}
+
+/* -- Heading --*/
+div.header h3 {
+	margin-bottom:0;
+	clear:both;
+	padding-top:12px;
+	font-size:1.9em;
+	font-weight:bold;
+	color:#999;
+}
+
+/* Set BG image for anchor in skin css */
+div.header h2.logo a {
+	outline:0;
+	display:block;
+	text-indent:-9999px;
+	width:182px;
+	height:60px;
+	float:left;
+	margin:0;
+	
+	
+}
+
+
+/*----------------------------
+	Main Menu / Navigation 
+ ----------------------------*/
+div.header ul.top {
+	position:relative;
+	z-index:1;
+	margin:33px 0 0 20px;
+	float:left;
+	list-style:none;
+}
+
+div.header ul.top li {
+	z-index:0;
+	position:relative;
+	line-height:1.2em;
+	font-size:1.2em;
+	float:left;
+	display:block;
+	padding:0 1px 0 0;
+	background:transparent url('../img/skins/default/border_bg.png') left 8px no-repeat;
+	
+}
+
+div.header ul.top li a {
+	display:block;
+	z-index:3;
+	outline:0;
+	margin:0;
+	color:#0084a9;
+	font-weight:bold;
+	padding:7px 22px 4px 10px;
+	background:transparent url('../img/skins/default/icon_sprite.png') no-repeat right -133px; 
+	border:1px;
+}
+
+div.header ul.top li a:hover {
+	text-decoration: none;
+}
+
+div.header ul.top li ul li a:hover{
+	text-decoration: underline;
+}
+
+div.header ul.top li.selected {
+	margin-right:-0px;
+	margin-bottom:-2px;
+	
+}
+
+div.header ul.top li.selected a {
+	outline:0;
+	border:1px solid #427fb2;
+	border-bottom:0;
+	padding: 6px 21px 6px 9px; /* same as unselected padding -1px to account for the border change */
+	color:#005499;
+}
+
+div.header ul.top li.selected {
+	background:none;
+	padding-right:1px;
+}
+
+div.header ul.top li.selected a {
+	background-color:#fff;
+	background-position:right -1224px;
+}
+
+div.header ul.top li.first {
+	background:none;
+	padding-left:0;
+}
+
+/*----------------------------
+	Sub-Main Menu / Navigation 
+ ----------------------------*/
+div.header ul.top li.selected div.top-nav-sub {
+	display:none;
+}
+
+div.header ul.top li div.top-nav-sub {
+	display:none;
+	z-index:-1;
+	font-size:.7em;
+	position:absolute;
+	top:26px;
+	left:0;
+	margin:0;
+	background:#fff;
+	border:1px solid #427fb2;
+	padding:10px;
+}
+
+div.header ul.top li div.top-nav-sub ul {
+	overflow:hidden;
+	margin:0;
+	width:15em;
+	margin-right:1em;
+	float:left;
+	padding:0;/* -- changes -- */
+}
+
+div.header ul.top li div.top-nav-sub.two-col {
+	width:32em;
+	
+}
+
+div.header ul.top li div.top-nav-sub h5 {
+	clear:both;
+	color:#222;
+	margin:0 0 4px 0;
+	padding-top:10px;
+	font-size:12px;
+}
+
+div.header ul.top li.selected div.top-nav-sub ul li a {
+	margin:0;
+	background:none;
+	font-size:12px;
+	font-weight:normal;
+	border:0;
+	padding:0;
+	color:#0084a9;
+}
+
+div.header ul.top li div.top-nav-sub ul li {
+	display:block;
+	background:transparent url('../img/skins/default/icon_sprite.png') no-repeat scroll left -541px;
+	line-height:1.6em;
+	float:none;
+	margin-bottom:3px;
+	padding-left:8px;
+}
+
+div.header ul.top li div.top-nav-sub ul li.last {
+	margin-right:0;
+}
+
+/*----------------------------
+	Search Box
+ ----------------------------*/
+div.header form {
+	right:15px;
+	top:15px;
+	position:absolute;
+	height:25px;
+	display:block;
+	background:url('../img/skins/default/icon_sprite.png')  right -425px; 
+}
+
+div.header form label {
+	position:absolute;
+	width:11px;
+	height:25px;
+	margin:0;
+	padding:0;
+	display:block;
+	text-indent:-9999px; 
+	background:url('../img/skins/default/icon_sprite.png')  left -375px; 
+}
+
+div.header form input#search-query {
+	width:160px;
+	outline:0;
+	margin:0;
+	border:0;
+	padding:5px 24px 7px 15px;
+	background:url('../img/skins/default/icon_sprite.png')  no-repeat right -475px; 
+	font-size:1.3em;
+}
+
+div.header form input#search-submit {
+	cursor:pointer;
+	display:block;
+	position:absolute;
+	right:0;
+	top:0;
+	border:0;
+	width:30px;
+	height:27px;
+	margin:0;
+	padding:0;
+	background:url('../img/skins/default/icon_sprite.png')  no-repeat right -332px; 
+	text-indent:-999px;
+}
+
+
+/*----------------------------
+	Content Container
+ ----------------------------*/
+div.content {
+	overflow:hidden;
+	padding-bottom:0;
+}
+
+
+/*----------------------------
+	Sidebar - Left 
+ ----------------------------*/
+div.sidebar {
+	padding-bottom:99999px; 	/* For equal height columns */
+	margin-bottom:-99999px; 	/* For equal height columns */
+	background:url('../img/skins/default/border_bg.png') right repeat-y;
+}
+
+/* -- SideBar Modules -- */
+div.sidebar div.module {
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #e5e5e5;
+	margin:0 16px 15px 0;
+	padding:15px;
+	background:url('../img/skins/default/sidebar_module_bg.png') repeat-y;
+}
+
+div.sidebar div.module.last {
+	margin-bottom:0;
+}
+
+div.sidebar div.module h3 {
+	font-size:1.5em;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+
+div.sidebar div.module p {
+	line-height:1.4em;
+	margin-bottom:10px;
+}
+
+/* -- Credits -- */
+div.sidebar div.module.credits {
+	font-size:1.1em;
+}
+
+div.sidebar div.module.credits p {
+	font-weight:bold;
+}
+div.sidebar div.module.credits h4 {
+	width:67px;
+	height:67px;
+	font-family:Arial, sans-serif;
+	text-align:center;
+	color:#fff;
+	font-size:11px;
+	font-weight:bold;
+	line-height:.9;
+	text-indent:-1px;
+	background:url('../img/skins/default/sidebar_credit_counter_bg.png') no-repeat;
+}
+
+div.sidebar div.module.credits h4 strong {
+	line-height:30px;
+	display:block;
+	clear:both;
+	color:#333;
+	font-size:29px;
+	letter-spacing:-1px;
+	padding-top:13px;
+}
+
+div.sidebar div.module.credits ul {
+	color:#0084a9;
+	margin:0;
+	list-style:none;
+}
+
+div.sidebar div.module.credits ul li {
+	line-height:1.2em;
+	margin-bottom:3px;
+	padding-left:8px;
+	background:url('../img/skins/default/icon_sprite.png')  no-repeat left -541px; 
+}
+
+div.sidebar div.module.credits ul li a {
+	color:#0084a9;
+}
+
+/* -- Alternate Nav -- */
+div.sidebar div.module.alt-nav {
+	padding:15px 12px 3px 13px;
+}
+div.sidebar div.module.alt-nav ul {
+	list-style:none;
+	margin:-10px 0 0 0 ;
+	padding:0;/* -- changes -- */
+}
+
+div.sidebar div.module.alt-nav li {
+	margin:0 0 2px 0;
+	background:none;
+	border-bottom:1px dotted #aed7e2;
+}
+
+div.sidebar div.module.alt-nav li.last {
+	border:0;
+}
+
+div.sidebar div.module.alt-nav li a {
+	outline:none;
+	display:block;
+	color:#005499;
+	font-size:1.3em;
+	padding:3px 0 6px 21px;
+	font-weight:bold;
+	background:url('../img/skins/default/icon_sprite.png') no-repeat left -279px; 
+}
+
+div.sidebar div.module.alt-nav li a:hover {
+	text-decoration: none;
+}
+
+div.sidebar div.module.alt-nav li.selected a {
+	background:url('../img/skins/default/icon_sprite.png') no-repeat left -579px; 	
+}
+
+/* -- Alternate Nav w/ no images */
+div.sidebar div.module.alt-nav h4 {
+	font-weight:bold;
+	font-size:1.1em;
+	border-bottom:1px dotted #AED7E2;
+	padding-bottom:10px;
+}
+div.sidebar div.module.alt-nav ul.alt li a {
+	padding:3px 0 6px 13px;
+	background:transparent url('../img/skins/default/icon_sprite.png') no-repeat 3px -625px;	
+}
+div.sidebar div.module.alt-nav ul.alt li.selected a {
+	color:#222;
+}
+
+/* -- Alt Nav Sub Nav -- */
+
+div.sidebar div.module.alt-nav li.selected ul {
+	display:block;
+}
+div.sidebar div.module.alt-nav li ul {
+	list-style:none;
+	margin-top:-4px;
+}
+
+div.sidebar div.module.alt-nav li ul li {
+	border:0;
+	margin:4px 0 0 21px;
+	font-size:.8em;
+	line-height:1.3em;
+	font-weight:normal;
+}
+
+div.sidebar div.module.alt-nav li ul li a {
+	padding:0;
+	margin:0;	
+}
+
+div.sidebar div.module.alt-nav li ul li a:hover {
+	text-decoration: underline;
+}
+
+div.sidebar div.module.alt-nav li.selected ul li a,
+div.sidebar div.module.alt-nav li ul li a {
+	margin:0;
+	background:0;
+	color:#0084a9;
+}
+div.sidebar div.module.alt-nav li ul li.last {
+	margin-bottom:10px;
+}
+
+div.sidebar div.module.alt-nav li.last ul li.last {
+	margin-bottom:15px	;
+	
+	
+}
+
+/* -- Company News -- */
+div.sidebar div.module.news ul{
+	color:#0084a9;
+	list-style:none;
+	margin:0;
+	padding:0;/* -- Changes -- */
+}
+
+div.sidebar div.module.news ul a {
+	color:#0084a9;
+	font-weight:bold;
+}
+
+div.sidebar div.module.news ul li {
+	padding-left:10px;
+	margin:5px 0;
+	line-height:1.2em;
+	font-size:1.1em;
+	background:url('../img/skins/default/icon_sprite.png')  no-repeat left -631px; 
+}
+
+div.sidebar div.module.news h2 {
+	height:19px;
+	width:109px;
+	text-indent:-9999px;
+	background: no-repeat; 
+	margin-bottom:0;
+	margin-top:-3px;
+	margin-bottom:10px;
+}
+
+
+/*----------------------------
+	Main Well
+ ----------------------------*/
+div.main-well {
+	float:left;
+
+}
+
+div.main-well div.message {
+	margin-bottom:15px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #d3d3d3;
+	font-size:1.4em;
+	background:#ffffb7 url('../img/skins/default/module_gradients_bg.png') repeat-x;
+}
+
+div.main-well div.message p {
+	padding:10px 20px 14px 71px;
+	background:url('../img/skins/default/welcome_message_bg.png') no-repeat 17px 11px;
+	margin:0;
+}
+
+div.main-well h1.what-next, 
+div.main-well h2.module-header {
+	color:#222;
+	font-family: Georgia, Times, serif;
+}
+
+div.main-well h2.module-header {
+	font-size:1.4em;
+	line-height:2em;
+	border-top:1px dotted #bcbcbc;
+	margin-bottom:8px;	
+}
+
+div.main-well h1.what-next {
+	font-size:1.8em;
+	line-height:2em;
+	border-top:1px dotted #bcbcbc;
+	margin-bottom:6px;
+}
+
+div.main-well form nice-form {padding:inherit;}
+
+/*----------------------------
+	Favorited Button
+ ----------------------------*/
+a.favorited {
+	font-size:10px;
+	font-weight:bold;
+	padding-left:17px;
+	line-height:10px;
+	color:#222 !important;
+	text-decoration:none !important;
+	background:transparent url('../img/skins/default/icon_sprite.png')  no-repeat 0px -1188px; 
+}
+
+/*----------------------------
+	More Button
+ ----------------------------*/
+a.more {
+	display:block;
+	float:right;
+	font-size:12px;
+	font-weight:bold;
+	color:#0084a9 !important;
+}
+
+/*----------------------------
+	Next/Prev Pagination
+ ----------------------------*/
+ul.pagination {
+	list-style:none;
+	margin:20px 0 10px 0;
+	overflow:hidden;
+	padding:0;/*--changes--*/
+
+}
+
+ul.pagination li a {
+	display:inline;
+	float:none;
+}
+
+ul.pagination li.next {
+	float:right;
+}
+
+
+/*----------------------------
+	Action Button - Medium Size
+ ----------------------------*/
+.action-button {
+	display:block;
+	clear:both;
+	border:0;
+	padding:0;
+	margin:0;
+	float:right;
+	background:transparent url('../img/skins/default/icon_sprite.png')  no-repeat 0 -177px; 
+	color:#fff;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:13px;
+	line-height:23px;
+}
+
+.action-button strong {
+	display:block;
+	padding:0 8px 0 0;
+	margin-left:17px;
+	height:24px;
+	color:#fff;
+	cursor:pointer;
+	text-decoration:none;
+	background: transparent url('../img/skins/default/icon_sprite.png')  no-repeat right -227px; 
+}
+
+.action-button em {
+	cursor:pointer;
+	height:100%;
+	white-space: nowrap;
+	font-style:normal;
+	margin-left:3px;
+	padding-left:5px;
+	display:block;
+	background:url('../img/skins/default/icon_sprite.png')  repeat-x 0 -707px; 
+}
+
+/* -- Action Button Hover -- */
+.action-button:hover,
+button:hover .action-button { text-decoration:none; background-position:0 -807px; }
+.action-button:hover strong,
+button:hover .action-button strong { background-position:right -857px; }
+.action-button:hover em,
+button:hover .action-button em { background-position:0 -757px; }
+
+
+/*----------------------------
+	Action Button - Small
+ ----------------------------*/
+.action-button.alt {
+	text-decoration:none;
+	line-height:20px;
+	font-size:11px;
+	background-position:0 -915px;
+	white-space: nowrap;
+}
+
+.action-button.alt strong {
+	background-position:right -1015px;
+	height:20px;
+}
+.action-button.alt em {
+	margin-left:-1px;
+	background-position:0 -965px;
+}
+
+/* -- Action Button Hover Small -- */
+.action-button.alt:hover,
+button:hover .action-button.alt {	background-position:0 -1060px; }
+.action-button.alt:hover strong,
+button:hover .action-button.alt strong { background-position:right -1140px; }
+.action-button.alt:hover em,
+button:hover .action-button.alt em { background-position:right -1100px; }
+
+
+/*----------------------------
+	Action Button - Small Reverse Arrow
+ ----------------------------*/
+.action-button.alt.reverse {
+	background-image:url('../img/skins/default/button_sprite.png');
+	background-position:0 -899px;
+}
+
+.action-button.alt.reverse strong {
+	background-image:url('../img/skins/default/button_sprite.png');
+	background-position:right -1199px;
+	margin-left:9px;
+	padding-right:18px;
+}
+.action-button.alt.reverse em {
+	background-image:url('../img/skins/default/button_sprite.png');
+	background-position:0 -1049px;
+	padding-right:3px;
+}
+
+/* -- Action Button Hover Small -- */
+.action-button.alt.reverse:hover,
+button:hover .action-button.alt.reverse {	background-position:0 -974px; }
+.action-button.alt.reverse:hover strong,
+button:hover .action-button.alt.reverse strong { background-position:right -1274px; }
+.action-button.alt:hover.reverse em,
+button:hover .action-button.alt.reverse em { background-position:right -1124px; }
+
+
+
+
+/*----------------------------
+	Action Button - Small Light
+ ----------------------------*/
+.action-button.alt.light {
+	font-color:#0cb2ed;
+	line-height:18px;
+	background-image:url('../img/skins/default/button_sprite.png');
+	background-position:0 -450px;
+}
+
+.action-button.alt.light strong {
+	background-image:url('../img/skins/default/button_sprite.png');
+	background-position:right -750px;
+	color:#0cb2ed;
+	margin-left:10px;
+}
+.action-button.alt.light em {
+	background-image:url('../img/skins/default/button_sprite.png');
+	padding-right:3px;
+	background-position:0 -600px;
+}
+
+/* -- Action Button Hover Small -- */
+.action-button.alt.light:hover,
+button:hover .action-button.alt.light {	background-position:0 -525px; }
+.action-button.alt.light:hover strong,
+button:hover .action-button.alt.light strong { color:#005499; background-position:right -825px; }
+.action-button.alt.light:hover em,
+button:hover .action-button.alt.light em { background-position:right -675px; }
+
+
+
+/*----------------------------
+	Action Button - Large
+ ----------------------------*/
+.action-button.large {
+	background-image:url('../img/skins/default/button_sprite.png');
+	text-decoration:none;
+	line-height:32px;
+	font-size:14px;
+	background-position:0 0;
+}
+
+.action-button.large em {
+	background-image:url('../img/skins/default/button_sprite.png');
+	margin-left:11px;
+	background-position:0 -150px;
+}
+
+.action-button.large strong {
+	height:32px;
+	padding-right:15px;
+	background-image:url('../img/skins/default/button_sprite.png');
+	background-position:right -300px;
+}
+
+
+/* -- Action Button Hover Small -- */
+.action-button.large:hover,
+button:hover .action-button.large {	background-position:0 -75px; }
+.action-button.large:hover strong,
+button:hover .action-button.large strong { background-position:right -375px; }
+.action-button.large:hover em,
+button:hover .action-button.large em { background-position:right -225px; }
+
+
+/*----------------------------
+	Action Button - Disabled
+ ----------------------------*/
+.action-button.disabled {
+	opacity: 0.3;
+	-moz-opacity: 0.3;
+	filter:alpha(opacity=30);
+}
+
+.action-button.disabled em {
+	cursor: default;
+}
+
+
+/*----------------------------
+	Breadcrumb Bar
+ ----------------------------*/
+div.breadcrumb-bar {
+	clear:both;
+	overflow:hidden;
+
+	padding-bottom:13px;
+	margin:3px 0 15px 0;
+	border-bottom:1px dotted #c9c9c9;
+}
+
+div.breadcrumb-bar.utils-only {
+
+	border-bottom:0;
+	margin-bottom:0;
+}
+
+div.breadcrumb-bar ul,
+div.breadcrumb-bar ol {
+	list-style: none;
+	margin:0;
+	padding:0;/* -- Changes -- */
+}
+
+div.breadcrumb-bar ol {
+	float:left;
+}
+
+div.breadcrumb-bar ul {
+	float:right;
+}
+
+div.breadcrumb-bar ol li {
+	font-size:1.1em;
+	display:inline;
+}
+
+/*----------------------------
+	Language -Changes
+ ----------------------------*/
+div.language {
+	clear:both;
+	
+	padding-bottom:13px;
+	margin:3px 0 15px 0;
+	border-bottom:1px dotted #c9c9c9;
+}
+
+div.language.utils-only {
+
+	border-bottom:0;
+	margin-bottom:0;
+}
+
+div.language ul,
+div.language ol {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+div.language ol {
+	float:left;
+}
+
+div.language ul {
+	float:right;
+}
+
+div.language ol li {
+	font-size:1.1em;
+	display:inline;
+}
+
+div.language form#language-selection {
+	float:right;
+
+}
+
+div.language form#language-selection label {
+	display:none;
+}
+
+div.language ul li {
+	font-size:1.1em;
+	float:left;
+	margin-left:17px;
+}
+
+
+
+/* -- Page title -- */
+div.breadcrumb-bar h2 {
+	float:left;
+	margin-bottom:0;
+	font-size:1.8em;
+	font-weight:bold;
+}
+
+/* -- Breadcrumb -- */
+div.breadcrumb-bar ol li {
+	color:#0084a9;
+}
+
+div.breadcrumb-bar ol li a {
+	color:#0084a9;
+}
+div.breadcrumb-bar ol li.selected {
+	font-weight:bold;
+	color:#222;
+}
+
+/* -- Utils (print/email/font-sizer) -- */
+div.breadcrumb-bar ul li {
+	font-size:1.1em;
+	float:left;
+	margin-left:17px;
+}
+
+div.breadcrumb-bar ul li.print a,
+div.breadcrumb-bar ul li.email a {
+	padding-left:18px;
+	color:#0084a9;
+	background:transparent url('../img/skins/default/icon_sprite.png')  no-repeat 0px -38px; 
+}
+
+div.breadcrumb-bar ul li.print a {
+	background-position:0px -1621px;
+}
+
+/*-- Language Selected --*/
+div.breadcrumb-bar form#language-selection {
+	float:right;
+
+}
+
+div.breadcrumb-bar form#language-selection label {
+	display:none;
+}
+
+
+/*----------------------------
+	Carousel Pagination
+ ----------------------------*/
+div.image-carousel {
+	overflow:hidden;
+	text-align:center;
+}
+
+div.image-carousel div {
+	display:table;
+	display:inline-block;
+	margin:auto auto;
+}
+
+div.image-carousel ol {
+	list-style:none;
+	display:block;
+	float:left;
+	margin:0;
+}
+
+div.image-carousel a.next,
+div.image-carousel a.previous {
+	outline:0;
+	float:left;
+	display:block;
+	height:18px;
+	width:18px;
+	text-indent:100px;
+	margin-right:.7em;
+	overflow:hidden;
+	background:transparent url('../img/skins/default/icon_sprite.png') no-repeat scroll left -1502px;
+}
+
+div.image-carousel a.next {
+	background-position:left -1562px;
+	margin-left:1em;
+	margin-right:0;
+}
+
+div.image-carousel ol li {
+	display:inline;
+}
+
+div.image-carousel ol li a {
+	padding:0 .5em;
+	outline:0;
+	float:left;
+	font-size:11px;
+	line-height:18px;
+	color:#80d7f5;
+}
+
+div.image-carousel ol li.selected a {
+	color:#005499;
+}
+
+div.image-carousel ol li a:hover {
+	text-decoration: none;
+}
+
+ul.image-carousel {
+	list-style:none;
+	margin:0;
+	clear:both;
+}
+
+
+
+
+
+/*----------------------------
+	Home Button
+ ----------------------------*/
+div.sidebar div.module.home-btn {
+	padding:5px 15px;
+	font-weight:bold;
+	font-size:1.1em;
+}
+div.home-btn a {
+	color:#005499;
+	padding-left:10px;
+	background:transparent url('../img/skins/default/icon_sprite.png')  no-repeat 0px -1748px; 
+}
+
+
+/*----------------------------
+	Right Side-bar
+ ----------------------------*/
+div.alt-sidebar {
+	float:left;
+}
+
+/* -- Font-sizer --*/
+.font-sizer a {
+	color:#666;
+	font-size:11px;
+	float:left;
+	margin-right:2px;
+	text-align:center;
+	line-height:19px;
+	display:block;
+	height:17px;
+	width:17px;
+	font-family:Arial, sans-serif;
+	font-weight:bold;
+	border:1px solid #91dffc;
+	text-decoration:none;
+}
+
+.font-sizer a:focus {
+	outline:0;
+}
+
+.font-sizer a:hover {
+	text-decoration:none;
+	border-color:#627FC1;
+}
+
+.font-sizer a.increase {
+	font-size:15px;
+	line-height:18px;
+}
+
+/*----------------------------
+	Modal Dialog
+ ----------------------------*/
+div.modal-dialog {
+	z-index:101;
+	position:absolute;
+	margin-left:10px;
+	background:#fff;
+	padding:2em;
+	
+	width:56em;
+
+/*--	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:3px solid #13b5ea;      changes---*/
+	overflow:hidden;
+}
+
+div.modal-dialog h2 {
+	color:#005499;
+	font-weight:bold;
+	font-size:1.8em;
+}
+
+div.modal-dialog p {
+	font-size:1.4em;
+	margin-right:3em;
+}
+
+div.modal-dialog div.buttons {
+	clear:both;
+	overflow:hidden;
+	width:30em;
+	margin:3em 12em 1em ;
+	text-align:center;
+}
+
+div.modal-dialog div.buttons .action-button {
+	float:left;
+	clear:none;
+	margin-right:2em;
+}
+
+
+/*----------------------------
+	Footer
+ ----------------------------*/
+div.footer {
+	padding:0;
+	overflow:hidden;
+}
+
+div.footer div.alere {
+	font-family: Arial, sans-serif;
+	float:left;
+	clear:left;
+}
+
+div.footer div.footer-bg {
+	height:auto;
+	overflow:hidden;
+	padding-bottom:0;
+}
+
+div.footer p.powered-by {
+	color:#00a0c6;
+	font-size:1.1em;
+	font-weight:bold;
+	letter-spacing:0;
+	margin-bottom:3px;
+}
+
+div.footer h3 {
+	width:67px;
+	height:21px;
+	background: url('../img/alere_logo_footer.png') no-repeat;
+	text-indent:-500px;
+}
+
+div.footer p {
+	margin-bottom:20px;
+	color:#999;
+	width:260px;
+	line-height:1.3em;
+}
+
+div.footer p.powered-by img {
+	float:none;
+	display:block;
+	margin-top:3px;
+	clear:both;
+}
+
+/*-- Nav --*/
+div.footer ul {
+	overflow:hidden;
+	margin-left:0;
+	list-style:none;
+	margin-bottom:20px;
+	padding:0;/*-- changes --*/
+}
+
+div.footer ul li {
+	margin-right:5px;
+	padding-left:6px;
+	line-height:1.2em;
+	border-left:1px solid #00A0C6;
+	font-weight:bold;
+	float:left;
+	font-size:1.1em;
+}
+
+div.footer ul li.first {
+	padding-left:0;
+	border:0;
+}
+div.footer ul li a {
+	color:#00A0C6;
+}
+
+div.footer ul li a:hover {
+	text-decoration: underline;
+}
+
+div.footer div.certification {
+	float:right;	
+}
+
+div.footer div.certification img {
+	float:left;
+	margin-right:10px;
+}
+div.footer div.certification p {
+	float:left;
+	width:90px;
+	color:#666;
+	font-family: Arial, sans-serif;
+}
+
+div.footer div.certification p a {
+	color:#666;
+	text-decoration:underline;
+
+}
+
+
+
+

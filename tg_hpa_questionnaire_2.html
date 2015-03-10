@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<title>Alere HTML Framework</title>
+    
+    <!-- BLUEPRINT STYLES -->
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/print.css" type="text/css" media="print">
+	
+    <!-- CUSTOM STYLES -->
+	<link rel="stylesheet" href="cmn/css/global.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/hpa-test.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/skins/fedex.css" type="text/css" media="all">
+    <!-- STYLES FOR FORMS -->
+
+	<link href="cmn/css/jNice.css" rel="stylesheet" type="text/css" />
+    
+    <!-- JS FOR RADIO BUTTON STYLING -->
+    <script type="text/javascript" src="cmn/js/jquery-latest-version.js"></script>
+	<script type="text/javascript" src="cmn/js/jquery.jNice.js"></script>
+ 	<script src="cmn/js/yesdd.js"></script> <!-- Script for yes dropdown max 15 -->
+	<script type="text/javascript">
+	<!--
+	$(function(){
+		var $a = $('<a>Add Option</a>');
+		$('body').append($a);
+		$a.click(function(){
+			var element = $('#select2')[0];
+			var myNewOption = new Option("My Option", "123", true);
+			element.options[element.options.length] = myNewOption;
+			$.jNice.SelectUpdate(element);
+		});
+	});
+	
+	-->
+	</script>
+ 
+	
+
+	<!--[if IE]>
+		<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="cmn/css/global_ie.css" type="text/css" media="all">
+	<![endif]-->
+	</head>
+<body>	
+
+	<div class="container">
+		<div class="utility span-31">
+					<strong class="welcome">Hello, Suzanne.</strong>
+		<ul>
+			<li class="home"><a href="/">Home</a></li>
+			<li><a href="#">Logout</a></li>
+		</ul>
+		<div class="help"><a href="#">Help</a></div>		</div>
+		<div class="header">
+			<div class="module-cap-top"><!-- for skinning purposes only, rounded corder cap --></div>
+			<div class="header-bg hpa"> <!-- for skinning purposes only, background for header -->
+							<h2 class="logo"><a href="/">GE</a></h2>
+				<h3>Health and Wellness Assessment</h3>			</div>
+			<div class="module-cap-bottom"><!-- for skinning purposes only, rounded corder cap --></div> 
+		</div>
+		<div class="content hpa-test">
+			<div class="module-cap-top"><!-- for skinning purposes only, rounded corder cap --></div>
+			<div class="span-7 sidebar">
+				<h3>Your Progress:</h3>
+				<!-- 
+					Integration Note:
+					Progress bar completion can be set inline using the style="width:x" property. Valid values are 0 - 100%
+				-->
+				<div class="progress-bar">
+					<span style="width:80%">You're 80% complete!</span> 
+				</div>
+				<p>Keep going! You're well on your way.</p>
+			</div>
+			<div class="span-23 last">
+				<div class="breadcrumb-bar utils-only">
+					<ul>
+						<li class="font-sizer">
+							<a class="decrease" href="#" title="Decrease font-size">A</a>
+							<a class="increase" href="#" title="Increase font-size">A</a>
+						</li>
+					</ul>
+					<form id="language-selection">
+						<label for="change_language">Change Language</label>
+						<select name="change_language" id="change_language">
+					    <option value="option1">English</option>
+							<option value="option2">Español</option>
+						</select>
+					</form>
+				</div>			
+			</div>
+			<div class="span-21 main-well">
+				
+			
+			<form class="jNice">
+                <h1>Do you have or have you had any of the following health problems?</h1>
+				 	<hr />                    
+                
+				<div class="form-element">	
+                  
+                	<div class="span-13 append-1" id="q0">Arthritis or other joint pane?</div>
+                    <div class="span-3">
+                    	<div class="span-1" id="show1"><input type="radio" name="yn1" value="1" id="yesNo1_1" /></div>
+          				<div class="span-1"><label>&nbsp;Yes</label></div>
+                    </div>
+			        <div class="span-1" id="hide1"><input type="radio" name="yn1" value="0" id="yesNo1_2" class="close"/></div>
+                    <div class="span-1"><label>&nbsp;No</label></div>
+          			
+                    <div class="span-1">
+                    <a href="#" id="btn-help-q0" class="form-field-help" title="Need Help?">Help</a>
+                    </div>
+                   	<div class="span-8" id="yes_layer1" style:"z-index:10000">
+						<p>
+							<div class="span-21">&nbsp; <!--IE HACK for spacing-->
+                            	<div class="span-10 prepend-1">Where do you feel the most pain?</div>
+                                <div class="span-5">
+                                  <select name="arthritis_pain" id="yn1-q1" style="z-index:100">
+      							  <option value="" selected="selected">Please Choose</option>
+                                  <option value="1">Head/Neck</option>
+                                  <option value="2">Shoulders</option>
+                                  <option value="3">Elbows</option>
+                                  <option value="4">Wrists/Hands/Fingers</option>
+                                  <option value="5">Hips</option>
+                                  <option value="6">Knees</option>                    
+                                  <option value="7">Ankles/Feet</option>
+                                </select>
+								</div>
+                            </div>
+                            
+                            
+						</p>
+					</div>
+				</div>
+                 <hr />
+				<div class="form-element">
+                   	<div class="span-13 append-1" id="q2">Asthma?</div>
+                	<div class="span-3">
+                    	<div class="span-1" id="show2"><input type="radio" name="yn2" value="1" id="yesNo2_1" /></div>
+          				<div class="span-1"><label>&nbsp;Yes</label></div>
+                    </div>
+			        <div class="span-1" id="hide2"><input type="radio" name="yn2" value="0" id="yesNo2_2" /></div>
+                    <div class="span-1"><label>&nbsp;No</label></div>
+          			<div class="span-1">
+                    <a href="#" id="btn-help-q2" class="form-field-help" title="Need Help?">Help</a>
+                    </div>
+                      <div class="span-8" id="yes_layer2" >
+						<p>
+							Content of a Div Toggle
+						</p>
+					</div>
+ 				</div>   
+                 <hr />
+				<div class="form-element">
+                	<div class="span-13 append-1" id="q3">Cancer?</div>
+                	<div class="span-3">
+                    	<div class="span-1" id="show3"><input type="radio" name="yn3" value="1" id="yesNo3_1" /></div>
+          				<div class="span-1"><label>&nbsp;Yes</label></div>
+                    </div>
+			        <div class="span-1" id="hide3"><input type="radio" name="yn3" value="0" id="yesNo3_2" /></div>
+                    <div class="span-1"><label>&nbsp;No</label></div>
+          			<div class="span-1">
+                    <a href="#" id="btn-help-q3" class="form-field-help" title="Need Help?">Help</a>
+                    </div>
+                      <div class="span-8" id="yes_layer3" >
+						<p>
+							Content of a Div Toggle
+						</p>
+					</div>
+ 				</div>     
+                 <hr />
+					<div class="form-element">
+                	<div class="span-13 append-1" id="q4">Chronic muscle/skeletal pain (for example: chronic back pain, siatica, chronic neck pain)?</div>
+                	<div class="span-3">
+                    	<div class="span-1" id="show4"><input type="radio" name="yn4" value="1" id="yesNo4_1" /></div>
+          				<div class="span-1"><label>&nbsp;Yes</label></div>
+                    </div>
+			        <div class="span-1" id="hide4"><input type="radio" name="yn4" value="0" id="yesNo4_2" /></div>
+                    <div class="span-1"><label>&nbsp;No</label></div>
+          			<div class="span-1">
+                    <a href="#" id="btn-help-q4" class="form-field-help" title="Need Help?">Help</a>
+                    </div>
+                      <div class="span-8" id="yes_layer4" >
+						<p>
+							Content of a Div Toggle
+						</p>
+					</div>
+ 				</div>      
+                 <hr />
+				<div class="form-element">
+                	<div class="span-13 append-1" id="q5">Chronic heart failure?</div>
+                	<div class="span-3">
+                    	<div class="span-1" id="show5"><input type="radio" name="yn5" value="1" id="yesNo5_1" /></div>
+          				<div class="span-1"><label>&nbsp;Yes</label></div>
+                    </div>
+			        <div class="span-1" id="hide5"><input type="radio" name="yn5" value="0" id="yesNo5_2" /></div>
+                    <div class="span-1"><label>&nbsp;No</label></div>
+          			<div class="span-1">
+                    <a href="#" id="btn-help-q5" class="form-field-help" title="Need Help?">Help</a>
+                    </div>
+                      <div class="span-8" id="yes_layer5" >
+						<p>
+							Content of a Div Toggle
+						</p>
+					</div>
+ 				</div>   
+                 <hr />
+				<div class="form-element">
+                	<div class="span-13 append-1" id="q6">Depression?</div>
+                	<div class="span-3">
+                    	<div class="span-1" id="show6"><input type="radio" name="yn6" value="1" id="yesNo65_1" /></div>
+          				<div class="span-1"><label>&nbsp;Yes</label></div>
+                    </div>
+			        <div class="span-1" id="hide6"><input type="radio" name="yn6" value="0" id="yesNo6_2" /></div>
+                    <div class="span-1"><label>&nbsp;No</label></div>
+          			<div class="span-1">
+                    <a href="#" id="btn-help-q6" class="form-field-help" title="Need Help?">Help</a>
+                    </div>
+                      <div class="span-8" id="yes_layer6" >
+						<p>
+							Content of a Div Toggle
+						</p>
+					</div>
+ 				</div>    
+                 <hr />
+				<div class="form-element">
+                	<div class="span-13 append-1" id="q7">Diabetes?</div>
+                	<div class="span-3">
+                    	<div class="span-1" id="show7"><input type="radio" name="yn7" value="1" id="yesNo7_1" /></div>
+          				<div class="span-1"><label>&nbsp;Yes</label></div>
+                    </div>
+			        <div class="span-1" id="hide7"><input type="radio" name="yn7" value="0" id="yesNo7_2" /></div>
+                    <div class="span-1"><label>&nbsp;No</label></div>
+          			<div class="span-1">
+                    <a href="#" id="btn-help-q7" class="form-field-help" title="Need Help?">Help</a>
+                    </div>
+                      <div class="span-8" id="yes_layer7" >
+						<p>
+							Content of a Div Toggle
+						</p>
+					</div>
+ 				</div>     
+                 <hr />
+				<div class="form-element">
+                	<div class="span-13 append-1" id="q8">Heart disease (for example: angina, heart attack, heart surgery, atrial fibrillation, etc.)?</div>
+                	<div class="span-3">
+                    	<div class="span-1" id="show8"><input type="radio" name="yn8" value="1" id="yesNo8_1" /></div>
+          				<div class="span-1"><label>&nbsp;Yes</label></div>
+                    </div>
+			        <div class="span-1" id="hide8"><input type="radio" name="yn8" value="0" id="yesNo8_2" /></div>
+                    <div class="span-1"><label>&nbsp;No</label></div>
+          			<div class="span-1">
+                    <a href="#" id="btn-help-q8" class="form-field-help" title="Need Help?">Help</a>
+                    </div>
+                    <div class="span-8" id="yes_layer8" >
+					
+						<p>
+							Content of a Div Toggle
+						</p>
+					</div>
+ 				</div>    
+                 <hr />
+				<div class="form-element">
+                	<div class="span-13 append-1" id="q9">Headaches (for example: migraines or other severe and/or frequent headaches)?</div>
+                	<div class="span-3">
+                    	<div class="span-1" id="show9"><input type="radio" name="yn9" value="1" id="yesNo9_1" /></div>
+          				<div class="span-1"><label>&nbsp;Yes</label></div>
+                    </div>
+			        <div class="span-1" id="hide9"><input type="radio" name="yn9" value="0" id="yesNo9_2" /></div>
+                    <div class="span-1"><label>&nbsp;No</label></div>
+          			<div class="span-1">
+                    <a href="#" id="btn-help-q9" class="form-field-help" title="Need Help?">Help</a>
+                    </div>
+                      <div class="span-8" id="yes_layer9" >
+						<p>
+							Content of a Div Toggle
+						</p>
+					</div>
+ 				</div>   
+                 <hr />     
+				<div class="form-element">
+                	<div class="span-13 append-1" id="q10">High blood pressure/hypertension?</div>
+                	<div class="span-3">
+                    	<div class="span-1" id="show10"><input type="radio" name="yn10" value="1" id="yesNo10_1" /></div>
+          				<div class="span-1"><label>&nbsp;Yes</label></div>
+                    </div>
+			        <div class="span-1" id="hide10"><input type="radio" name="yn10" value="0" id="yesNo10_2" /></div>
+                    <div class="span-1"><label>&nbsp;No</label></div>
+          			<div class="span-1">
+                    <a href="#" id="btn-help-q10" class="form-field-help" title="Need Help?">Help</a>
+                    </div>
+                      <div class="span-8" id="yes_layer10" >
+						<p>
+							Content of a Div Toggle
+						</p>
+					</div>
+ 				</div>     
+                <hr />     
+				<div class="form-element">
+                	<div class="span-13 append-1" id="q11">High blood cholesterol (or low HDL cholesterol)?</div>
+                	<div class="span-3">
+                    	<div class="span-1" id="show11"><input type="radio" name="yn11" value="1" id="yesNo11_1" /></div>
+          				<div class="span-1"><label>&nbsp;Yes</label></div>
+                    </div>
+			        <div class="span-1" id="hide11"><input type="radio" name="yn11" value="0" id="yesNo11_2" /></div>
+                    <div class="span-1"><label>&nbsp;No</label></div>
+          			<div class="span-1">
+                    <a href="#" id="btn-help-q11" class="form-field-help" title="Need Help?">Help</a>
+                    </div>
+                      <div class="span-8" id="yes_layer11" >
+						<p>
+							Content of a Div Toggle
+						</p>
+					</div>
+ 				</div>
+                <hr />     
+				<div class="form-element">
+                	<div class="span-13 append-1" id="q12">Lung disease (for example: chronic obstructive pulmonary disease/COPD, emphysema, chronic bronchitis)?</div>
+                	<div class="span-3">
+                    	<div class="span-1" id="show12"><input type="radio" name="yn12" value="1" id="yesNo12_1" /></div>
+          				<div class="span-1"><label>&nbsp;Yes</label></div>
+                    </div>
+			        <div class="span-1" id="hide12"><input type="radio" name="yn12" value="0" id="yesNo12_2" /></div>
+                    <div class="span-1"><label>&nbsp;No</label></div>
+          			<div class="span-1">
+                    <a href="#" id="btn-help-q12" class="form-field-help" title="Need Help?">Help</a>
+                    </div>
+                      <div class="span-8" id="yes_layer12" >
+						<p>
+							Content of a Div Toggle
+						</p>
+					</div>
+ 				</div>
+                <hr />     
+				<div class="form-element">
+                	<div class="span-13 append-1" id="q13">Stroke?</div>
+                	<div class="span-3">
+                    	<div class="span-1" id="show13"><input type="radio" name="yn13" value="1" id="yesNo13_1" /></div>
+          				<div class="span-1"><label>&nbsp;Yes</label></div>
+                    </div>
+			        <div class="span-1" id="hide13"><input type="radio" name="yn13" value="0" id="yesNo13_2" /></div>
+                    <div class="span-1"><label>&nbsp;No</label></div>
+          			<div class="span-1">
+                    <a href="#" id="btn-help-q13" class="form-field-help" title="Need Help?">Help</a>
+                    </div>
+                      <div class="span-8" id="yes_layer13" >
+						<p>
+							Content of a Div Toggle
+						</p>
+					</div>
+ 				</div>  
+ 				<hr />
+                  	<div class="buttons span-21">
+						<div class="span-7 pull-3">
+                        	<a href="tg_hpa_questionnaire_1.html"><span class="action-button alt reverse"><strong><em>Previous</em></strong></span></a>	
+                        </div>
+						<div class="span-7 prepend-4" >
+                        	<button class="reset" type="submit"><span class="action-button alt light"><strong><em>Save and Enter Later</em></strong></span></button>
+                        </div>
+						<div class="span-5">
+							<a href="tg_hpa_questionnaire_3.html"><span class="action-button alt"><strong><em>Next</em></strong></span></a>	
+                        </div>				
+                    </div>
+			</form>
+            </div>    
+			</div>
+			<div class="module-cap-bottom"><!-- for skinning purposes only, rounded corder cap --></div>
+		</div>
+		<div class="footer">
+			<div class="module-cap-top"><!-- for skinning purposes only, rounded corder cap --></div>
+				<div class="footer-bg"><!-- for skinning purposes only, footer background -->
+					<ul>
+						<li class="first"><a href="#">About Alere</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Editorial Policy</a></li>
+					</ul>
+					<div class="alere">
+						<p class="powered-by">Powered by</p>
+						<h3>Alere</h3>
+						<p>&copy; 2009 Alere. All rights reserved. Alere is a trademark of the Inverness Medical group of companies.</p>
+					</div>
+					
+					<div class="certification">
+						<img src="cmn/img/footer/urac-logo.png" width="78" height="73" alt="URAC">
+						<img src="cmn/img/footer/hon-code-logo.png" width="49" height="72" alt="HON Code">
+						<p>
+							We comply with the <a href="#">HONcode standard for the trustworthy health</a> information: <a href="#">verify here</a>
+						</p>
+					</div>
+				</div>
+			<div class="module-cap-bottom"><!-- for skinning purposes only, rounded corder cap --></div> 
+		</div>
+	</div>
+	<!-- Leave Scripts at the bottom to make sure they don't block the initial paint -->
+	
+	<script src="cmn/js/jquery.js"></script>
+	<script src="cmn/js/jquery_example/jquery.example.min.js"></script>
+	<script src="cmn/js/global.js"></script>   
+    
+ 
+	</body>
+</html>

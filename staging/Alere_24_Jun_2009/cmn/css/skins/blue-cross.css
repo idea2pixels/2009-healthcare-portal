@@ -1,0 +1,169 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color:#039;
+}
+
+/* Set icon sprite to skin specific here */
+div.header form, /* Search form */
+div.header form label,
+div.header form input#search-query,
+div.utility div.help a, /* -- Help Button -- */
+div.header ul li a, /* -- Main Nav Buttons -- */
+div.sidebar div.module.credits ul li, 
+div.header ul.top li a
+{
+	background-image: url('../../img/skins/blue-cross/icon_sprite.png');
+}
+
+div.header div.header-bg {
+
+	background:url('../../img/skins/blue-cross/header_bg.png') repeat-x; 
+}
+
+div.header div.header-bg.hpa {
+
+	background:url('../../img/skins/blue-cross/header_full.png') no-repeat; 
+}
+div.header h3 { color:#FFF }
+
+/* Override link colors here */
+div.sidebar div.module.alt-nav li a,
+div.sidebar div.module.news ul a,
+div.header ul.top li.selected div.top-nav-sub ul li a,
+div.main-well div.module ul li a,
+div.main-well div.module p a,
+div.main-well div.module ul.utility-nav li a,
+div.main-well div.module label a,
+a.more {
+	color:#0092de;
+}
+/* -- Main Well Module Hover -- */
+div.main-well div.module:hover,
+div.main-well div.module.b:hover {
+	border-color:#c60;
+}
+
+/* -- Search Module --*/
+div.header form input#search-query {
+	font-family: Arial, sans-serif;
+}
+
+
+/* -- # of Messages --*/
+div.utility ul li.messages strong {
+	color:#cc6600;
+}
+
+/* -- Logo -- */
+div.header h2.logo a {
+	background-image: url('../../img/skins/blue-cross/logo.png');
+}
+
+/* -- Main Nav Buttons -- */
+div.header ul.top li a {
+	color:#fff;
+	background-color:transparent;
+}
+div.header ul.top li.selected a {
+	background-color:#fff;
+}
+
+div.header ul.top li div.top-nav-sub {
+	top:20px;
+}
+
+
+/* -- Main Module Caps for rounded corners/drop shadow -- */
+div.header, 
+div.header div.module-cap-top, 
+div.header div.module-cap-bottom {
+	background-image: url('../../img/skins/blue-cross/module_caps_sprite_bg.png');
+}
+
+/*-- Header --*/
+div.header {
+	background-color:transparent;
+}
+
+div.header div.header-bg,  {
+	background: #5aacda url('../../img/skins/blue-cross/icon_sprite.png') left -1271px repeat-x;
+}
+
+
+div.header div.header-bg hpa{
+	background: #5aacda url('../../img/skins/blue-cross/icon_sprite.png') left -1271px repeat-x;
+}
+
+/*-- Footer --
+
+div.footer div.footer-bg {
+	background-position:0 -1247px;
+}
+
+
+div.footer h3 {
+	background-image: url('../../img/skins/blue-cross/alere_logo_footer.png');
+}
+
+
+div.footer p,
+div.footer p.powered-by {
+	color:#fff;
+}
+*/
+/* -- credit counter left -- */
+div.sidebar div.module.credits h4 {
+	font-weight:normal;
+	color:#fff;
+	background-image: url('../../img/skins/blue-cross/credit_counter_bg.png');
+}
+
+div.sidebar div.module.credits h4 strong {
+	color:#fff;
+}
+
+div.sidebar div.module.credits {
+	font-weight:bold;
+}
+
+/* -- credit counter in main well -- */
+div.main-well div.module h4 {
+	height:58px;
+	width:58px;
+	padding:13px 0 0 0;
+	background: url('../../img/skins/blue-cross/credit_counter_bg.png') 0 -117px;
+	border:0;
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	color:#fff;
+}
+
+div.main-well div.module h4 strong {
+	color:#222;
+}
+
+
+/* Side bar nav */
+div.sidebar div.module.credits ul li a {
+	color:#cc6600;
+}
+
+div.sidebar div.module.alt-nav li.selected ul li a, 
+div.sidebar div.module.alt-nav li ul li a  {
+	color:#005499;
+}
+
+
+/* Font-sizer */
+div.alt-sidebar a:hover {
+/*	border-color:#CC6600;
+*/}
+
+/* -- News Header --*/
+div.sidebar div.module.news h2 {
+	background-image: url('../../img/skins/blue-cross/news.png');
+}

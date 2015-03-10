@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<title>Alere HTML Framework</title>
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="cmn/css/incentives.css" type="text/css" media="all">
+	
+	<link rel="stylesheet" href="cmn/css/global.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/modules.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/article.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/sign-in_register.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/hpa.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/hpa-test.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/search.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/bioIQ.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/incentives.css" type="text/css" media="all">
+
+	<link rel="stylesheet" href="cmn/css/skins/fedex.css" type="text/css" media="all">
+	<!--[if IE]>
+		<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="cmn/css/global_ie.css" type="text/css" media="all">
+	<![endif]-->
+	</head>
+<body>	<div class="container">
+		<div class="utility span-31">
+					<strong class="welcome">Hello, Suzanne.</strong>
+		<ul>
+			<li class="home"><a href="g_home-e.html">Home</a></li>
+			<li class="messages"><a href="#">Messages: <strong>2</strong></a></li>
+			<li><a href="#">Account</a></li>
+			<li><a href="#">Feedback</a></li>
+			<li><a href="#">Logout</a></li>
+		</ul>
+		<div class="help"><a href="#">Help</a></div>		</div>
+		<div class="header">
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+			<div class="header-bg"> <!-- for skinning purposes only, background for header -->
+							<h2 class="logo"><a href="g_home-e.html" border="0">Global Express</a></h2>
+				
+				<!-- 
+					Main Menu Nav
+					Integration Notes:
+						- The first menu item should have class="first"
+						- the last menu item should have class="last"
+						- JavaScript is used to show / hide sub menus. If JS is not available, fall back landing pages should be provided to guide the user to subsections
+				-->
+				<ul id="top-nav" class="nav top">
+					<li class="first">
+						<a href="#">Healthy Living</a>
+						<div class="top-nav-sub two-col">
+							<ul>
+								<li><a href="#">Food and Recipes</a></li>
+								<li><a href="#">Nutrition</a></li>
+								<li><a href="#">Fitness &amp; Activity</a></li>
+							</ul>
+							<ul class="last">
+								<li><a href="#">Stress Management</a></li>
+								<li><a href="#">Weight Management</a></li>
+								<li><a href="#">Smoking Cessation</a></li>
+							</ul>
+							<h5>Tools</h5>
+							<ul>
+								<li><a href="g_hlp_pt_weight.html">Progress Tracker</a></li>
+								<li><a href="g_hlp_mealplanner-s-nohlp.html">Meal Planner</a></li>
+								<li><a href="g_hlp_dietmanager-s-nohlp.html">Diet Manager</a></li>
+							</ul>
+							<ul>
+								<li><a href="g_hlp_fitnessplanner-s-nohlp.html">Fitness Planner</a></li>
+								<li><a href="g_hlp_walkingchallenge-s-nohlp.html">Walking Challenge</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">Diseases &amp; Conditions</a>
+						<div class="top-nav-sub two-col">
+							<ul>
+								<li><a href="#">Allergies</a></li>
+									<li><a href="#">Arthritis</a></li>
+									<li><a href="#">Asthma</a></li>
+									<li><a href="#">Back Pain</a></li>
+									<li><a href="#">Cancer</a></li>
+									<li><a href="#">Depression</a></li>
+									<li><a href="#">Diabetes</a></li>
+									<li><a href="#">Digestive Disorders</a></li>
+									<li><a href="#">Heart Disease</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">High Cholesterol</a></li>
+									<li><a href="#">High Blood Pressure</a></li>
+									<li><a href="#">Irritable Bowel</a></li>
+									<li><a href="#">Kidney Disease</a></li>
+									<li><a href="#">Migraine</a></li>
+									<li><a href="#">Obesity</a></li>
+									<li><a href="#">Osteoporosis</a></li>
+									<li><a href="#">Respiratory Disease</a></li>
+									<li><a href="#">Sleep disorders</a></li>
+									<li class="all"><a href="#">All Conditions</a></li>
+								
+							</ul>
+							<h5>Other Resources</h5>
+							<ul>
+								<li><a href="#">Surgeries &amp; Procedures</a></li>
+								<li><a href="#">Medications</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Symptom Checker</a></li>
+								<li><a href="#">Health Tools</a></li>				
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">Personal &amp; Family Health</a>
+						<div class="top-nav-sub two-col">
+							<ul>
+								<li><a href="#">Women's Health</a></li>
+								<li><a href="#">50+ Health</a></li>
+								<li><a href="#">Home Care/First Aid</a></li>
+								<li><a href="#">Navigating Healthcare</a></li>
+								<li><a href="#">Alternative Therapies</a></li>
+							</ul>
+							
+							<ul>
+								<li><a href="#">Men's Health</a></li>
+								<li><a href="#">Healthy Kids</a></li>
+								<li><a href="#">Pregnancy</a></li>
+								<li><a href="#">Supplements/Herbals</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">Tools &amp; Media</a>
+						<div class="top-nav-sub">
+							<ul>
+								<li><a href="g_hlp_interactivetools-nohlp.html">Interactive Tools</a></li>
+								<li><a href="g_hlp_pt_weight.html">Trackers</a></li>
+								<li><a href="g_hlp_quizzes-nohlp.html">Quizzes/Assessments</a></li>
+								<li><a href="g_hlp_calculators-nohlp.html">Calculators</a></li>
+								<li><a href="#">Video</a></li>
+								<li><a href="#">Audio</a></li>
+								<li><a href="#">Games</a></li>
+								<li><a href="#">Conversations</a></li>
+								<li><a href="#">Online Seminars</a></li>
+							</ul>
+						</div>	
+					</li>
+				</ul>
+				<form id="search">
+					<label for="search-query">Search</label>
+					<input type="text" name="search-query" title="Search" class="example-text" id="search-query">
+					<input type="submit" name="search-submit" value="" id="search-submit">
+				</form>			</div>
+			<div class="module-cap-bottom"></div> <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+		<div class="content">
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+			<div class="sidebar span-7">
+							<!-- 
+					Credits Counter
+					Integration Notes:
+						- Can support up to 3 digits
+						- Background is styled through skin CSS
+				-->
+				<div class="module credits">
+					<h3>You've Earned</h3>
+					<h4><strong>25</strong> wellness credits</h4>
+					<p>Earn 50 credits and you can earn $250 cash!</p>
+					<ul>
+						<li><a href="g_incentives_dashboard_new.html">How do I earn more wellness credits?</a></li>
+					</ul>
+				</div>
+				<!-- End Credits Counter -->
+				
+				<!--
+					Sub-Nav 
+					Integration Notes:
+						- Add class="selected" to the top level list to indicate the user is currently inside the section
+						- Add class="last" to the last item in the top level list
+						- Add class="last" to the last item in the sub list
+						- All JavaScript interaction is unobtrusive. Generate the nav as if javascript is not a requirement.
+				-->
+				<div class="module alt-nav">
+					<ul id="side-bar-nav">
+						<li>
+							<a href="#">Program Info </a>
+							<ul>
+								<li><a href="g_incentives_dashboard_new.html">Track Credits</a></li>
+								<li><a href="g_incentives_dashboard_new.html">Program Overview</a></li>
+								<li><a href="#">Success Stories</a></li>
+								<li class="last"><a href="#">Wellness Champions</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Health Resources</a>
+							<ul>
+								<li><a href="#">Personal Health Record</a></li>
+								<li><a href="g_hpa_landing.html">Wellness Assessment</a></li>
+								<li><a href="g_hlp_home.html">Healthy Living Programs</a></li>
+								<li><a href="#">Health Challenges</a></li>
+								<li><a href="#">Online Seminars</a></li>
+								<li><a href="#">Personal Resource Center</a></li>
+								<li><a href="#">Health Coaching</a></li>
+								<li><a href="bioIQ_landing.html">Health Screenings</a></li>
+								<li class="last"><a href="#">[Third Party Programs]</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Condition Care</a>
+							<ul>
+								<li><a href="#">Assessment</a></li>
+								<li><a href="#">Asthma</a></li>								
+								<li><a href="#">CAD</a></li>
+								<li><a href="#">CHF</a></li>
+								<li><a href="#">COPD</a></li>								
+								<li><a href="#">Diabetes</a></li>
+								<li><a href="#">Pain</a></li>
+								<li><a href="#">Pregnancy/ Preconception</a></li>
+								<li class="last"><a href="#">Oncology</a></li>
+							</ul>
+						</li>
+						<li class="last">
+							<a href="#">Beneﬁts Info</a>
+							<ul>
+								<li><a href="#">Benefits Overview</a></li>
+								<li><a href="#">SSO to Health Plans</a></li>
+								<li><a href="#">EAP</a></li>
+								<li class="last"><a href="#">[Custom Links]</a></li>								
+							</ul>	
+						</li>
+					</ul>
+				</div>
+				<!-- End Sub Nav -->
+			
+				<!-- 
+					Company News Module 
+					Integration Notes:
+						- Logo is 106x30 background image defined in the skin CSS
+				-->
+				<div class="module news last">
+					<h2>GE News</h2>
+					<ul class="news">
+						<li><a href="#">Become a Wellness Advocate</a></li>
+						<li><a href="#">Share Your Success Story!</a></li>
+						<li><a href="#">April Seminar: Beating the Odds</a></li>
+						<li><a href="#">More About the GE Wellness Program</a></li>
+					</ul>
+				</div>
+				<!-- End Company News -->			</div>
+			<div class="main-well span-21">
+
+				<div class="message">
+					<p class="welcome-message">
+						Congratulations, Suzanne! Learning your risk is a big step. Now comes the fun part. The actions below were chosen just for you!
+					</p>
+				</div>
+
+				<h1 class="what-next">Your priorities:</h1>
+
+				<!-- Included from: cmn/inc/modules/program_checklist.inc.php-->
+				<div class="module program-checklist">
+					<h4><strong>5</strong> wellness credits</h4>
+					
+					<img class="picture" src="cmn/img/modules/tmp/module-a-picture6.png" width="118" height="118" alt="Module A Picture">
+					<h2>Weight Loss Program</h2>
+					<h2>Work on your To-Do List!</h2>
+					<p>Week 1: Get Started (5 To-Dos)</p>
+					
+					<form>
+					
+						<ul class="list-carousel">
+						<li>
+							<input type="checkbox">
+							<label>1 -
+							<a href="g_hlp_article.html">Start Losing Weight Today!</a> Five things you can do now to make this plan work for the long-term.</label>
+						</li>                                                                                                                 
+
+						<li>
+							<input type="checkbox">
+							<label>2 -
+							<a href="#">Diet Manager:</a> Ready to lose pounds? Enter your current weight, set your goal and get a personalized meal plan.
+							</label>
+						</li>                                                                                                                 
+						<li>
+							<input type="checkbox">
+							<label>3 -
+							<a href="#">Progress Tracker:</a> One of the keys to healthy weight loss is being aware of your diet. Start a food journal today!
+							</label>
+						</li>                                                                                                                 
+						<li>
+							<input type="checkbox">
+							<label>4 -
+							<a href="#">Why This Weight Loss Plan Works:</a> This common-sense plan will help you eat less high-fat, high calorie foods so you'll feel full on fewer calories.
+							</label>
+						</li>						
+						<li>
+							<input type="checkbox">
+							<label>5 -
+							<a href="#">What Does Your BMI Mean?</a> Your body mass index is 25.2, learn what that means to you and what to do about it.
+							</label>
+						</li>
+						
+						</ul>
+						<ul class="pagination list-carousel-pagination">
+							<li class="next"><a href="#" class="more next">Next To-Do &raquo;</a></li>
+							<li class="prev"><a href="#" class="more prev">&laquo; Previous To-Do</a></li>
+						</ul>
+					</form>                                                                                                               
+					
+					
+					
+					<ul class="utility-nav">
+						<li class="first">Enrolled in Weight Loss &nbsp;</li>
+						
+						<li class="dont-show">
+							<a href="#">Change program</a>
+							<div class="dont-show-confirm">
+								<h5>Change program</h5>
+								<p>Are you sure? If you start a new 6-week program, you won't be able to access your previous To-Do List.</p>
+								<br>
+								<span><a class="keep" title="Keep Reminder" href="#">Stay</a> | <a href="g_hlp_pickprogram.html" title="Remove">Change program</a></span>
+								</p>
+							</div>
+							
+						</li>
+						<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+					</ul>
+
+
+					
+					<div class="more">
+						<h5>Your Goals This Week:</h5>
+						<ul>
+							<li>Set a healthy weight loss goal.</li>
+							<li>Get your personalized meal plan.</li>
+							<li>Start keeping track of what you eat in your food journal!</li>
+						</ul>
+					</div>
+					<a href="g_hlp_home.html" class="action-button alt"><strong><em>View All To-Dos</em></strong></a>
+					
+					
+					
+				</div>
+
+				<!-- Included from: cmn/inc/modules/weekly_log_single_line.inc.php-->
+				<div class="module weekly-log-input-multiline">
+					<h4><strong>5</strong> wellness credits</h4>
+					<img class="picture" src="cmn/img/modules/tmp/module-a-picture2.png" width="118" height="118" alt="Module A Picture">
+					<h2>Log your Chug-a-Jug Challenge</h2>
+					<h2>(May 1 - May 31)</h2>
+					<p>Enter the number of 8 ounce glasses of water you drink each day. You will earn 1 point for every 8 ounce glass up to 5 points per day. 40 points = 5 wellness credits.</p>
+					
+				<p>	 <strong>You are 1 of 364 people enrolled in this challenge!</strong></p>
+
+										
+					<form>
+						<h6>Week of May 3 – May 9</h6>
+						<a href="#">Enter a previous week</a>
+
+						<fieldset class="first">
+							<p>8 ounce glasses of water</p> 
+							<label class="first" for="weekly-logger-sunday-1">
+								Sun
+								<input type="textbox" id="weekly-logger-sunday-1"> 
+							</label>
+							<label for="weekly-logger-monday-1">
+								Mon
+								<input type="textbox" id="weekly-logger-monday-1"> 
+							</label>
+							<label for="weekly-logger-tuesday-1">
+								Tu
+								<input type="textbox" id="weekly-logger-tuesday-1"> 
+							</label>
+							<label for="weekly-logger-wednesday-1">
+								Wed
+								<input type="textbox" id="weekly-logger-wednesday-1"> 
+							</label>
+							<label for="weekly-logger-thursday-1">
+								Th
+								<input type="textbox" id="weekly-logger-thursday-1"> 
+							</label>
+							<label for="weekly-logger-friday-1">
+								Fri
+								<input type="textbox" id="weekly-logger-friday-1"> 
+							</label>
+							<label class="last" for="weekly-logger-saturday-1">
+								Sat
+								<input type="textbox" id="weekly-logger-saturday-1"> 
+							</label>
+						</fieldset>
+					</form>
+					
+					<ul class="utility-nav">
+						<li class="first"><a href="#">Show more like this</a></li>
+						<li class="dont-show">
+							<a href="#">Show this later</a>
+							<div class="dont-show-confirm">
+								<h5>Show this later</h5>
+								<p>Are you sure? If you don't 
+								complete the challenge, you can't earn your credits.
+								<span><a class="keep" title="Keep" href="#">Keep</a> | <a href="#" title="Show later">Show later</a></span>
+								</p>
+							</div>
+
+						</li>
+						<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+					</ul>
+					<a href="#" class="action-button alt"><strong><em>Record Activity</em></strong></a>
+					
+					<div class="more">
+						<p>The Chug-A-Jug Challenge is a month-long water drinking challenge that begins May 1 and ends on May 31. This program emphasizes the importance of water and proper hydration, especially during the hot summer months. During hot weather, it is important to increase your fluid intake – regardless of activity level. If you are exercising in a hot environment, be especially mindful and drink plenty of fluids to stay hydrated. Drinking water replaces the fluid our bodies need to work properly. Participants will enter the number of 8 ounces of water that they drink each day. The goal of this challenge is to earn 40 points during the 4 weeks.</p>
+						<p>40 points = 5 wellness credits</p>
+					</div>
+					
+				</div>
+
+
+
+				<!-- Included from: cmn/inc/modules/meal_planner.inc.php-->
+				<div class="module b meal-planner">
+					<img class="icon" src="cmn/img/modules/tmp/module-b-icon-eat.png" width="35" height="26" alt="Module Icon">
+					<h2>Healthy Meal Ideas for Today</h2>
+					<a class="btn prev" href="#" title="Previous Day">Prev</a>
+					<ol>
+						<li class="first">
+							<h5>Breakfast</h5>
+							<ul>
+								<li><a href="#">Egg and Cheese Sandwich</a></li>
+							</ul>
+						</li>
+						<li>
+							<h5>Lunch</h5>
+							<ul>
+								<li><a href="#">Sandwich: Tuna Pita</a></li>
+							</ul>
+						</li>
+						<li>
+							<h5>Dinner</h5>
+							<ul>
+								<li><a href="#">Fish: Salmon with Honey Mustard Glaze</a></li>
+							</ul>
+						</li>
+						<li class="last">
+							<h5>Snacks</h5>
+							<ul>
+								<li><a href="#">Daily Snacks</a></li>
+							</ul>
+						</li>
+					</ol>
+					<a class="btn next" title="Next Day" href="#">Next</a>
+					
+					<ul class="utility-nav">
+						<li class="first"><a href="#">Show more like this</a></li>
+						<li class="last"><a href="#">Show this later</a></li>
+					</ul>
+					<a href="g_hlp_mealplanner-e-nohlp.html" class="action-button alt"><strong><em>View All Meals</em></strong></a>
+				</div>
+
+				
+				
+				<h1 class="what-next">Your health:</h1>
+				
+				<!-- Included from: cmn/inc/modules/video.inc.php-->
+				<div class="module b has-video">
+					<img class="icon" src="cmn/img/modules/tmp/module-b-icon-read.png" width="35" height="26" alt="Module Icon">
+					<h2>Watch Videos About Diabetes</h2>
+					<p>Robert Bazell reports that two drugs, already on the market to treat some cancers, could hold the key to putting diabetes patients into permanent remission. <a href="#">Watch the video now</a>.	</p>
+					<p class="sub-copy"><a href="#" class="favorited">363 People liked this</a></p>
+					
+					<img class="powered-by" src="cmn/img/modules/tmp/logo-nbc.png">
+					<div class="video"><img src="cmn/img/modules/tmp/video.png" width="190" height="142" alt="Video"></div>
+					<ul class="utility-nav">
+						<li class="first"><a href="#">Show more like this</a></li>
+						<li class="last"><a href="#">Show this later</a></li>
+					</ul>
+					 <a href="#" class="more">More Videos &raquo;</a>
+				</div>
+				
+				
+				<h1 class="what-next">Your status:</h1>
+				
+				
+
+				<!-- Included from: cmn/inc/modules/option_select_with_image_and_input.inc.php-->
+				<div class="module b option-select-with-image five-options">
+					<img class="icon" src="cmn/img/modules/tmp/module-b-icon_happyface.png" width="36" height="36" alt="Module Icon">
+					<h2>How are you feeling right now?</h2>
+					<form id="how-are-you-feeling">
+						<label class="first" for="how-are-you-feeling-great">
+							<input type="radio" id="how-are-you-feeling-great" name="how-are-you-feeling-feeling"> 
+							Great!
+						</label>
+
+						<label class="second" for="how-are-you-feeling-good">
+							<input type="radio" id="how-are-you-feeling-good" name="how-are-you-feeling-feeling"> 
+							Good
+						</label>
+
+						<label class="third" for="how-are-you-feeling-ok">
+							<input type="radio" id="how-are-you-feeling-ok" name="how-are-you-feeling-feeling">
+							OK
+						</label>
+		
+						<label class="fourth" for="how-are-you-feeling-eh">
+							<input type="radio" id="how-are-you-feeling-eh" name="how-are-you-feeling-feeling">
+							Eh
+						</label>
+		
+						<label class="fifth" for="how-are-you-feeling-awful">
+							<input type="radio" id="how-are-you-feeling-awful" name="how-are-you-feeling-feeling">
+							Awful
+						</label>
+
+						<label class="text-entry last" for="how-are-you-feeling-why">
+							Why?
+							<textarea id="how-are-you-feeling-why" name="how-are-you-feeling-why" rows="8" cols="40"></textarea>
+						</label>
+					</form>
+					<ul class="utility-nav">
+						<li class="first"><a href="#">Show more like this</a></li>
+						<li class="last"><a href="#">Show this later</a></li>
+					</ul>
+					<a href="#" class="action-button alt"><strong><em>Save Stress Level</em></strong></a>
+				
+				</div>
+
+		
+				</div>
+				<div class="alt-sidebar span-2 last">
+					<div class="font-sizer">
+						<a class="decrease" href="#" title="Decrease font-size">A</a>
+						<a class="increase" href="#" title="Increase font-size">A</a>					
+					</div>
+				</div>
+				
+
+			<div class="module-cap-bottom"></div>  <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+		<div class="footer">
+			<div class="module-cap-top"><!-- for skinning purposes only, rounded corder cap --></div>
+				<div class="footer-bg"><!-- for skinning purposes only, footer background -->
+					<ul>
+						<li class="first"><a href="#">About Alere</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Editorial Policy</a></li>
+					</ul>
+					<div class="alere">
+						<p class="powered-by">Powered by</p>
+						<h3>Alere</h3>
+						<p>&copy; 2009 Alere. All rights reserved. Alere is a trademark of the Inverness Medical group of companies.</p>
+					</div>
+					
+					<div class="certification">
+						<img src="cmn/img/footer/urac-logo.png" width="78" height="73" alt="URAC">
+						<img src="cmn/img/footer/hon-code-logo.png" width="49" height="72" alt="HON Code">
+						<p>
+							We comply with the <a href="#">HONcode standard for the trustworthy health</a> information: <a href="#">verify here</a>
+						</p>
+					</div>
+				</div>
+			<div class="module-cap-bottom"><!-- for skinning purposes only, rounded corder cap --></div> 
+		</div>
+	</div>
+	<!-- Leave Scripts at the bottom to make sure they don't block the initial paint -->
+	<script src="cmn/js/jquery-1.3.2.min.js"></script>
+	<script src="cmn/js/jcarousel/lib/jquery.jcarousel.js"></script>
+	<script src="cmn/js/jquery_example/jquery.example.min.js"></script>
+	<script src="cmn/js/global.js"></script>
+	</body>
+</html>

@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<title>Alere HTML Framework</title>
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="cmn/css/incentives.css" type="text/css" media="all">
+	
+	<link rel="stylesheet" href="cmn/css/global.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/modules.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/article.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/sign-in_register.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/hpa.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/hpa-test.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/search.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/bioIQ.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/incentives.css" type="text/css" media="all">
+	<!-- 
+		Integration Note:
+			Generally you would only include a single skin style sheet which overrides
+			all the default in global.css and modules.css as necessary.
+			
+			For debug/demo purposes all the style sheets are include here so that they can
+			be toggled using the style sheet switcher (to see the style sheet switch add ?debug=1)
+	-->
+	<link rel="stylesheet" href="cmn/css/skins/ge.css" type="text/css" media="all" title="ge">
+	<link rel="stylesheet alternate" href="cmn/css/skins/cisco.css" type="text/css" media="all" title="cisco">
+	<link rel="stylesheet alternate" href="cmn/css/skins/fedex.css" type="text/css" media="all" title="fedex">
+	<link rel="stylesheet alternate" href="cmn/css/skins/blue-cross.css" type="text/css" media="all" title="blue-cross">
+	<!--[if IE]>
+		<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="cmn/css/global_ie.css" type="text/css" media="all">
+	<![endif]-->
+	</head>
+<body>	<div class="container">
+		<div class="utility span-31">
+					<strong class="welcome">Hello, Suzanne.</strong>
+		<ul>
+			<li class="home"><a href="home-e.html">Home</a></li>
+			<li class="messages"><a href="#">Messages: <strong>2</strong></a></li>
+			<li><a href="#">Account</a></li>
+			<li><a href="#">Feedback</a></li>
+			<li><a href="#">Logout</a></li>
+		</ul>
+		<div class="help"><a href="#">Help</a></div>		</div>
+		<div class="header">
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+			<div class="header-bg"> <!-- for skinning purposes only, background for header -->
+							<h2 class="logo"><a href="home-e.html">GE</a></h2>
+				
+				<!-- 
+					Main Menu Nav
+					Integration Notes:
+						- The first menu item should have class="first"
+						- the last menu item should have class="last"
+						- JavaScript is used to show / hide sub menus. If JS is not available, fall back landing pages should be provided to guide the user to subsections
+				-->
+				<ul id="top-nav" class="nav top">
+					<li class="first">
+						<a href="#">Healthy Living</a>
+						<div class="top-nav-sub two-col">
+							<ul>
+								<li><a href="#">Food and Recipes</a></li>
+								<li><a href="#">Nutrition</a></li>
+								<li><a href="#">Fitness &amp; Activity</a></li>
+							</ul>
+							<ul class="last">
+								<li><a href="#">Stress Management</a></li>
+								<li><a href="#">Weight Management</a></li>
+								<li><a href="#">Smoking Cessation</a></li>
+							</ul>
+							<h5>Tools</h5>
+							<ul>
+								<li><a href="hlp_pt_weight.html">Progress Tracker</a></li>
+								<li><a href="hlp_mealplanner-s-nohlp.html">Meal Planner</a></li>
+								<li><a href="hlp_dietmanager-s-nohlp.html">Diet Manager</a></li>
+							</ul>
+							<ul>
+								<li><a href="hlp_fitnessplanner-s-nohlp.html">Fitness Planner</a></li>
+								<li><a href="hlp_walkingchallenge-s-nohlp.html">Walking Challenge</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">Diseases &amp; Conditions</a>
+						<div class="top-nav-sub two-col">
+							<ul>
+								<li><a href="#">Allergies</a></li>
+									<li><a href="#">Arthritis</a></li>
+									<li><a href="#">Asthma</a></li>
+									<li><a href="#">Back Pain</a></li>
+									<li><a href="#">Cancer</a></li>
+									<li><a href="#">Depression</a></li>
+									<li><a href="#">Diabetes</a></li>
+									<li><a href="#">Digestive Disorders</a></li>
+									<li><a href="#">Heart Disease</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">High Cholesterol</a></li>
+									<li><a href="#">High Blood Pressure</a></li>
+									<li><a href="#">Irritable Bowel</a></li>
+									<li><a href="#">Kidney Disease</a></li>
+									<li><a href="#">Migraine</a></li>
+									<li><a href="#">Obesity</a></li>
+									<li><a href="#">Osteoporosis</a></li>
+									<li><a href="#">Respiratory Disease</a></li>
+									<li><a href="#">Sleep disorders</a></li>
+									<li class="all"><a href="#">All Conditions</a></li>
+								
+							</ul>
+							<h5>Other Resources</h5>
+							<ul>
+								<li><a href="#">Surgeries &amp; Procedures</a></li>
+								<li><a href="#">Medications</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Symptom Checker</a></li>
+								<li><a href="#">Health Tools</a></li>				
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">Personal &amp; Family Health</a>
+						<div class="top-nav-sub two-col">
+							<ul>
+								<li><a href="#">Women's Health</a></li>
+								<li><a href="#">50+ Health</a></li>
+								<li><a href="#">Home Care/First Aid</a></li>
+								<li><a href="#">Navigating Healthcare</a></li>
+								<li><a href="#">Alternative Therapies</a></li>
+							</ul>
+							
+							<ul>
+								<li><a href="#">Men's Health</a></li>
+								<li><a href="#">Healthy Kids</a></li>
+								<li><a href="#">Pregnancy</a></li>
+								<li><a href="#">Supplements/Herbals</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">Tools &amp; Media</a>
+						<div class="top-nav-sub">
+							<ul>
+								<li><a href="hlp_interactivetools-nohlp.html">Interactive Tools</a></li>
+								<li><a href="hlp_pt_weight.html">Trackers</a></li>
+								<li><a href="hlp_quizzes-nohlp.html">Quizzes/Assessments</a></li>
+								<li><a href="hlp_calculators-nohlp.html">Calculators</a></li>
+								<li><a href="#">Video</a></li>
+								<li><a href="#">Audio</a></li>
+								<li><a href="#">Games</a></li>
+								<li><a href="#">Conversations</a></li>
+								<li><a href="#">Online Seminars</a></li>
+							</ul>
+						</div>	
+					</li>
+				</ul>
+				<form id="search">
+					<label for="search-query">Search</label>
+					<input type="text" name="search-query" title="Search" class="example-text" id="search-query">
+					<input type="submit" name="search-submit" value="" id="search-submit">
+				</form>			</div>
+			<div class="module-cap-bottom"></div> <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+		<div class="content">
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+			<div class="sidebar span-7">
+							<!-- 
+					Credits Counter
+					Integration Notes:
+						- Can support up to 3 digits
+						- Background is styled through skin CSS
+				-->
+				<div class="module credits">
+					<h3>You've Earned</h3>
+					<h4><strong>223</strong> credits</h4>
+					<p>Earn 50 more credits and you'll have enough for $150 cash card!</p>
+					<ul>
+						<li><a href="incentives_dashboard_new.html">How do I earn more credits?</a></li>
+					</ul>
+				</div>
+				<!-- End Credits Counter -->
+				
+								<!--
+					Sub-Nav 
+					Integration Notes:
+						- Add class="selected" to the top level list to indicate the user is currently inside the section
+						- Add class="last" to the last item in the top level list
+						- Add class="last" to the last item in the sub list
+						- All JavaScript interaction is unobtrusive. Generate the nav as if javascript is not a requirement.
+				-->
+				<div class="module alt-nav">
+					<ul id="side-bar-nav">
+						<li class="selected">
+							<a href="#">Program Info </a>
+							<ul>
+								<li><a href="incentives_dashboard_new.html">Track Credits</a></li>
+								<li><a href="incentives_dashboard_new.html">Program Overview</a></li>
+								<li><a href="#">Success Stories</a></li>
+								<li class="last"><a href="#">Wellness Champions</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Health Resources</a>
+							<ul>
+								<li><a href="#">Personal Health Record</a></li>
+								<li><a href="hpa_landing.html">Wellness Assessment</a></li>
+								<li><a href="#">Healthy Living Programs</a></li>
+								<li><a href="#">Health Challenges</a></li>
+								<li><a href="#">Online Seminars</a></li>
+								<li><a href="#">Personal Resource Center</a></li>
+								<li><a href="#">Health Coaching</a></li>
+								<li><a href="bioIQ_landing.html">Health Screenings</a></li>
+								<li class="last"><a href="#">[Third Party Programs]</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Condition Care</a>
+							<ul>
+								<li><a href="#">Assessment</a></li>
+								<li><a href="#">Asthma</a></li>								
+								<li><a href="#">CAD</a></li>
+								<li><a href="#">CHF</a></li>
+								<li><a href="#">COPD</a></li>								
+								<li><a href="#">Diabetes</a></li>
+								<li><a href="#">Pain</a></li>
+								<li><a href="#">Pregnancy/ Preconception</a></li>
+								<li class="last"><a href="#">Oncology</a></li>
+							</ul>
+						</li>
+						<li class="last">
+							<a href="#">Beneﬁts Info</a>
+							<ul>
+								<li><a href="#">Benefits Overview</a></li>
+								<li><a href="#">SSO to Health Plans</a></li>
+								<li><a href="#">EAP</a></li>
+								<li class="last"><a href="#">[Custom Links]</a></li>								
+							</ul>	
+						</li>
+					</ul>
+				</div>
+				<!-- End Sub Nav -->
+			
+				<!-- 
+					Company News Module 
+					Integration Notes:
+						- Logo is 106x30 background image defined in the skin CSS
+				-->
+				<div class="module news last">
+					<h2>GE News</h2>
+					<ul class="news">
+						<li><a href="#">Become a Wellness Advocate</a></li>
+						<li><a href="#">Share Your Success Story!</a></li>
+						<li><a href="#">April Seminar: Beating the Odds</a></li>
+						<li><a href="#">More About the FedEx Wellness Program</a></li>
+					</ul>
+				</div>
+				<!-- End Company News -->			</div>
+			<div class="main-well span-21">
+
+				<div class="message">
+					<p class="welcome-message">
+						Congratulations, Suzanne You’ve taken an important step toward maintaining wellness.
+					</p>
+				</div>
+				
+				
+				<h1 class="what-next">What you can do next...</h1>
+				<!--
+					Integration Note: 
+						All modules should be included here
+				-->
+
+				
+
+
+
+
+				<!-- Included from: cmn/inc/modules/article_listing.inc.php-->
+				<div class="module b">
+					<img class="icon" src="cmn/img/modules/tmp/module-b-icon-read.png" width="35" height="26" alt="Module Icon">
+					<h2>Read About Diabetes</h2>
+					<ul>
+						<li><a href="#">What is prediabetes?</a> <a href="#" class="favorited" title="Favorites">510</a></li>
+						<li><a href="#">Relationships between Diabetes and Cancer</a> <a class="favorited" href="#" title="Favorites">231</a></li>
+						<li><a href="#">Sick-Day Guidlines for People With Diabetes</a> <a class="favorited" href="#" title="Favorites">13</a></li>					
+					</ul>
+					<ul class="utility-nav">
+						<li class="first"><a href="#">Always show this</a></li>
+						<li><a href="#">Don't show again</a></li>
+						<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+					</ul>
+					<a href="#" class="more">Read More <span>&raquo;</span></a>
+				</div>
+
+
+
+
+				<!-- Included from: cmn/inc/modules/generic_activity.inc.php-->
+						<div class="module-activity">
+							<h2>Activity Title</h2>
+							<h3 class="credits">20 credits</h3>
+							<a href="#" class="tell-me-more">Learn more</a>
+							<a href="#" class="action-button alt"><strong><em>Start Now</em></strong></a>						
+						</div>
+
+
+
+
+				<!-- Included from: cmn/inc/modules/generic_activity_expired.inc.php-->
+						<div class="module-activity expired">
+							<h2>Activity Title</h2>
+							<h3 class="credits">20 credits</h3>
+							<a href="#" class="tell-me-more">Learn more</a>
+							<p>This activity is expired</p>					
+						</div>
+
+
+
+
+				<!-- Included from: cmn/inc/modules/generic_activity_history.inc.php-->
+						<div class="module-activity history last">
+							<h2>Wellness Assessment</h2>
+							<p class="completion-date">Completed on 6/5/08</p>
+							<h3 class="credits">2 credits earned</h3>
+						</div>
+
+
+
+
+				<!-- Included from: cmn/inc/modules/generic_alternate.inc.php-->
+				<div class="module b">
+					<img class="icon" src="cmn/img/modules/tmp/module-b-icon1.png" width="36" height="36" alt="Module Icon">
+					<h2>Finish Your At-Home Screening</h2>
+					<p>You should have received your test kit in the mail. Please return it so we can show your results. If there’s a problem, <a href="#">we can help</a>.</p>
+					<ul class="utility-nav">
+						<li class="first"><a href="#">Always show this</a></li>
+						<li><a href="#">Don't show again</a></li>
+						<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+					</ul>
+					<p class="partner-link-warning">
+						This link will take you to a partner site to enroll. <a href="#" class="action-button alt"><strong><em>Enroll Now</em></strong></a>
+					</p>
+				</div>
+
+
+
+
+				<!-- Included from: cmn/inc/modules/generic_main.inc.php-->
+				<div class="module">
+					<h4><strong>223</strong> credits</h4>
+					<img class="picture" src="cmn/img/modules/tmp/module-a-picture2.png" width="118" height="118" alt="Module A Picture">
+					<h2>Chug-a-Lug Challenge</h2>
+					<p>Keep yourself hydrated and keep yourself healthy! <a href="#">Join this challenge</a> and commit to drinking more water.</p>
+					<ul class="utility-nav">
+						<li class="first"><a href="#">Always show this</a></li>
+						<li><a href="#">Don't show again</a></li>
+						<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+					</ul>
+					<a href="#" class="action-button"><strong><em>Join Now</em></strong></a>
+				</div>
+
+
+
+
+				<!-- Included from: cmn/inc/modules/generic_main_with_subtext.inc.php-->
+				<div class="module">
+					<h4><strong>223</strong> credits</h4>
+					<img class="picture" src="cmn/img/modules/tmp/module-a-picture2.png" width="118" height="118" alt="Module A Picture">
+					<h2>Chug-a-Lug Challenge <span>(Ends 4/24)</span></h2>
+					<p>Keep yourself hydrated and keep yourself healthy! <a href="#">Join this challenge</a> and commit to drinking more water.</p>
+					<p class="sub-copy">Join 363 people taking this challenge now!</p>
+					<ul class="utility-nav">
+						<li class="first"><a href="#">Always show this</a></li>
+						<li><a href="#">Don't show again</a></li>
+						<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+					</ul>
+					<a href="#" class="action-button"><strong><em>Join Now</em></strong></a>
+				</div>
+
+
+
+
+				<!-- Included from: cmn/inc/modules/generic_more_with_images.inc.php-->
+				<div class="module">
+					<h4><strong>223</strong> credits</h4>
+					<img class="picture" src="cmn/img/modules/tmp/module-a-picture.png" width="118" height="118" alt="Module A Picture">
+					<h2>Get Active! Challenge</h2>
+					<h2>May 1, 2009 through June 12, 2009</h2>
+					<p><a href="#">Sign up for this 6-week activity</a> that encourages all
+					types of physical activity. This challenge is for al levels
+					of abilities. <strong>Join 490 people taking this challenge now!</strong></p>
+					<ul class="utility-nav">
+						<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+					</ul>
+					<a href="#" class="action-button"><strong><em>Join Now</em></strong></a>
+					<div class="more">
+						<p>Enter the number of minutes you exercise each day. You earn 1 
+						point for every 10 minutes you exercise. At the end of the 6 week 
+						challenge, if you have obtained 60 points, you earn 25 wellness credits.</p>
+						<h6>Need some suggestions?</h6>
+						<ul class="images-text three-column">
+							<li>
+								<img src="cmn/img/modules/tmp/get_active_jumping.png" width="117" height="64" alt="Get Active Jumping">
+								Take a brisk walk around the block.
+							</li>
+							<li>
+								<img src="cmn/img/modules/tmp/get_active_office.png" width="117" height="64" alt="Get Active Office">
+								Walk up the stairs to your office.
+							</li>
+							<li class="last">
+								<img src="cmn/img/modules/tmp/get_active_running.png" width="117" height="64" alt="Get Active Running">
+								Do jumping jacks.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+
+
+
+				<!-- Included from: cmn/inc/modules/generic_with_more.inc.php-->
+				<div class="module b">
+					<img class="icon" src="cmn/img/modules/tmp/module-b-icon2.png" width="36" height="40" alt="Module Icon">
+					<h4><strong>223</strong> credits</h4>
+					<h2>Start the Get In Shape Program</h2>
+					<p>Increase your activity level to improve your health and fitness. <a href="#">Start the program</a> to get weekly action items and reminders.</p>
+					<ul class="utility-nav">
+						<li class="show-more first"><a href="#">Always show this</a></li>
+						<li class="dont-show">
+							<a href="#">Don't show again</a>
+							<div class="dont-show-confirm">
+								<h5>Show this later</h5>
+								<p>Are you sure? If you don't 
+								complete your wellness 
+								assessment, you can't 
+								earn your $50 cash card.
+								<span><a class="keep" title="Keep" href="#">Keep</a> | <a href="#" title="Show later">Show later</a></span>
+								</p>
+							</div>
+							
+						</li>
+						<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+					</ul>
+					<a href="#" class="action-button alt"><strong><em>Start Now</em></strong></a>
+					<!-- 
+						Integration Note: 
+						Anything inside the "more" div will be hidden onload and shown when ever the use clicks "show more"
+					-->
+					<div class="more">
+						<h5>This program can help you:</h5>
+						<ul>
+							<li>Find easy ways to increase activity as part of your daily life</li>
+							<li>Build a fitness plan that you can stick to for a lifetime</li>
+							<li>Improve your cardiovascular health, tone muscle and gain flexibility</li>
+							<li>Boost your energy</li>
+							<li>Drop excess body fat</li>						
+						</ul>
+					</div>
+				</div>
+
+
+
+
+				<!-- Included from: cmn/inc/modules/generic_with_more_inactive.inc.php-->
+				<div class="module b">
+					<img class="icon" src="cmn/img/modules/tmp/module-b-icon2.png" width="36" height="40" alt="Module Icon">
+					<h4><strong>223</strong> credits</h4>
+					<h2>Start the Get In Shape Program</h2>
+					<p>Increase your activity level to improve your health and fitness. <a href="#">Start the program</a> to get weekly action items and reminders.</p>
+					<p class="date-available">This activity will become available on 4/29/2009</p>
+					
+					<ul class="utility-nav">	
+						<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+					</ul>
+					<span class="action-button alt disabled"><strong><em>Start Now</em></strong></span>
+					<!-- 
+						Integration Note: 
+						Anything inside the "more" div will be hidden onload and shown when ever the use clicks "show more"
+					-->
+					<div class="more">
+						<h5>This program can help you:</h5>
+						<ul>
+							<li>Find easy ways to increase activity as part of your daily life</li>
+							<li>Build a fitness plan that you can stick to for a lifetime</li>
+							<li>Improve your cardiovascular health, tone muscle and gain flexibility</li>
+							<li>Boost your energy</li>
+							<li>Drop excess body fat</li>						
+						</ul>
+					</div>
+				</div>
+
+
+
+
+				<!-- Included from: cmn/inc/modules/generic_with_more_incentives.inc.php-->
+				<div class="module b">
+					<img class="icon" src="cmn/img/modules/tmp/module-b-icon2.png" width="36" height="40" alt="Module Icon">
+					<h4><strong>223</strong> credits</h4>
+					<h2>Start the Get In Shape Program</h2>
+					<p>Increase your activity level to improve your health and fitness. <a href="#">Start the program</a> to get weekly action items and reminders.</p>
+					<ul class="utility-nav">
+						<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+					</ul>
+					<a href="#" class="action-button alt"><strong><em>Start Now</em></strong></a>
+					<!-- 
+						Integration Note: 
+						Anything inside the "more" div will be hidden onload and shown when ever the use clicks "show more"
+					-->
+					<div class="more">
+						<h5>This program can help you:</h5>
+						<ul>
+							<li>Find easy ways to increase activity as part of your daily life</li>
+							<li>Build a fitness plan that you can stick to for a lifetime</li>
+							<li>Improve your cardiovascular health, tone muscle and gain flexibility</li>
+							<li>Boost your energy</li>
+							<li>Drop excess body fat</li>						
+						</ul>
+					</div>
+				</div>
+
+
+
+
+				<!-- Included from: cmn/inc/modules/meal_plan_signup.inc.php-->
+				<div class="module b option-select-with-image">
+					<img class="icon" src="cmn/img/modules/tmp/module-b-icon-fruit.png" width="36" height="36" alt="Module Icon">
+					<h2>Sign up for Menu Plan</h2>
+					<p>Sign up for one of our four tailored meal plans, and each day we'll give you a menu with recipes.</p>
+					<form id="meal-plan">
+						<label class="first" for="meal-plan-cancer">
+							<input type="radio" id="meal-plan-cancer" name="foods"> 
+							Cancer Fighting Foods
+						</label>
+		
+						<label class="second" for="meal-plan-heart">
+							<input type="radio" id="meal-plan-heart" name="foods"> 
+							Heart Healthy
+						</label>
+		
+						<label class="third" for="meal-plan-veg">
+							<input type="radio" id="meal-plan-veg" name="foods">
+							Vegetarian
+						</label>
+		
+						<label class="fourth last" for="meal-plan-peak">
+							<input type="radio" id="meal-plan-peak" name="foods">
+							Peak Performers
+						</label>
+					</form>
+					<ul class="utility-nav">
+						<li class="first"><a href="#">Always show this</a></li>
+						<li><a href="#">Don't show again</a></li>
+						<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+					</ul>
+					<a href="#" class="action-button alt"><strong><em>Get Menu Plan</em></strong></a>
+				</div>
+
+
+
+
+				<!-- Included from: cmn/inc/modules/meal_planner.inc.php-->
+				<div class="module b meal-planner">
+					<img class="icon" src="cmn/img/modules/tmp/module-b-icon-eat.png" width="35" height="26" alt="Module Icon">
+					<h2>Heart Healthy Menu for Monday</h2>
+					<a class="btn prev" href="#" title="Previous Day">Prev</a>
+					<ol>
+						<li class="first">
+							<h5>Breakfast</h5>
+							<ul>
+								<li><a href="#">Egg and Cheese Sandwich</a></li>
+							</ul>
+						</li>
+						<li>
+							<h5>Lunch</h5>
+							<ul>
+								<li><a href="#">Sandwich: Tuna Pita</a></li>
+							</ul>
+						</li>
+						<li>
+							<h5>Dinner</h5>
+							<ul>
+								<li><a href="#">Fish: Salmon with Honey Mustard Glaze</a></li>
+							</ul>
+						</li>
+						<li class="last">
+							<h5>Snacks</h5>
+							<ul>
+								<li><a href="#">Daily Snacks</a></li>
+							</ul>
+						</li>
+					</ol>
+					<a class="btn next" title="Next Day" href="#">Next</a>
+					
+					<ul class="utility-nav">
+						<li class="first"><a href="#">Always show this</a></li>
+						<li class="last"><a href="#">Don't show again</a></li>
+					</ul>
+					<a href="#" class="action-button alt"><strong><em>Get Meals</em></strong></a>
+				</div>
+
+
+
+
+				<!-- Included from: cmn/inc/modules/option_select_with_image_and_input.inc.php-->
+				<div class="module b option-select-with-image five-options">
+					<img class="icon" src="cmn/img/modules/tmp/module-b-icon_happyface.png" width="36" height="36" alt="Module Icon">
+					<h2>How are you feeling right now?</h2>
+					<form id="how-are-you-feeling">
+						<label class="first" for="how-are-you-feeling-great">
+							<input type="radio" id="how-are-you-feeling-great" name="how-are-you-feeling-feeling"> 
+							Great!
+						</label>
+
+						<label class="second" for="how-are-you-feeling-good">
+							<input type="radio" id="how-are-you-feeling-good" name="how-are-you-feeling-feeling"> 
+							Good
+						</label>
+
+						<label class="third" for="how-are-you-feeling-ok">
+							<input type="radio" id="how-are-you-feeling-ok" name="how-are-you-feeling-feeling">
+							OK
+						</label>
+		
+						<label class="fourth" for="how-are-you-feeling-eh">
+							<input type="radio" id="how-are-you-feeling-eh" name="how-are-you-feeling-feeling">
+							Eh
+						</label>
+		
+						<label class="fifth" for="how-are-you-feeling-awful">
+							<input type="radio" id="how-are-you-feeling-awful" name="how-are-you-feeling-feeling">
+							Awful
+						</label>
+
+						<label class="text-entry last" for="how-are-you-feeling-why">
+							Why?
+							<textarea id="how-are-you-feeling-why" name="how-are-you-feeling-why" rows="8" cols="40"></textarea>
+						</label>
+					</form>
+					<ul class="utility-nav">
+						<li class="first"><a href="#">Always show this</a></li>
+						<li class="last"><a href="#">Don't show again</a></li>
+					</ul>
+					<a href="#" class="action-button alt"><strong><em>Save Stress Level</em></strong></a>
+				</div>
+
+
+
+
+				<!-- Included from: cmn/inc/modules/program_checklist.inc.php-->
+				<div class="module program-checklist">
+					<img class="picture" src="cmn/img/modules/tmp/module-a-picture2.png" width="118" height="118" alt="Module A Picture">
+					<h2>Weight Loss Program Checklist</h2>
+					<p>Check each box off as you complete it!</p>
+					<form>
+						<!-- Integration Note:
+								The idea here is that you could put as many fieldsets as you want here and the paginator will slide through them.
+								The other option is to pull fieldsets in from an Ajax request
+						-->
+						<fieldset class="item-1">
+							<input type="checkbox" name="lose-weight-check" value="" id="lose-weight-check">
+							<label for="lose-weight-check">1 - <a href="#">Start Losing Weight Today!</a> Five things you can do now to make this plan work for the long-term.</label>
+						</fieldset>
+						
+						<fieldset class="item-2">
+							<input type="checkbox" name="lose-weight-check" value="" id="lose-weight-check-1">
+							<label for="lose-weight-check-1">2 - <a href="#">Start Losing Weight Today!</a> Five things you can do now to make this plan work for the long-term.</label>
+						</fieldset>
+						
+						<fieldset class="item-3">
+							<input type="checkbox" name="lose-weight-check" value="" id="lose-weight-check-2">
+							<label for="lose-weight-check-2">3 - <a href="#">Start Losing Weight Today!</a> Five things you can do now to make this plan work for the long-term.</label>
+						</fieldset>
+						
+						<fieldset class="item-4">
+							<input type="checkbox" name="lose-weight-check" value="" id="lose-weight-check-3">
+							<label for="lose-weight-check-3">4 - <a href="#">Start Losing Weight Today!</a> Five things you can do now to make this plan work for the long-term.</label>
+						</fieldset>
+						
+						<ul class="pagination">
+							<li class="next"><a href="#" class="more next">Next To-Do &raquo;</a></li>
+							<li class="prev"><a href="#" class="more prev">&laquo; Previous To-Do</a></li>
+						</ul>
+					</form>
+					<ul class="utility-nav">
+						<li class="first"><a href="#">Always show this</a></li>
+						<li><a href="#">Don't show again</a></li>
+						<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+					</ul>
+					<a href="#" class="action-button"><strong><em>Print Articles</em></strong></a>
+				</div>
+
+
+
+
+				<!-- Included from: cmn/inc/modules/text_input.inc.php-->
+				<div class="module b what-to-eat">
+					<img class="icon" src="cmn/img/modules/tmp/module-b-icon-eat.png" width="35" height="26" alt="Module Icon">
+					<h2>What is there to Eat?</h2>
+					<p>Enter some of the ingredients you have on hand, and we'll suggest healthy recipes for you to cook:</p>
+					<form id="what-to-eat">
+						<input type="text" name="what-to-eat-1" value="" id="what-to-eat-1">
+						<input type="text" name="what-to-eat-2" value="" id="what-to-eat-2">
+						<input type="text" name="what-to-eat-3" value="" id="what-to-eat-3">
+						<input type="text" name="what-to-eat-4" value="" id="what-to-eat-4">
+					</form>
+					<ul class="utility-nav">
+						<li class="first"><a href="#">Always show this</a></li>
+						<li class="last"><a href="#">Don't show again</a></li>
+					</ul>
+					<a href="#" class="action-button alt"><strong><em>Get Recipes</em></strong></a>
+				</div>
+
+
+
+
+				<!-- Included from: cmn/inc/modules/todo_list.inc.php-->
+				<div class="module a todo-list">
+					<img class="icon" src="cmn/img/modules/tmp/module-b-icon3.png" width="28" height="36" alt="Module Icon">
+					<h2>Health Risk To-Dos</h2>
+					<div class="carousel">
+						<div class="item">
+							1 – Achieve and maintain a healthier body mass index by being conscious 
+							of what you eat, and by finding ways to maintain a healthful, physically 
+							active lifestyle. <a href="#">Learn more.</a>
+						</div>                                                                                                                 
+						                                                                                                                       
+						<div class="item">
+							2 – Achieve and maintain a healthier body mass index by being conscious 
+							of what you eat, and by finding ways to maintain a healthful, physically 
+							active lifestyle. <a href="#">Learn more.</a>
+						</div>
+						<div class="item">
+							3 – Achieve and maintain a healthier body mass index by being conscious 
+							of what you eat, and by finding ways to maintain a healthful, physically 
+							active lifestyle. <a href="#">Learn more.</a>
+						</div>
+						<div class="item">
+							4 – Achieve and maintain a healthier body mass index by being conscious 
+							of what you eat, and by finding ways to maintain a healthful, physically 
+							active lifestyle. <a href="#">Learn more.</a>
+						</div>
+						<ul class="pagination">
+							<li class="next"><a href="#" class="more next">Next To-Do &raquo;</a></li>
+							<li class="prev"><a href="#" class="more prev">&laquo; Previous To-Do</a></li>
+						</ul>
+					</div>
+		
+				</div>
+
+
+
+
+				<!-- Included from: cmn/inc/modules/true_false_question.inc.php-->
+				<div class="module b">
+					<img class="icon" src="cmn/img/modules/tmp/module-b-icon-read.png" width="35" height="26" alt="Module B Icon Read"/>
+					<h2>Learn more about walking for fitness</h2>
+	
+					<p>You don’t have to walk 30 minutes all at once each day. You can get 
+					the same benefits by walking in several chunks of 10 minutes or more 
+					throughout the day.</p>
+	
+					<form class="true-false">
+						<fieldset>
+							<label class="first true" for="true-false-true">
+								<input type="radio" id="true-false-true" name="tracker"> 
+								True
+							</label>
+
+							<label class="second false" for="true-false-false">
+								<input type="radio" id="true-false-false" name="tracker"> 
+								False
+							</label>
+						</fieldset>
+					</form>
+					<div class="answer">
+						<h6 class="true">You're right!</h6>
+						<h6 class="false">Sorry, that answer is incorrect.</h6>
+						<p>Experts recommend at least 30 minutes of moderate activity 5 days a week 
+						or more. But you don't need to do it all at once. You can break it up into 
+						several chunks of 10 minutes or more throughout the day. Or you can wear 
+						a pedometer and try to walk at least 10,000 steps every day. </p>
+					</div>
+					<ul class="utility-nav">
+						<li class="first"><a href="#">Always show this</a></li>
+						<li><a href="#">Don't show again</a></li>
+						<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+					</ul>
+					 <a href="#" class="more">Read More <span>&raquo;</span></a>
+				</div>
+
+
+
+
+				<!-- Included from: cmn/inc/modules/video.inc.php-->
+				<div class="module b has-video">
+					<img class="icon" src="cmn/img/modules/tmp/module-b-icon-read.png" width="35" height="26" alt="Module Icon">
+					<h2>Watch Videos About Diabetes</h2>
+					<p>Find out how to give yourself insulin injections, and what equipment is required. Find out how to equipment is required <a href="#">Watch the video now</a>.	</p>
+					<p class="sub-copy"><a href="#" class="favorited">363 People liked this</a></p>
+					<img class="powered-by" src="cmn/img/modules/tmp/logo-healthwise.png" width="153" height="35" alt="Logo Healthwise">
+					<div class="video"><img src="cmn/img/modules/tmp/video.png" width="190" height="142" alt="Video"></div>
+					<ul class="utility-nav">
+						<li class="first"><a href="#">Always show this</a></li>
+						<li class="last"><a href="#">Don't show again</a></li>
+					</ul>
+					 <a href="#" class="more">More Videos &raquo;</a>
+				</div>
+
+
+
+
+				<!-- Included from: cmn/inc/modules/weekly_log_multiline.inc.php-->
+				<div class="module weekly-log-input-multiline">
+					<h4><strong>223</strong> credits</h4>
+					<img class="picture" src="cmn/img/modules/tmp/module-a-picture.png" width="118" height="118" alt="Module A Picture">
+					<h2>Log your minutes for the Get Active!</h2>
+					<h2>Challenge</h2>
+					<p>Enter the number of minutes each day you exercise. For 
+						every 10 minutes of exercise, you get one point. At the 
+						end of the 6 week period, 60 points = 25 wellness credits.
+					</p>
+					<form>
+						<h6>Week of March 29 – April 4</h6>
+						<a href="#">Enter a previous week</a>
+
+						<fieldset class="first">
+							<p>Ate 5 servings of fruit and or vegetables</p> 
+							<label class="first" for="weekly-logger-sunday-1">
+								Sun
+								<input type="text" id="weekly-logger-sunday-1"> 
+							</label>
+							<label for="weekly-logger-monday-1">
+								Mon
+								<input type="text" id="weekly-logger-monday-1"> 
+							</label>
+							<label for="weekly-logger-tuesday-1">
+								Tu
+								<input type="text" id="weekly-logger-tuesday-1"> 
+							</label>
+							<label for="weekly-logger-wednesday-1">
+								Wed
+								<input type="text" id="weekly-logger-wednesday-1"> 
+							</label>
+							<label for="weekly-logger-thursday-1">
+								Th
+								<input type="text" id="weekly-logger-thursday-1"> 
+							</label>
+							<label for="weekly-logger-friday-1">
+								Fri
+								<input type="text" id="weekly-logger-friday-1"> 
+							</label>
+							<label class="last" for="weekly-logger-saturday-1">
+								Sat
+								<input type="text" id="weekly-logger-saturday-1"> 
+							</label>
+						</fieldset>
+						<fieldset>
+							<p>Completed 15 minutes of physical activity</p> 
+							<label class="first" for="weekly-logger-sunday-2">
+								<input type="text" id="weekly-logger-sunday-2"> 
+							</label>
+							<label for="weekly-logger-monday-2">
+								<input type="text" id="weekly-logger-monday-2"> 
+							</label>
+							<label for="weekly-logger-tuesday-2">
+								<input type="text" id="weekly-logger-tuesday-2"> 
+							</label>
+							<label for="weekly-logger-wednesday-2">
+								<input type="text" id="weekly-logger-wednesday-2"> 
+							</label>
+							<label for="weekly-logger-thursday-2">
+								<input type="text" id="weekly-logger-thursday-2"> 
+							</label>
+							<label for="weekly-logger-friday-2">
+								<input type="text" id="weekly-logger-friday-2"> 
+							</label>
+							<label class="last" for="weekly-logger-saturday-2">
+								<input type="text" id="weekly-logger-saturday-2"> 
+							</label>
+						</fieldset>
+
+						<fieldset>
+							<p>Slept for 7 hours</p> 
+							<label class="first" for="weekly-logger-sunday-3">
+								<input type="text" id="weekly-logger-sunday-3"> 
+							</label>
+							<label for="weekly-logger-monday-3">
+								<input type="text" id="weekly-logger-monday-3"> 
+							</label>
+							<label for="weekly-logger-tuesday-3">
+								<input type="text" id="weekly-logger-tuesday-3"> 
+							</label>
+							<label for="weekly-logger-wednesday-3">
+								<input type="text" id="weekly-logger-wednesday-3"> 
+							</label>
+							<label for="weekly-logger-thursday-3">
+								<input type="text" id="weekly-logger-thursday-3"> 
+							</label>
+							<label for="weekly-logger-friday-3">
+								<input type="text" id="weekly-logger-friday-3"> 
+							</label>
+							<label class="last" for="weekly-logger-saturday-3">
+								<input type="text" id="weekly-logger-saturday-3"> 
+							</label>
+						</fieldset>
+						<fieldset class="last">
+							<p>Took 10 minutes for personal relaxation</p> 
+							<label class="first" for="weekly-logger-sunday-4">
+								<input type="text" id="weekly-logger-sunday-4"> 
+							</label>
+							<label for="weekly-logger-monday-4">
+								<input type="text" id="weekly-logger-monday-4"> 
+							</label>
+							<label for="weekly-logger-tuesday-4">
+								<input type="text" id="weekly-logger-tuesday-4"> 
+							</label>
+							<label for="weekly-logger-wednesday-4">
+								<input type="text" id="weekly-logger-wednesday-4"> 
+							</label>
+							<label for="weekly-logger-thursday-4">
+								<input type="text" id="weekly-logger-thursday-4"> 
+							</label>
+							<label for="weekly-logger-friday-4">
+								<input type="text" id="weekly-logger-friday-4"> 
+							</label>
+							<label class="last" for="weekly-logger-saturday-4">
+								<input type="text" id="weekly-logger-saturday-4"> 
+							</label>
+						</fieldset>
+					</form>
+					<ul class="utility-nav">
+						<li class="first"><a href="#">Always show this</a></li>
+						<li><a href="#">Don't show again</a></li>
+						<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+					</ul>
+					<a href="#" class="action-button alt"><strong><em>Record Activity</em></strong></a>
+				</div>
+
+
+
+
+				<!-- Included from: cmn/inc/modules/weekly_log_single_line.inc.php-->
+				<div class="module weekly-log-input">
+					<h4><strong>223</strong> credits</h4>
+					<img class="picture" src="cmn/img/modules/tmp/module-a-picture.png" width="118" height="118" alt="Module A Picture">
+					<h2>Log your minutes for the Get Active!</h2>
+					<h2>Challenge</h2>
+					<p>Enter the number of minutes each day you exercise. For 
+						every 10 minutes of exercise, you get one point. At the 
+						end of the 6 week period, 60 points = 25 wellness credits.
+					</p>
+					<form>
+						<h6>Week of March 29 – April 4</h6>
+						<a href="#">Enter a previous week</a>
+						<fieldset>
+							<label class="first" for="weekly-logger-sunday">
+								Sun
+								<input type="text" id="weekly-logger-sunday"> 
+							</label>
+							<label for="weekly-logger-monday">
+								Mon
+								<input type="text" id="weekly-logger-monday"> 
+							</label>
+							<label for="weekly-logger-tuesday">
+								Tues
+								<input type="text" id="weekly-logger-tuesday"> 
+							</label>
+							<label for="weekly-logger-wednesday">
+								Wed
+								<input type="text" id="weekly-logger-wednesday"> 
+							</label>
+							<label for="weekly-logger-thursday">
+								Thurs
+								<input type="text" id="weekly-logger-thursday"> 
+							</label>
+							<label for="weekly-logger-friday">
+								Fri
+								<input type="text" id="weekly-logger-friday"> 
+							</label>
+							<label class="last" for="weekly-logger-saturday">
+								Sat
+								<input type="text" id="weekly-logger-saturday"> 
+							</label>
+						</fieldset>
+					</form>
+					<ul class="utility-nav">
+						<li class="first"><a href="#">Always show this</a></li>
+						<li><a href="#">Don't show again</a></li>
+						<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+					</ul>
+					<a href="#" class="action-button alt"><strong><em>Record Activity</em></strong></a>
+				</div>
+
+
+
+
+				<!-- Included from: cmn/inc/modules/weekly_log_single_line_saved.inc.php-->
+				<div class="module weekly-log-input">
+					<h4><strong>223</strong> credits</h4>
+					<img class="picture" src="cmn/img/modules/tmp/module-a-picture.png" width="118" height="118" alt="Module A Picture">
+					<h2>Log your minutes for the Get Active!</h2>
+					<h2>Challenge</h2>
+					<p>Enter the number of minutes each day you exercise. For 
+						every 10 minutes of exercise, you get one point. At the 
+						end of the 6 week period, 60 points = 25 wellness credits.
+					</p>
+					<div class="saved">
+						<h5>Your entry has been saved</h5>
+						<a href='#'>Enter another week</a>
+					</div>
+					<ul class="utility-nav">
+						<li class="first"><a href="#">Always show this</a></li>
+						<li><a href="#">Don't show again</a></li>
+						<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+					</ul>
+				</div>				
+			</div>
+			<div class="alt-sidebar span-2 last">
+				<div class="font-sizer">
+					<a class="decrease" href="#" title="Decrease font-size">A</a>
+					<a class="increase" href="#" title="Increase font-size">A</a>					
+				</div>
+			</div>	
+
+			<div class="module-cap-bottom"></div>  <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+		<div class="footer">
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+				<div class="footer-bg"><!-- for skinning purposes only, footer background -->
+					<ul>
+						<li class="first"><a href="#">About Alere</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Editorial Policy</a></li>
+					</ul>
+					<div class="alere">
+						<p class="powered-by">Powered by</p>
+						<h3>Alere</h3>
+						<p>&copy; 2009 Alere. All rights reserved. Alere is a trademark of the Inverness Medical group of companies.</p>
+					</div>
+					
+					<div class="certification">
+						<img src="cmn/img/footer/urac-logo.png" width="78" height="73" alt="URAC">
+						<img src="cmn/img/footer/hon-code-logo.png" width="49" height="72" alt="HON Code">
+						<p>
+							We comply with the <a href="#">HONcode standard for the trustworthy health</a> information: <a href="#">verify here</a>
+						</p>
+					</div>
+				</div>
+			<div class="module-cap-bottom"></div> <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+	</div>
+	<!-- Leave Scripts at the bottom to make sure they don't block the initial paint -->
+	<script src="cmn/js/jquery-1.3.2.min.js"></script>
+	<script src="cmn/js/jcarousel/lib/jquery.jcarousel.js"></script>
+	<script src="cmn/js/jquery_example/jquery.example.min.js"></script>
+	<script src="cmn/js/global.js"></script>
+	</body>
+</html>

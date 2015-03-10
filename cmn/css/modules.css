@@ -1,0 +1,1026 @@
+/*----------------------------------------------------------------
+ * Generic Module Styles
+ *
+ * Styles defined in this section make up the standard module 
+ * type. Anything modules that deviates from the standard
+ * text/image/util nav/action button/credit counter module can be 
+ * modified in the "Specific Module Overrides" section below.
+ * --------------------------------------------------------------*/
+
+/*----------------------------
+	Generic Module
+ ----------------------------*/
+div.main-well div.module {
+	position:relative;
+	border:1px solid #91dffc;
+	padding:20px 20px 20px 158px;
+	margin-bottom:20px;
+	background:#feffff url('../img/skins/default/module_gradients_bg.png') repeat-x 0 -350px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	padding-le
+}
+
+/* 
+	Use easy-clearing method instead of overflow clearing method.
+	This is due to the fact that the "don't show" button breaks 
+	the frame of the module div
+*/
+
+div.main-well div.module:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+
+div.main-well div.module:hover {
+	border:1px solid #627fc1;
+}
+
+div.main-well div.module h2 {
+	line-height:.8em;
+	color:#005499;
+	font-size:1.8em;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+div.main-well div.module h6 {
+	margin:0;
+	padding:0;
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+div.main-well div.module p {
+	font-size:1.3em;
+	color:#333;
+	margin-right:75px;
+}
+
+div.main-well div.module p.sub-copy {
+	margin-top:-15px;
+	font-size:1.1em;
+}
+
+div.main-well div.module img.powered-by {
+	margin-bottom:15px;
+}
+
+div.main-well div.module p a,
+div.main-well div.module label a {
+	color:#0084a9;
+	text-decoration: underline;
+}
+
+div.main-well div.module .action-button {
+	clear:none;
+}
+
+div.main-well div.module img.picture {
+	position:absolute;
+	top:15px;
+	left:15px;
+	border:5px solid #fff;
+	float:left;
+	margin-right:15px;
+}
+
+/*----------------------------
+	Generic Acitivity Module
+ ----------------------------*/
+div.main-well div.module-activity {
+	overflow:hidden;
+	padding:0 20px 14px 0;
+	margin-bottom:15px;
+	border-bottom:1px solid #e2e2e2;
+}
+
+div.main-well div.module-activity.last {
+	border-bottom:0;
+	margin-bottom:30px;
+}
+div.main-well div.module-activity h2 {
+	color:#005499;
+	font-size:1.5em;
+	font-weight:bold;
+	margin-bottom:4px;
+	float:left;
+	
+
+}
+
+div.main-well div.module-activity h3.credits {
+	float:right;
+	font-family:Arial, sans-serif;
+	font-weight:bold;
+	font-size:1.4em;
+	color:#005499;
+	margin:0;
+}
+
+
+div.main-well div.module-activity a.tell-me-more {
+	clear:left;
+	float:left;
+	display:block;
+}
+
+div.main-well div.module-activity .action-button {
+	margin-top:-15px;
+}
+
+	/*----------------------------
+		SD: Added - start
+	 ----------------------------*/
+	
+	div.main-well div.module-activity p {
+		font-size:1.2em;
+		margin-right:145px;
+	}
+	
+	div.main-well div.module-activity p.date-available {
+		margin:2.3em 0;
+		font-weight:bold;
+	}
+	/*----------------------------
+		SD: Added - end
+	 ----------------------------*/
+
+/*----------------------------
+	Generic Activity History
+ ----------------------------*/
+div.main-well div.module-activity.history p.completion-date {
+	font-size:1.3em;
+	float:left;
+	font-weight:bold;
+	line-height:100%;
+	margin-left:15px;
+	margin-top:5px;/*---Changes--*/
+}
+div.main-well div.module-activity.history h3.credits {
+	color:#ee8203;
+} 
+
+div.main-well div.module-activity.history.last {
+	border-bottom:0;
+}
+
+/*----------------------------
+	Generic Activity Expired
+ ----------------------------*/
+div.main-well div.module-activity.expired p {
+	float:right;
+	font-size:1.2em;
+	margin:0;
+	margin-top:-5px;
+	color:#999;
+}
+
+div.main-well div.module-activity.expired h3.credits {
+	color:#999;
+}
+
+/*----------------------------
+	Saved Message
+ ----------------------------*/
+div.saved h5 {
+	font-size:1.4em;
+	float:left;
+	line-height:100%;
+
+}
+div.saved a {
+	margin-right:60px;
+	float:right;
+}
+
+
+/*----------------------------
+	 Module utility Nav
+	("Show more like this | Don't Show Again | Tell Me More") 
+ ----------------------------*/
+div.main-well div.module ul.utility-nav {
+	clear:both;
+	list-style:none;
+	border-top:1px solid #dee1e2;
+	float:left;
+	margin:0;
+	
+	padding:0;/*--changes--*/
+}
+
+div.main-well div.module ul.utility-nav li {
+	line-height:1.2em;
+	list-style:none;
+	margin-top:3px;
+	margin-right:3px;
+	float:left;
+	border-right:1px solid #b2b3b4;
+	font-size:11px;
+}
+
+div.main-well div.module ul.utility-nav li a {
+	outline:0;
+	padding:0px 6px 0 3px;
+	color:#0084a9;
+	margin:0;
+	font-weight:normal;
+}
+
+div.main-well div.module ul.utility-nav li.first a {
+	padding-left:0;
+}
+
+div.main-well div.module ul.utility-nav li.last, 
+div.main-well div.module ul.utility-nav li.last a {
+	border-right:0;
+	padding-right:0;
+}
+
+div.main-well div.module ul.utility-nav li.tell-more {
+	border-right:0;
+	margin-right:-5px;
+}
+div.main-well div.module ul.utility-nav li.tell-more a {
+	padding-right:20px;
+}
+
+
+div.main-well div.module ul.utility-nav li.dont-show {
+	position:relative;
+	z-index:1
+}
+
+
+/* Confirmation dialog */
+div.main-well div.module ul.utility-nav li.dont-show div.dont-show-confirm {
+	width:145px;
+	padding:5px;
+	position:absolute;
+	top:-6px;
+	left:-6px;
+	border:1px solid #627fc1;
+	background:#fff;
+	display:none;
+}
+
+
+div.main-well div.module ul.utility-nav li.dont-show div.dont-show-confirm h5,
+div.main-well div.module ul.utility-nav li.dont-show div.dont-show-confirm p a,
+div.main-well div.module ul.utility-nav li.dont-show div.dont-show-confirm p {
+	margin:0;
+	padding:0;
+	font-size:1em;
+}
+
+div.main-well div.module ul.utility-nav li.dont-show div.dont-show-confirm h5 {
+	margin-bottom:10px;
+}
+
+div.main-well div.module ul.utility-nav li.dont-show div.dont-show-confirm p span {
+	margin-top:10px;
+	display:block;
+	clear:both;
+}
+
+
+/*----------------------------
+	Credit Counter
+ ----------------------------*/
+div.main-well div.module h4 {
+	position:absolute;
+	height:auto;
+	top:20px;
+	right:20px;
+	font-size:1em;
+	border:1px solid #1463a2;
+	background:#fff;
+	padding:7px 3px;
+	width:39px ;
+	font-family:Arial, sans-serif;
+	text-align:center;
+	color:#222;
+	font-weight:bold;
+	line-height:.9;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+
+div.main-well div.module h4 strong {
+	display:block;
+	clear:both;
+	color:#1463a2;
+	font-size:2.2em;
+	letter-spacing:-1px;
+}
+
+/*----------------------------
+	Show More 
+ ----------------------------*/
+div.more {
+	padding-top:10px;
+	clear:both;
+}
+
+div.more h5 {
+	font-size:1.1em;
+	color:#222;
+	margin-bottom:0px;
+}
+div.more ul li {
+	color:#222;
+	font-size:1.1em;
+	margin-left:0;
+}
+
+
+/*----------------------------
+	Module B is the alternate module style. This inherits
+	from the standard module style and overrides as necesssary
+ ----------------------------*/
+div.main-well div.module.b {
+	border-color:#ddd;
+	background-position:0 -876px;
+}
+
+div.main-well div.module.b h2 {
+	font-size:1.5em;
+}
+
+div.main-well div.module.b {
+	padding-left:65px;
+}
+
+	/*----------------------------
+		SD: Added - start
+	 ----------------------------*/
+	div.main-well div.module.b.seminar {
+		padding-left:15px;
+	}
+
+	/*----------------------------
+		SD: Added - end
+	 ----------------------------*/
+	
+div.main-well div.module.b p {
+	font-size:1.2em;
+	margin-right:145px;
+}
+
+div.main-well div.module.b p.partner-link-warning {
+	float:right;
+	font-size:1.1em;
+	line-height:1.1em;
+	width:100px;
+	text-align:center;
+	margin:-49px 0 0 0;
+}
+
+div.main-well div.module.b p.partner-link-warning a {
+	text-decoration: none;
+	margin-top:8px;
+}
+
+div.main-well div.module.b img.icon {
+	border:0;
+	position:absolute;
+	top:20px;
+	left:15px;
+}
+
+div.main-well div.module.b p.date-available {
+	margin:1.5em 0;
+	font-weight:bold;
+}
+div.main-well div.module.b div.more {
+	margin-left:0;
+}
+
+div.main-well div.module.b:hover { 
+	border-color:#627fc1;
+}
+
+
+/*----------------------------------------------------------------
+ * Specific Module Overrides
+ * Below are overrides that define specific modules types.
+ *
+ * This includes anything that deviates from the standard
+ * text/image/util nav/action button/credit counter module.
+ *
+ * Module names are not final are subject to change 
+ * --------------------------------------------------------------*/
+ 
+	
+/*----------------------------
+	Module: Text w/ Video
+ ----------------------------*/
+div.main-well div.module.has-video p {
+	margin-right:210px;
+}
+
+div.main-well div.module div.video {
+	position:absolute;
+	right:20px;
+	top:20px;
+} 
+
+div.main-well div.module div.video img {
+	margin:0;
+	position:relative;
+	top:0;
+	left:0;
+}
+
+div.main-well div.module ul.article-list li {
+	color:#0084a9;
+	font-size:1.2em;
+}
+div.main-well div.module ul.article-list li a {
+	color:#0084a9;
+	font-weight:bold;
+}
+
+
+/*----------------------------
+	Module: True or False Form 
+ ----------------------------*/
+div.main-well div.module.b form.true-false  {
+	font-size:1.2em;
+	font-weight:bold;
+	margin-bottom:15px;
+}
+
+div.main-well div.module.b form.true-false label {
+	vertical-align:middle;
+	margin-right:20px;
+}
+div.main-well div.module.b form.true-false input {
+	margin-top:-3px;
+	margin-left:0px;
+	vertical-align:middle;	
+}
+
+div.main-well div.module.b form.true-false fieldset {
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+/*----------------------------
+	Module: Option Selector 
+ ----------------------------*/
+div.module.option-select-with-image form  {
+	overflow:hidden;
+	margin-bottom:20px;
+	padding-bottom:5px;
+}
+div.module.option-select-with-image label {
+	cursor:pointer;
+	padding-top:65px;
+	width:102px;
+	display:block;
+	float:left;
+	font-size:12px;
+	font-weight:bold;
+	padding-left:17px;
+	margin-right:17px;
+	color:#222;
+	position:relative;
+	background: transparent url('../img/modules/tmp/food_tracker_bg.png')  no-repeat left 0; 	
+}
+
+div.module.option-select-with-image label.second {
+	background-position:-156px 0;
+}
+
+div.module.option-select-with-image label.third {
+	background-position:-311px 0;
+}
+
+div.module.option-select-with-image label.fourth {
+	background-position:-468px 0;	
+}
+
+div.module.option-select-with-image label input {
+	margin:0;
+	font-size:90%;
+	padding:0;
+	top:68px;
+	left:0;
+	position:absolute;
+	display:block;
+}
+
+div.module.option-select-with-image label.last {
+	margin-right:-20px;
+}
+
+
+/*----------------------------
+	Module: Option Selector With Image and Text Input 
+ ----------------------------*/
+div.module.option-select-with-image.five-options label {
+	background-image: url('../img/modules/tmp/how_are_you_feeling_sprite_bg.png');	
+	text-align:center;
+	padding-top:47px;
+	width:45px;
+	margin-right:25px;
+	padding-left:0;
+}
+
+div.module.option-select-with-image.five-options label input {
+	left:16px;
+	top:66px;
+}
+
+div.module.option-select-with-image.five-options label.last {
+	text-align:left;
+	background:0;
+	padding-top:0;
+	width:auto;
+	margin-right:0;
+}
+
+div.module.option-select-with-image.five-options textarea {
+	clear:both;
+	display:block;
+	height:56px;
+	width:165px;
+	margin:0;
+}
+
+/* position sprite */
+div.module.option-select-with-image.five-options label.second {	background-position:-71px 0; } 
+div.module.option-select-with-image.five-options label.third { background-position:-142px 0; }
+div.module.option-select-with-image.five-options label.fourth {	background-position:-213px 0; }
+div.module.option-select-with-image.five-options label.fifth { background-position:-284px 0; }
+
+
+/*----------------------------
+	Module: What to Eat Form
+ ----------------------------*/
+div.module.what-to-eat form {
+	margin-bottom:15px;	
+}
+
+div.module.what-to-eat input {
+	display:block;
+	float:left;
+	margin:0 10px 10px 0;
+	width:240px;
+}
+
+
+/*----------------------------
+	Module: Weekly logger
+ ----------------------------*/
+div.main-well div.module.weekly-log-input form {
+	display:block;
+	padding:8px;
+	background-color:#dee0fe;
+	overflow:hidden;
+	margin-bottom:20px;
+}
+
+div.main-well div.module.weekly-log-input h6 {
+	float:left;
+}
+
+/* Previous Week Button */
+div.main-well div.module.weekly-log-input form a {
+	float:right;
+	text-decoration:none;
+	color:#0084a9;
+}
+
+div.main-well div.module.weekly-log-input form fieldset {
+	clear:both;
+	border:0;
+	padding:0;
+	margin:0;
+}
+div.main-well div.module.weekly-log-input form label {
+	border-right:1px solid #fff;
+	float:left;
+	font-weight:bold;
+	color:#666;
+	padding:0 8px 0 7px;
+}
+div.main-well div.module.weekly-log-input form label.first {
+	padding-left:0;
+}
+div.main-well div.module.weekly-log-input form label.last {
+	margin-right:0;
+	padding-right:0;
+	border-right:0;
+}
+div.main-well div.module.weekly-log-input form input {
+	clear:both;
+	display:block;
+	width:40px;
+}
+
+/* Pump up the margin so the form stays aligned */
+div.main-well div.module.weekly-log-input img.picture {
+	margin-bottom:120px;
+}
+
+/*----------------------------
+	Module: Weekly logger - Multiline
+ ----------------------------*/
+div.main-well div.module.weekly-log-input-multiline form {
+	display:block;
+	padding:8px;
+	background-color:#dee0fe;
+	overflow:hidden;
+	margin-bottom:20px;
+}
+
+div.main-well div.module.weekly-log-input-multiline h6 {
+	float:left;
+}
+
+/* Previous Week Button */
+div.main-well div.module.weekly-log-input-multiline form a {
+	float:right;
+	color:#0084a9;
+}
+
+/* Line item description */
+div.main-well div.module.weekly-log-input-multiline form p {
+	float:left;
+	width:125px;
+	font-size:10px;
+	margin:0 5px 0 0;
+}
+div.main-well div.module.weekly-log-input-multiline form fieldset {
+	clear:both;
+	border:0;
+	border-top:1px solid #fff;
+	padding:6px 0;
+	margin:0;
+}
+
+div.main-well div.module.weekly-log-input-multiline form fieldset.first {
+	border:0;
+}
+
+div.main-well div.module.weekly-log-input-multiline form fieldset.last {
+	margin-bottom:0;
+	padding-bottom:0;
+}
+
+div.main-well div.module.weekly-log-input-multiline form fieldset.first p {
+	margin-top:16px;
+}
+
+div.main-well div.module.weekly-log-input-multiline form label {
+	float:left;
+	font-weight:bold;
+	color:#666;
+	padding:0 7px 0 6px;
+}
+
+div.main-well div.module.weekly-log-input-multiline form label.first {
+	padding-left:0;
+}
+
+div.main-well div.module.weekly-log-input-multiline form label.last {
+	margin-right:0;
+	padding-right:0;
+	border-right:0;
+}
+
+div.main-well div.module.weekly-log-input-multiline form input {
+	display:block;
+	width:24px;
+	margin-top:5px;
+}
+
+
+	/*----------------------------
+		SD: Added - start
+	 ----------------------------*/
+
+	div.main-well div.module.weekly-log-input-multiline form input.long {
+		display:block;
+		width:104px;
+		margin-top:5px;
+	}
+
+	div.main-well div.module.weekly-log-input-multiline form input.xlong {
+		display:block;
+		width:204px;
+		margin-top:5px;
+	}
+
+	/*----------------------------
+		SD: Added - end
+	 ----------------------------*/
+
+
+/*----------------------------
+	Module: Program Checklist
+ ----------------------------*/
+div.main-well div.module.program-checklist p {
+	margin-bottom:10px;
+	
+}
+
+div.main-well div.module.program-checklist form {
+	float:left;
+	width:350px;
+	overflow:hidden;
+	position:relative;
+}
+
+
+div.main-well div.module.program-checklist form fieldset {
+	position:relative;
+	float:left;
+	width:100%;
+	border:0;
+	margin:0;
+	padding:0;	
+}
+
+div.main-well div.module.program-checklist form ul.pagination {
+	float:left;
+	width:100%;
+}
+
+div.main-well div.module.program-checklist form input,
+div.main-well div.module.program-checklist form label {
+	cursor:pointer;
+	vertical-align:middle;
+	font-size:1.2em;
+	line-height:1.2em;
+}
+
+/*----------------------------
+	Module: Todo
+ ----------------------------*/
+div.main-well div.module.todo-list p {
+	margin-bottom:10px;
+}
+
+div.main-well div.module.todo-list ul.list-carousel {
+	float:left;
+	width:400px;
+	overflow:hidden;
+	position:relative;
+}
+
+div.main-well div.module.todo-list ul.pagination {
+	float:left;
+	width:100%;
+	margin-bottom:0;
+}
+
+div.main-well div.module.todo-list ul.list-carousel li {
+	font-size:1.2em;
+}
+
+
+/*----------------------------
+	Module: Meal Planner
+ ----------------------------*/
+div.main-well div.module.meal-planner a.btn {
+	display:block;
+	position:absolute;
+	top:90px;
+	left:0;
+	height:19px;
+	left:30px;
+	width:19px;
+	text-indent:100px;
+	overflow:hidden;
+	background:transparent url('../img/skins/default/icon_sprite.png') no-repeat scroll left -1502px;
+}
+
+div.main-well div.module.meal-planner a.btn.next {
+	background-position:left -1562px;
+	right:15px;
+	left:auto;
+	top:90px;
+}
+div.main-well div.module.meal-planner ol, 
+div.main-well div.module.meal-planner ol ul {
+	list-style:none;
+	overflow:hidden;
+	margin:0;
+	padding:0;/*--changes--*/
+}
+
+div.main-well div.module.meal-planner ol {
+	margin:15px 0;
+}
+
+div.main-well div.module.meal-planner ol h5 {
+	font-size:1.2em;
+	font-weight:bold;
+	background:#d7ebc4;
+	padding:6px 0 3px 12px;
+	color:#222;
+	margin:0 0 4px 0;
+}
+
+div.main-well div.module.meal-planner ol li {
+	padding-bottom:99999px; 	/* For equal height columns */
+	margin-bottom:-99999px; 	/* For equal height columns */
+	width:116px;
+	float:left;
+	display:block;
+	margin-right:7px;
+	padding-left:7px;
+	border-left:1px solid #cfcfcf;
+}
+
+div.main-well div.module.meal-planner ol li.first {
+	margin-left:0;
+	padding-left:0;
+	border:0;
+}
+
+div.main-well div.module.meal-planner ol li ul {
+	overflow:visible;
+}
+
+div.main-well div.module.meal-planner ol li ul li {
+	line-height:1.2em;
+	padding-bottom:0; 	/* undo equal height columns */
+	background:transparent url('../img/skins/default/icon_sprite.png') no-repeat scroll left -632px;
+	font-size:1.2em;
+	margin:0 0 0 4px;
+	border:0;
+	width:105px;
+}
+
+div.main-well div.module.meal-planner ol li ul li a {
+	font-weight:normal;
+}
+/*----------------------------
+	Module: Images and Text
+ ----------------------------*/
+div.main-well div.module ul.images-text {
+	list-style:none;
+	margin:15px 0 0 0;
+}
+div.main-well div.module ul.images-text li {
+	float:left;
+}
+div.main-well div.module ul.images-text img {
+	display:block;
+}
+
+/*-- Three column style --*/
+
+div.main-well div.module ul.images-text li {
+	width:117px;
+	margin-right:40px;
+}
+
+div.main-well div.module ul.images-text li.last {
+	margin-right:0;
+}
+
+/*----------------------------
+	Progress Module 
+ ----------------------------*/
+div.progress-module {
+	margin-left:100px;
+	margin-bottom:60px;
+}
+
+div.progress-module h1 {
+	font-weight:bold;
+	font-size:3em;
+	margin-bottom:10px;
+}
+
+div.progress-module h1 span {
+	color:#ee8203;
+}
+div.progress-module h3 {
+	font-weight:bold;
+	margin:0 0 5px 0;
+}
+
+
+/*-- Progress bar --*/
+div.progress-module div.progress-bar {
+	font-size:100%;
+	margin:8px 0 4px 0;
+	height:21px;
+	width:361px;
+	padding:1px;
+	position:relative;
+	background: transparent url('../img/skins/default/progress_bar_sprite.png') no-repeat 0 -150px;
+}
+
+div.progress-module div.progress-bar span.zero-percent-label, 
+div.progress-module div.progress-bar span.hundred-percent-label,
+div.progress-module div.progress-bar span.progress-label {
+	position:absolute;
+	color:#666;
+	font-size:1.2em;
+}
+
+div.progress-module div.progress-bar span.zero-percent-label {
+	left:-20px;
+	top:1px;
+}
+
+div.progress-module div.progress-bar span.hundred-percent-label {
+	top:1px;
+	right:-22px;
+}
+
+div.progress-module div.progress-bar span.progress-label {
+	color:#ee8203;
+	font-size:1.6em;
+	font-weight:bold;
+	top:20px;
+	left:0%; /* This is set as the default.  The actual value should be set inline on the page */
+	margin-left:-15px;
+}
+
+div.progress-module div.progress-bar span.bar {
+	height:100%;
+	display:block;
+	width:30px;
+	text-indent:-999px;
+	overflow:hidden;
+	background: transparent url('../img/skins/default/progress_bar_sprite.png') no-repeat 0 -225px;
+}
+
+
+div.progress-module h1 {
+	margin:30px 0 20px 0;
+}
+
+div.progress-module p.rate-challenge {
+	border-top:1px dotted #bcbcbc;
+	margin-top:35px;
+	padding-top:10px;
+	font-weight:bold;
+	font-size:1.2em;
+}
+
+
+/*-- yes / no buttons --*/
+div.progress-module p.rate-challenge a.yes,
+div.progress-module p.rate-challenge a.no {
+	float:left;
+	width:15px;
+	height:17px;
+	display:block;
+	margin-left:8px;
+	padding-left:17px;
+	margin-top:2px;
+	margin-right:5px;
+	color:#666;
+	font-size:100%;
+	font-size:.9em;
+	line-height:1.2em;
+	background:transparent url('../img/skins/default/icon_sprite.png') no-repeat scroll 0 -2668px;
+}
+
+div.progress-module p.rate-challenge a.no {
+	background-position:0 -2724px;
+}
+
+div.progress-module p.rate-challenge span {
+	float:left;
+	margin-right:2px;
+}
+
+	/*----------------------------
+		SD: Added - start
+	 ----------------------------*/
+
+	div.progress-module p {
+		font-size:1.1em;
+		float:left;
+		margin-left:17px;
+	}
+
+	div.progress-module p.print a {
+		padding-left:18px;
+		color:#0084a9;
+		background:transparent url('../img/skins/default/icon_sprite.png')  no-repeat 0px -38px; 
+	}
+
+	div.progress-module p.print a {
+		background-position:0px -1621px;
+	}
+
+	/*----------------------------
+		SD: Added - end
+	 ----------------------------*/
+

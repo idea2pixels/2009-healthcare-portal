@@ -1,0 +1,133 @@
+/*--  --*/
+div.bioIQ-landing div.info {
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #fff;
+	margin-bottom:15px;
+	background:#ffffff url('../img/skins/default/module_gradients_bg.png') repeat-x 0 -1600px;
+}
+
+div.bioIQ-landing div.info h1 {
+	margin:15px 0 25px 0;
+	font-size:1.5em;
+	font-weight:bold;
+	text-align:center;
+}
+
+div.bioIQ-landing div.info p {
+	font-size:1.3em;
+}
+
+/*-- How does it work section --*/
+div.bioIQ-landing dl {
+	margin:0;
+}
+
+div.bioIQ-landing dt {
+	font-size:1.2em;
+	border-top:1px dotted #bcbcbc;
+	padding:14px 0 0 26px;
+	background:transparent url('../img/skins/default/icon_sprite.png')  no-repeat 0px -2088px; 
+	margin-bottom:.2em;
+}
+
+div.bioIQ-landing dt.second { background-position:0 -2168px; }
+div.bioIQ-landing dt.third { background-position:0 -2248px; }
+div.bioIQ-landing dt.fourth { background-position:0 -2328px; }
+div.bioIQ-landing dt.fifth { background-position:0 -2408px; }
+
+div.bioIQ-landing dd {
+	font-size:1.2em;
+	margin:-3px 0 10px 0;
+	padding:0 24px 5px 26px;
+}
+
+div.bioIQ-landing dd.last {
+	padding-bottom:10px;
+	border-bottom:1px dotted #bcbcbc;
+
+}
+
+div.bioIQ-landing div.how-does-it-work a {
+	font-size:1.1em;
+}
+
+
+div.bioIQ-landing div.scorecard {
+	overflow:hidden;
+	margin-bottom:15px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #d3d3d3;
+	font-weight:bold;
+	background:#fff url('../img/skins/default/module_gradients_bg.png') repeat-x 0 -876px;
+	padding:10px 20px 20px 20px;
+	margin-right:5px;
+	margin-bottom:30px;
+}
+
+div.bioIQ-landing div.scorecard img.score {
+	margin-left:18px;
+}
+
+div.bioIQ-landing div.scorecard h5 {
+	margin:0;
+	color:#999;
+}
+
+div.bioIQ-landing div.scorecard h4 {
+	color:#003775;
+	font-size:1.3em;
+	font-weight:bold;
+	margin:0;
+	float:left;
+	margin-bottom:15px;
+}
+
+div.bioIQ-landing div.scorecard a.full-sample-report {
+	float:right;
+	font-weight:normal;
+}
+
+div.bioIQ-landing form {
+	text-align:center;
+	margin-bottom:10px;
+}
+
+div.bioIQ-landing form input {
+	vertical-align: middle;
+	margin-top:-2px;
+}
+
+
+div.bioIQ-landing form label {
+	padding-top:.3em;
+	font-size:1.1em;
+	color:#666;
+}
+
+div.bioIQ-landing form label a {
+	text-decoration:underline;
+}
+
+
+div.bioIQ-landing form fieldset {
+	display:table;
+	display:inline-block;
+}
+
+div.bioIQ-landing form button {
+	margin:5px 0 10px 20px;
+}
+
+
+div.bioIQ-landing form.bottom {
+	margin-bottom:80px;
+}
+
+
+
+
+

@@ -1,0 +1,138 @@
+/* -------------
+ * Buttons
+ * ------------- 
+button {margin:0;padding:0;border:none;background-color:transparent;cursor:pointer;overflow:visible;outline:none;moz-outline:none;}
+*:first-child+html button[type]{width:1;} /* IE7 
+
+button span {
+	background: transparent url(../img/skins/default/form_elements/btn_right.gif) no-repeat scroll right top;
+	display: block;
+	float: left;
+	padding: 0px 4px 0px 0px; /* sliding doors padding 
+	margin: 0px;
+}
+
+button span span {
+	background: transparent url(../img/skins/default/form_elements/btn_left.gif) no-repeat;
+	color: #FFFFFF;
+	padding: 1px 4px 0px 8px;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 13px;
+	text-transform: lowercase;
+	display: block;
+	text-decoration: none;
+}
+*/
+
+
+/* -------------
+ * Inputs
+ * ------------- */
+.jNiceInputWrapper {
+	background: transparent url(../img/skins/default/form_elements/input.gif) no-repeat left top;
+	float:left;
+}
+
+.jNiceInputInner {
+	background: transparent url(../img/skins/default/form_elements/input.gif) no-repeat right top;
+	padding: 0 4px 0 2px;
+	margin: 0 0 -1px 1px;
+}
+
+.jNiceInputInner input {
+	font-family: Arial, Times, serif;
+	font-size: 11px;
+	color:#404040;	
+	line-height: 17px;
+	height: 17px;
+	*line-height: 15px;/* IE Hacks */
+	*height: 15px;/* IE Hacks */
+	vertical-align:middle;
+	padding:0;
+	margin: 0 0 0 0;
+	background:none;
+	border:none;
+	outline:none;
+}
+
+.jNiceInputWrapper_hover { background-position: left bottom; }
+.jNiceInputWrapper_hover .jNiceInputInner { background-position: right bottom; }
+
+
+/* -------------
+ * Radios
+ * ------------- */
+.jRadioWrapper { float:none; z-index: 2; }
+.jNiceRadio {
+	background: transparent url(../img/skins/default/form_elements/radio.gif) no-repeat center top;
+	height: 27px;
+	width: 27px;
+	position:absolute;left:15px;top:0px;cursor:pointer;vertical-align:middle;
+	padding: 0px 4px;
+}
+.jNiceRadioYN {
+	background: transparent url(../img/skins/default/form_elements/radio.gif) no-repeat center top;
+	height: 27px;
+	width: 27px;
+	position:absolute;left:0px;top:0px;cursor:pointer;vertical-align:middle;
+	padding: 0px 4px;
+}
+
+/* -------------
+ * Checkboxes
+ * ------------- */
+.jNiceCheckbox {
+	background: transparent url(../img/skins/default/form_elements/checkbox.gif) no-repeat center top;
+	height: 18px;
+	width: 18px;
+	position:absolute;left:0px;top:0px;z-index:2;cursor:pointer;
+}
+
+/* -------------
+ * Checked - Used for both Radio and Checkbox
+ * ------------- */
+.jNiceChecked { background-position: center bottom;}
+
+/* -------------
+ * Selects
+ * ------------- */
+.jNiceWrapper SELECT {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-TOP-STYLE: none; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.jNiceSelectWrapper {
+	Z-INDEX: 3; LEFT: 0px; POSITION: absolute; TOP: 0px; HEIGHT: 17px
+}
+.jNiceWrapper IFRAME {
+	Z-INDEX: 1; LEFT: 0px; WIDTH: 100%; POSITION: absolute; TOP: 0px
+}
+.jNiceSelectWrapper .jNiceSelectText {
+	BORDER-RIGHT: #cccccc 1px; PADDING-RIGHT: 3px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 3px; Z-INDEX: 100; FLOAT: none; PADDING-BOTTOM: 0px; OVERFLOW: hidden; BORDER-LEFT: #cccccc 1px solid; LINE-HEIGHT: 15px; PADDING-TOP: 0px; BORDER-BOTTOM: #cccccc 1px solid; POSITION: absolute; HEIGHT: 15px; BACKGROUND-COLOR: #fff
+}
+.jNiceSelectWrapper .jNiceSelectOpen {
+	DISPLAY: block; Z-INDEX: 100; RIGHT: 0px; BACKGROUND: url(../img/skins/default/form_elements/select_right.gif) no-repeat center center; WIDTH: 21px; POSITION: absolute; HEIGHT: 17px
+}
+.jNiceSelectWrapper UL {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #ccc 1px solid; OVERFLOW-Y: auto; DISPLAY: none; PADDING-LEFT: 0px; Z-INDEX: 100; LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #ccc 1px solid; WIDTH: 95%; PADDING-TOP: 0px; BORDER-BOTTOM: #ccc 1px solid; LIST-STYLE-TYPE: none; POSITION: absolute; TOP: 16px; HEIGHT: 55px; BACKGROUND-COLOR: #fff
+}
+.jNiceSelectWrapper UL A {
+	PADDING-RIGHT: 5px; DISPLAY: block; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; COLOR: #0099cc; PADDING-TOP: 5px; BACKGROUND-COLOR: #fff; TEXT-DECORATION: none
+}
+.jNiceSelectWrapper UL A:hover {
+	BACKGROUND: #e1f5ff
+}
+.jNiceSelectWrapper UL A.selected {
+	BACKGROUND: #ededed
+}
+.jNiceFocus {
+	BORDER-RIGHT: #666666 1px dotted; BORDER-TOP: #666666 1px dotted; BORDER-LEFT: #666666 1px dotted; BORDER-BOTTOM: #666666 1px dotted
+}
+.jNiceHidden {
+	Z-INDEX: -1; POSITION: relative; opacity: 0
+}
+.jNiceWrapper {
+	VERTICAL-ALIGN: top; POSITION: relative
+}
+.jNiceWrapper INPUT {
+	outline: none; moz-outline: none
+}

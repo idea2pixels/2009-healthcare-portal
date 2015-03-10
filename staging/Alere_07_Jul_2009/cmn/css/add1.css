@@ -1,0 +1,199 @@
+/*---Search Box--*/
+div.another-search {
+	height:75px;
+	width:250px;
+}
+div.another-search h3 {
+	font-size:1.5em;
+	font-weight:bold;
+	margin:0;
+	padding-left:10px;
+}
+div.another-search label {
+	font-size:1.2em;
+	padding:0 10px 0 10px;
+}
+div.another-search form {
+	position:absolute;
+	margin-top:100px;
+	right:55px;
+	top:15px;
+	height:25px;
+	display:block;
+	background:url('../img/skins/default/icon_sprite.png')  right -2838px; 
+}
+div.another-search form label {
+	position:absolute;
+	width:11px;
+	height:25px;
+	margin:0;
+	padding:0;
+	display:block;
+	text-indent:-9999px; 
+	background:url('../img/skins/default/icon_sprite.png')  left -2788px; 
+}
+div.another-search form input#search-query1 {
+	width:160px;
+	outline:0;
+	margin:0;
+	border:0;
+	padding:5px 24px 7px 15px;
+	background:url('../img/skins/default/icon_sprite.png')  no-repeat right -2888px; 
+	font-size:1.3em;
+}
+div.another-search form input#search-submit1 {
+	cursor:pointer;
+	display:block;
+	position:absolute;
+	right:0;
+	top:0;
+	border:0;
+	width:30px;
+	height:27px;
+	margin:0;
+	padding:0;
+	background:url('../img/skins/default/icon_sprite.png')  no-repeat right -332px; 
+	text-indent:-999px;
+}
+/* -- Recommend this Another Search -- */
+div.another-search {
+	font-size:1.0em;
+	border:1px solid #edd9b6;
+	text-align:left;
+	display:block;
+	padding:6px 0 5px 5px;
+	margin-bottom:20px;
+	background: #FFFFB7 url('../img/skins/default/module_gradients_bg.png') repeat-x;
+}
+/* ---- Food Finder ----------*/
+div.foodfindheader h1 {
+	font-size:1.8em;
+	font-weight:bold;
+	margin:0;
+	color:#005499;
+}
+div.foodfindheader h2 {
+	font-size:1.3em;
+	font-weight:bold;
+	margin:20px 0 0 0;
+	color:#005499;
+}
+div.foodfinder {
+	margin-top:-15px;
+}
+div.foodfinder h2 {
+	font-size:1.4em;
+	font-weight:bold;
+	color:#005499;
+	margin:15px 0 0 0;
+	padding:0;
+}
+div.foodfinder .category {
+	font-size:1.2em;
+	color:#005499;
+}
+div.foodfinder p {
+	font-size:1.2em;
+}
+div.foodfinder p.searchresult{
+	margin-bottom:-10px;
+}
+div.foodfinder .footnote {
+	padding-bottom:20px;
+	color:#999999;
+	float:left;
+}
+div.foodfinder .footnote p {
+	display:block;
+	font-size:100%;
+	margin:10px 0 0 0;
+	text-align:center;
+	width:101%;
+}
+/*---Pagination--- */
+div.pagination1{
+	width:150px;
+	float:right;
+}
+div.pagination1 ul {
+	margin-left:0;
+	list-style:none;
+	padding:0;
+	float:right;
+}
+div.pagination1 ul li {
+	margin-right:3px;
+	padding-left:3px;
+	font-weight:bold;
+	float:left;
+	font-size:1.1em;
+}
+div.pagination1 ul li a {
+	color:#00A0C6;
+}
+div.pagination1 ul li a:hover {
+	text-decoration: underline;
+}
+div.pagination1 ul li.selected {
+	color:#000000;
+}
+div.pagination1 ul li.disable {
+	color:#CCCCCC;
+}
+/*---Tabular Data--- */
+#tabulardata{
+	border:1px solid #979b9e;
+	padding:5px;
+	font-size:1.2em;
+	width:630px;
+	margin-top:-10px;
+	margin-bottom:5px;
+	border-collapse:collapse;
+}
+#tabulardata th{
+	text-align:left;
+	background-color:#e7f4fd;
+	padding-left:5px;
+	font-weight:normal;
+	height:28px;
+}
+#tabulardata th.bold{
+	font-weight:bold;
+}
+#tabulardata td{
+	padding-left:5px;
+	border-left:1px solid #979b9e;
+	border-top:1px solid #979b9e;
+	height:28px;
+}
+/*---Popup Tabular Data--- */
+#tabulardata1{
+	border:1px solid #CCCCCC;
+	padding:5px;
+	font-size:1.2em;
+	width:98%;
+	margin-top:-10px;
+	margin-bottom:5px;
+	border-collapse:collapse;
+}
+#tabulardata1 td{
+	padding-left:5px;
+	border-top:1px solid #FFFFFF;
+	height:28px;
+}
+#tabulardata1 tr.oddrow{
+	background-color:#cdcdcd;
+}
+#tabulardata1 tr.evenrow{
+	background-color:#e9f3fd;
+}
+/*---Modal Dialog----*/
+div.modal-dialog1 {
+	z-index:101;
+	position:absolute;
+	margin-left:10px;
+	background:#fff;
+	padding:2em;
+	width:30em;
+	overflow:hidden;
+}

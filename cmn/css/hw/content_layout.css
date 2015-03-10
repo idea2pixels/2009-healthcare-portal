@@ -1,0 +1,138 @@
+
+/* This file contains definitions for main elements inside HwContentWrapper */
+
+
+/*************************************************************************
+ HwContentHader/HwContentTitle
+*************************************************************************/
+
+.HwContentHeader 
+{
+	display: none;
+}
+
+.HwContentTitle 
+{
+}
+
+/*************************************************************************
+ HwContent: Main content area
+*************************************************************************/
+
+.HwContent
+{
+}
+
+.HwTypeMultiMedia div.HwContent
+{
+	text-align: left;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-top: 1px solid #990000;
+}
+
+#HwCustomContentBottom 
+{
+  clear: both;
+}
+
+
+/*************************************************************************
+ HwContentNavigation: Prev/Next area under content
+*************************************************************************/
+
+.HwContentNavigationNoSections 
+{
+	/* do not display section navigation if there are no sections
+       (with no sections, there is just the 'top' link. */
+	display: none;
+}
+.HwContentNavigation 
+{
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+	clear: both;
+}
+
+.HwContentNavigation ul 
+{
+}
+
+.HwContentNavigation li 
+{
+    list-style: none;
+}
+
+.HwContentNavigationPrev
+{
+    float: left;
+    width: 45%;
+}
+
+li.HwContentNavigationTop 
+{
+	display: none;
+}
+
+.HwContentNavigationNext 
+{
+    float: right;
+    width: 45%;
+    text-align: right;
+}
+
+.HwContentNavigation .HwClear 
+{
+    height: 1px;
+}
+        
+.HwContentNavigationPrev p,
+.HwContentNavigationNext p
+{
+	/* Don't display 'Previous section'/'Next section' text -- only arrow */
+	display: none;
+}
+
+p.NoWebPrint 
+{ 
+	clear:both;
+	padding-top:10px;
+}
+
+.HwTypeDecisionPoint .HwContent table
+{
+	/* This is necessary to have empty tables expand correctly (in decisionpoints) */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*************************************************************************
+ HwContentInformation: credits and last updated information
+*************************************************************************/
+
+.HwContentInformation
+{
+	text-align: left;
+	padding: 10px 0 10px 0;
+	font-weight: bold;
+	font-weight: bold;
+}
+
+.HwInfoLabel 
+{
+	padding-right: 5px;
+}
+
+.HwContentInformation a 
+{
+	font-weight: normal;
+}
+
+
+/*************************************************************************
+ Top Level Medical Images
+*************************************************************************/
+
+/*************************************************************************
+ Other definitions
+*************************************************************************/

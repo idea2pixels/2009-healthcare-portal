@@ -1,0 +1,106 @@
+div.search {
+	padding-top:20px;
+}
+
+div.search div.sidebar {
+	background:none;
+}
+
+div.search h1 {
+	font-size:1.6em;
+	font-weight:bold;
+	margin-top:5px;
+	margin-bottom:28px;
+}
+
+div.search h2 {
+	font-size:1.5em;
+	margin-bottom:0;
+}
+
+div.search div.main-well p {
+	font-size:1.2em;
+	margin-right:30px;
+	margin-bottom:1.2em;
+}
+
+/*-- Search form --*/
+
+div.search div.main-well form {
+	border:1px solid #91dffc;
+	padding:10px 20px 20px 15px;
+	margin-bottom:70px;
+	background:#ddd url('../img/skins/default/module_gradients_bg.png') repeat-x 0 -876px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border-color:#ddd;
+	margin-right:30px;
+}
+
+div.search div.main-well form label {
+	font-size:1.3em;
+	font-weight:bold;
+	display:block;
+	margin-bottom:10px;
+	clear:both;
+}
+
+div.search div.main-well form input {
+	clear:both;
+	width:312px;
+	float:left;
+	margin:3px 10px 0 0;
+	font-size:1.2em;
+	padding:1px;
+}
+
+/*-- Pagination --*/
+div.search ul.pagination {
+	list-style:none;
+	text-align:center;
+	margin:50px 30px 15px 0;
+	padding-bottom:20px;
+	border-bottom:1px dotted #cacaca;
+}
+
+div.search ul.pagination li {
+	display:inline;
+	font-size:1.2em;
+	padding:5px;
+	font-weight:bold;
+	
+}
+
+div.search ul.pagination li.next {
+	float:none;
+}
+
+/*-- Sidebar --*/
+
+div.search div.sidebar h4 {
+	font-size:1.1em;
+	font-weight:bold;
+	padding-bottom:5px;
+	margin-bottom:9px;
+	margin-right:50px;
+	border-bottom:1px dotted #afd9e4;
+}
+
+div.search div.sidebar ul {
+	list-style:none;
+	margin:0;
+	font-size:1.1em;
+	font-weight:bold;
+	margin-right:50px;
+}
+
+div.search div.sidebar ul li {
+	line-height:1.2em;
+	margin-bottom:.8em;
+}
+
+div.search div.sidebar ul li.selected a {
+	color:#000;
+}
+

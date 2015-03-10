@@ -1,0 +1,220 @@
+div.hpa-landing div.font-sizer {
+	float:right;
+	overflow:hidden;
+	text-align:right;
+	margin-bottom:15px;
+	margin-right:8px;
+}
+
+div.hpa-landing h1 {
+	position:relative;
+	clear:both;
+	overflow:hidden;
+	margin-bottom:15px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #d3d3d3;
+	font-size:1.6em;
+	font-weight:bold;
+	background:#ffffb7 url('../img/skins/default/module_gradients_bg.png') repeat-x;
+	padding:24px 80px 26px 100px;
+	margin:0 8px 36px 0;
+}
+
+div.main-well div.message p {
+	background:url('../img/skins/default/message_bg.png') no-repeat 17px 14px;
+}
+
+div.hpa-landing h1 span {
+	position:absolute;
+	right:75px;
+	top:41px;
+	margin-top:-1.5em;
+	display:block;
+}
+div.hpa-landing dl {
+	margin-left:10px;
+}
+
+div.hpa-landing dt {
+	font-size:1.7em;
+	margin-bottom:.2em;
+}
+
+div.hpa-landing dd {
+	font-size:1.2em;
+	margin:0 0 10px 0;
+	padding-bottom:10px;
+	padding-right:24px;
+	border-bottom:1px dotted #bcbcbc;
+}
+
+div.hpa-landing dd.last {
+	border:0;
+}
+
+div.hpa-landing dd ol {
+	margin-bottom:0;
+}
+
+div.hpa-landing div.last a.action-button {
+	margin-right:158px;
+	margin-bottom:80px;
+}
+
+div.hpa-landing div.scorecard {
+	overflow:hidden;
+	margin-bottom:15px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #d3d3d3;
+	font-weight:bold;
+	background:#fff url('../img/skins/default/module_gradients_bg.png') repeat-x 0 -876px;
+	padding:10px 20px 20px 20px;
+	margin:0 2px 20px 30px;
+}
+
+div.hpa-landing div.scorecard div.jcarousel-container {
+	clear:both;
+	overflow:hidden;
+	margin-left:18px;
+}
+
+div.hpa-landing div.scorecard h5 {
+	margin:0;
+	color:#999;
+}
+
+div.hpa-landing div.scorecard h4 {
+	color:#003775;
+	font-size:1.3em;
+	font-weight:bold;
+	margin:0;
+	float:left;
+	margin-bottom:15px;
+}
+
+div.hpa-landing div.scorecard a.full-sample-report {
+	float:right;
+	font-weight:normal;
+}
+
+
+
+div.hpa-report div.breadcrumb-bar {
+	border:0;
+	margin-bottom:0;
+}
+
+div.hpa-report div.wellness-score {
+	text-align:center;
+	margin:20px 0;
+}
+
+div.hpa-report div.wellness-score h1 {
+	font-size:3em;
+	font-weight:bold;
+}
+
+div.hpa-report div.wellness-score h1 span {
+	color:#ee8203;
+}
+
+div.hpa-report h3 {
+	font-weight:bold;
+	text-align:center;
+}
+
+div.hpa-report h4 {
+	padding:7px 0 7px 15px;
+	border-top:1px solid #23b8ee;
+	border-bottom:1px solid #dedede;
+	font-size:1.4em;
+	margin-bottom:10px;
+	font-weight:bold;
+	background: #f5fbfd url('../img/skins/default/module_gradients_bg.png') repeat-x 0 -1601px;
+}
+
+div.hpa-report ul.report-card,
+div.hpa-report ul.report-card ul {
+	margin-left:0;
+	margin-right:0;
+	padding-right:25px;
+	list-style:none;
+}
+
+div.hpa-report ul.report-card li {
+	font-weight:bold;
+	margin-bottom:10px;
+	border-bottom:1px solid #dedede;
+	font-size:1.1em;
+}
+
+div.hpa-report ul.report-card li.last {
+	border-bottom:0;
+}
+
+div.hpa-report ul.report-card li li {
+	font-size:100%;
+	font-weight:normal;
+	padding:5px 0 5px 30px;
+	border-bottom:0;
+	margin-bottom:2px;
+	background:transparent url('../img/skins/default/icon_sprite.png') no-repeat scroll left -1858px;
+}
+
+div.hpa-report ul.report-card li li.negative {
+	background-position:left -1916px;
+}
+
+div.hpa-report ul.report-card li li.unknown {
+	background-position:left -1976px;
+}
+
+div.hpa-report ul.report-card li li.recommend {
+	background:none;
+}
+
+
+/*Sprite Bug Fix */
+div.hpa-report ul.report-card-long,
+div.hpa-report ul.report-card-long ul {
+	margin-left:0;
+	margin-right:0;
+	padding-right:25px;
+	list-style:none;
+}
+
+div.hpa-report ul.report-card-long li {
+	font-weight:bold;
+	margin-bottom:10px;
+	border-bottom:1px solid #dedede;
+	font-size:1.1em;
+}
+
+div.hpa-report ul.report-card-long li.last {
+	border-bottom:0;
+}
+
+div.hpa-report ul.report-card-long li li {
+	font-size:100%;
+	font-weight:normal;
+	padding:5px 0 5px 30px;
+	border-bottom:0;
+	margin-bottom:2px;
+	background:transparent url('../img/skins/default/icon_sprite_long.png') no-repeat scroll left -900px;
+}
+
+div.hpa-report ul.report-card-long li li.negative {
+	background-position:left -1775px;
+}
+
+div.hpa-report ul.report-card-long li li.unknown {
+	background-position:left -2392px;
+}
+
+div.hpa-report ul.report-card-long li li.recommend {
+	background:none;
+}

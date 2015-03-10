@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<title>Alere HTML Framework</title>
+    
+    <!-- BLUEPRINT STYLES -->
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/print.css" type="text/css" media="print">
+	
+    <!-- CUSTOM STYLES -->
+	<link rel="stylesheet" href="cmn/css/global.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/hpa-test.css" type="text/css" media="all">
+
+    <!-- STYLES FOR FORMS -->
+
+	<link href="cmn/css/jNice.css" rel="stylesheet" type="text/css" />
+    
+    <!-- JS FOR RADIO BUTTON STYLING -->
+    <script type="text/javascript" src="cmn/js/jquery-latest-version.js"></script>
+	<script type="text/javascript" src="cmn/js/jquery.jNice.js"></script>
+ 
+	<script type="text/javascript">
+	<!--
+	$(function(){
+		var $a = $('<a>Add Option</a>');
+		$('body').append($a);
+		$a.click(function(){
+			var element = $('#select2')[0];
+			var myNewOption = new Option("My Option", "123", true);
+			element.options[element.options.length] = myNewOption;
+			$.jNice.SelectUpdate(element);
+		});
+	});
+	
+	-->
+	</script><link rel="stylesheet" href="cmn/css/skins/fedex.css" type="text/css" media="all">
+	<!--[if IE]>
+		<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="cmn/css/global_ie.css" type="text/css" media="all">
+	<![endif]-->
+	</head>
+<body>	
+	<div class="container">
+		<div class="utility span-31">
+					<strong class="welcome">Hello, Suzanne.</strong>
+		<ul>
+			<li class="home"><a href="/">Home</a></li>
+			<li><a href="#">Logout</a></li>
+		</ul>
+		<div class="help"><a href="#">Help</a></div>		</div>
+		<div class="header">
+			<div class="module-cap-top"><!-- for skinning purposes only, rounded corder cap --></div>
+			<div class="header-bg hpa"> <!-- for skinning purposes only, background for header -->
+							<h2 class="logo"><a href="/">GE</a></h2>
+				<h3>Health and Wellness Assessment</h3>			</div>
+			<div class="module-cap-bottom"><!-- for skinning purposes only, rounded corder cap --></div> 
+		</div>
+		<div class="content hpa-test">
+			<div class="module-cap-top"><!-- for skinning purposes only, rounded corder cap --></div>
+			<div class="span-7 sidebar">
+				<h3>Your Progress:</h3>
+				<!-- 
+					Integration Note:
+					Progress bar completion can be set inline using the style="width:x" property. Valid values are 0 - 100%
+				-->
+				<div class="progress-bar">
+					<span style="width:80%">You're 80% complete!</span> 
+				</div>
+				<p>Keep going! You're well on your way.</p>
+			</div>
+			<div class="span-23 last">
+				<div class="breadcrumb-bar utils-only">
+					<ul>
+						<li class="font-sizer">
+							<a class="decrease" href="#" title="Decrease font-size">A</a>
+							<a class="increase" href="#" title="Increase font-size">A</a>
+						</li>
+					</ul>
+					<form id="language-selection">
+						<label for="change_language">Change Language</label>
+						<select name="change_language" id="change_language">
+					    <option value="option1">English</option>
+							<option value="option2">Español</option>
+						</select>
+					</form>
+				</div>			
+			</div>
+			<div class="span-21 main-well">
+				
+				
+			<form class="jNice">
+                
+                <div class="form-element">
+                	<div class="question-header">You are nearly finished!<br /> But first, we'd like to ask you some questions about how you handle stress.</div>
+                	<a href="#" id="btn-help-hip" class="form-field-help" title="Need Help?">Help</a>
+                	<div class="question">In general, how often is stress a problem for you?
+                    </div>
+				</div>
+				<div class="form-element" >
+          			<div class="span-21">
+                    <div class="span-1 prepend-1" id="rarely-btn"><input type="radio" name="f1" value="0" id="rarely" /></div>
+                    <div class="span-1 push-3" id="some-btn"><input type="radio" name="f1" value="1" id="some" /></div>
+          			<div class="span-1 push-3" id="often-btn"><input type="radio" name="f1" value="2" id="often" /></div>
+                    <div class="span-1 push-3" id="voften-btn"><input type="radio" name="f1" value="3" id="voften" /></div>
+          			</div>
+             &nbsp; <!-- IE hack for moving the label further from the button -->
+                    <div class="span-21">
+                    <div class="span-3 prepend-1" id="rarely-label">Rarely or <br />never</div>
+          			<div class="span-3 prepend-1" id="some-label">Sometimes</div>
+                    <div class="span-3 prepend-1" id="often-label">often</div>
+          			<div class="span-3 prepend-1" id="voften-label">very often</div>
+              		</div>
+ 				</div>   
+ 				
+          			
+  				<div class="buttons span-21">
+						<div class="span-7 pull-3">
+                        	<a href="tg_hpa_questionnaire_2.html"><span class="action-button alt reverse"><strong><em>Previous</em></strong></span></a>	
+                        </div>
+						<div class="span-7 prepend-4" >
+                        	<button class="reset" type="submit"><span class="action-button alt light"><strong><em>Save and Enter Later</em></strong></span></button>
+                        </div>
+						<div class="span-5">
+							<a href="tg_hpa_questionnaire_4.html"><span class="action-button alt"><strong><em>Finish!</em></strong></span></a>	
+                        </div>				
+                    </div>
+			</form>
+                
+			</div>
+			<div class="module-cap-bottom"><!-- for skinning purposes only, rounded corder cap --></div>
+		</div>
+		<div class="footer">
+			<div class="module-cap-top"><!-- for skinning purposes only, rounded corder cap --></div>
+				<div class="footer-bg"><!-- for skinning purposes only, footer background -->
+					<ul>
+						<li class="first"><a href="#">About Alere</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Editorial Policy</a></li>
+					</ul>
+					<div class="alere">
+						<p class="powered-by">Powered by</p>
+						<h3>Alere</h3>
+						<p>&copy; 2009 Alere. All rights reserved. Alere is a trademark of the Inverness Medical group of companies.</p>
+					</div>
+					
+					<div class="certification">
+						<img src="cmn/img/footer/urac-logo.png" width="78" height="73" alt="URAC">
+						<img src="cmn/img/footer/hon-code-logo.png" width="49" height="72" alt="HON Code">
+						<p>
+							We comply with the <a href="#">HONcode standard for the trustworthy health</a> information: <a href="#">verify here</a>
+						</p>
+					</div>
+				</div>
+			<div class="module-cap-bottom"><!-- for skinning purposes only, rounded corder cap --></div> 
+		</div>
+	</div>
+	<!-- Leave Scripts at the bottom to make sure they don't block the initial paint -->
+	<script src="cmn/js/jquery.js"></script>
+	<script src="cmn/js/jquery_example/jquery.example.min.js"></script>
+	<script src="cmn/js/global.js"></script>   
+    
+ 
+	</body>
+</html>

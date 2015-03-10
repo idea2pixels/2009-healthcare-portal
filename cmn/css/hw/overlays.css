@@ -1,0 +1,237 @@
+.HwPopout{
+  position:relative;
+  z-index:20;  
+  zoom:1;
+  max-width:742px;
+  visibility:hidden;
+  text-align:left;
+}
+
+.HwPopout .HwContent, .HwPopout .HwContentInformation
+{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.HwPopoutContent{
+  min-height:100px;
+  padding: 20px 10px 20px 10px;
+  zoom:1;
+}
+
+#HwTooltipWantMore
+{
+	text-align:right;
+	height:20px;
+}
+
+#HwTooltipWantMore a
+{
+	text-decoration:none;
+	color:#007DC3;
+	font-family:Arial;
+	font-size:1em;
+}
+
+.HwTooltipText
+{
+}
+
+
+.HwPopout div.HwMedicalImage
+{
+	float:right;
+	clear:both;
+	width:auto;
+	padding-bottom: 6px;
+}
+
+.HwPopout .HwContentInformation
+{
+	clear:both;
+}
+
+.HwPopout .HwPopoutBackground{
+  position:absolute;
+  z-index:-1;
+  top:-1px;
+  left:-1px;
+  right:-1px;
+  bottom:0;
+  zoom:1;
+}
+
+.HwTypeITool .HwPopoutContent .HwContentInformation
+{
+	display: none;
+}
+
+/* This hide everything inside an itool popup, except the itool itself */
+.HwPopoutContent .HwIToolSection p 
+{
+    display: none;
+}
+
+#HwPopoutHeader,  #HwTooltipHeader  
+{
+	min-height: 38px; 
+	padding-right: 20px;
+	padding-left: 15px;
+	margin-bottom: 12px;
+}
+
+/* IE6 doesn't position HwPopoutHeader the way other browsers do
+   but setting this height to something small seems to help */
+* html #HwPopoutHeader, * html #HwTooltipHeader
+{
+	height: 30px;
+}
+
+
+#HwPopoutHeaderTitle, 
+#HwTooltipHeaderTitle
+{
+    padding: 6px 0px 10px 0px;
+    overflow:hidden;
+    float:left;
+    font-size:2em;
+}
+     
+#HwTooltipHeaderTitle
+{
+    width:100%;
+}   
+     
+#HwPopoutHeaderClose,  #HwTooltipHeaderClose  
+{
+    width:25%; 
+    padding-top:8px;
+}
+
+/* See page 94 of Pro CSS Techniques book for why this is necessary */
+.HwPopoutHeaderClear
+{
+	clear:both;
+}
+
+/* Background image layout */
+
+.HwPopout .HwPopoutBackground *{
+  position:absolute;
+  overflow:hidden;
+  background-repeat:no-repeat;
+  zoom:1;
+}
+
+.HwPopout .HwPopoutBackground u.w{
+  left:0;
+  top:0;
+  right:40px;
+  height:60px;
+  
+}
+
+.HwPopout .HwPopoutBackground u.e{
+  top:0;
+  right:0;
+  height:60px;
+  width:40px;
+  background-position:-960px 0;
+}
+
+.HwPopout .HwPopoutBackground i.w{
+  left:0;
+  top:60px;
+  right:40px;
+  bottom:40px;
+  background-repeat:repeat-y;
+  background-position:-1000px 0;
+}
+
+.HwPopout .HwPopoutBackground i.e{
+  
+  top:60px;
+  right:0px;
+  width:40px;
+  bottom:40px;
+  background-repeat:repeat-y;
+  background-position:100% 0;
+}
+
+.HwPopout .HwPopoutBackground b.w{
+  left:0;
+  bottom:0;
+  right:40px;
+  height:40px;
+  background-position:0 100%;
+}
+
+.HwPopout .HwPopoutBackground b.e{
+  height:40px;
+  bottom:0;
+  right:0;
+  width:40px;
+  background-position:-960px 100%;
+}
+
+.SlideShow p
+{
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.HwPopout 
+{
+	border: solid 1px black;
+}
+
+.HwPopout .HwPopoutBackground *{
+  background-image:url(../custom/images/Dialog.png);
+  opacity: 1; 
+  filter: alpha(opacity=100);
+}
+
+#HwPopoutHeader, #HwTooltipHeader
+{
+	text-align:left; 
+	background-color:#5192B3;
+}
+#HwPopoutHeaderTitle,  #HwTooltipHeaderTitle  
+{
+    color:#FFF; 
+    font-weight:bold; 
+    font-size:1.33em; /*16px*/ 
+    overflow:hidden;
+}
+
+#HwPopoutHeaderClose, #HwTooltipHeaderClose
+{
+    text-align:right;
+}
+     
+#HwPopoutHeaderClose a
+{
+    background-color:#5192B3; 
+    color:#FFF; 
+    font-weight:bold; 
+    font-size:0.75em; /*9px*/ 
+    text-decoration:none;
+}
+
+
+#HwDialogOverlay
+{
+	z-index: 20;
+	visibility: hidden;
+	opacity: 0.30; 
+	filter: alpha(opacity=30);
+	background: #1a1a1a;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#HwPopout
+{
+  z-index: 50;
+}

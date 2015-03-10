@@ -1,0 +1,223 @@
+
+
+
+/*----------------------------
+	Left sidebar
+ ----------------------------*/
+
+div.hpa-test div.sidebar {
+	border:0;
+	background:none;
+}
+
+div.hpa-test div.sidebar h3 {
+	font-size:1.2em;
+	font-weight:bold;
+	margin-bottom:.5em;
+}
+
+div.hpa-test div.sidebar p {
+	font-size:1.1em;
+	color:#666;
+	margin-right:5em;
+}
+
+/*-- Progress Bar --*/
+
+div.hpa-test div.progress-bar {
+	margin:8px 0 4px 0;
+	font-size:8px;
+	height:15px;
+	width:149px;
+	padding:1px;
+	background: transparent url('../img/skins/default/progress_bar_sprite.png') no-repeat;
+}
+
+div.hpa-test div.progress-bar span {
+	display:block;
+	width:30px;
+	text-indent:-999px;
+	background: transparent url('../img/skins/default/progress_bar_sprite.png') no-repeat 0 -75px;
+}
+
+div.hpa-test div.main-well h1 {
+	font-size:1.4em;
+	margin-top:1.3em;
+	font-weight:bold;
+	padding: 0 0 10px 0;
+}
+
+
+/*----------------------------
+	Main Form
+ ----------------------------*/
+
+div.hpa-test div.form-element div.question-header {
+	color:#005499;
+	font-size:18px;
+	font-weight:bold;
+	margin:0px 0 10px 0;
+}
+
+div.hpa-test div.form-element div.question {
+	
+	font-size:14px;
+	font-weight:bold;
+	margin:0px 0 10px 0;
+}
+
+div.hpa-test div.form-element #yes_layer {
+	width:70%;
+	display: none;
+	padding:5px;
+	border:2px solid #EFEFEF;
+	background-color:Pink;
+}
+		
+div.hpa-test div.form-element #click_here{
+		
+	padding:5px;
+	border:2px solid #FFEFEF;
+	background-color:#00ff00;
+}
+
+div.hpa-test div.form-element label,
+div.hpa-test div.form-element.text p {
+	display:block;
+	float:left;
+	width:14em;
+	height: 3em;
+	position:relative;
+	padding-top:.1em;
+	color:#333333;
+}
+
+
+
+div.hpa-test div.form-element {
+	overflow:hidden;
+	clear:both;
+	margin:1em 0;
+	font-size:1.3em;
+	position:relative;
+}
+
+div.hpa-test div.form-element input {
+	padding:1px;
+	width:5em;
+	font-size:1em;
+	clear:right;
+	height:18px;
+}
+
+
+div.hpa-test div.form-element input#triglycerides,
+div.hpa-test div.form-element input#glucose {
+	padding:1px;
+	width:5em;
+	font-size:1em;
+	clear:right;
+	height:18px;
+}
+
+
+
+
+div.hpa-test div.form-element input.checkbox {
+	float:left;
+	width:auto;
+	margin:4px 5px 0 5px;
+	vertical-align: middle;
+	
+}
+
+div.hpa-test div.form-element label.checkbox {
+	float:left;
+	font-size:.9em;
+}
+
+div.hpa-test div.form-element label span {
+	position:absolute;
+	left:22.5em;
+	width:100%;
+	font-weight: bold;
+}
+
+div.hpa-test div.form-element label.slash {
+	margin:0 -5px 0 15px;
+}
+
+div.hpa-test div.form-element frequency {
+	height:200px;
+	width: 100%;
+	text-align: center;
+}
+
+div.hpa-test div.form-element a.form-field-help {
+	outline:0;
+	height:16px;
+	width:18px;
+	text-indent:20px;
+	overflow:hidden;
+	position:absolute;
+	right:0;	
+	top:0;
+	background:transparent url('../img/skins/default/icon_sprite.png') no-repeat scroll left -2044px;
+}
+
+
+
+
+
+/*-- Buttons --*/
+div.hpa-test div.buttons {
+	clear:both;
+	padding:4em 0 10em 0;
+}
+
+div.hpa-test div.buttons button span.alt.light {
+	margin-top:1px;
+}
+div.hpa-test div.buttons button {
+	float:left;
+	margin-right:9em;
+	display:inline;
+}
+
+div.hpa-test div.buttons button.last {
+	margin-right:0;
+}
+
+/*-- Overlay for help --*/
+div.more-overlay {
+	display:none;
+	z-index:1;
+	position:absolute;
+	border:2px solid #92dffc;
+	opacity: 0.9;
+	-moz-opacity: 0.9;
+	filter:alpha(opacity=90);
+	width:400px;
+	padding:15px;
+	background-color:#f6fde8;
+	top:0;
+	left:0;
+}
+
+div.more-overlay dl {
+	font-size:1.2em;
+}
+
+div.more-overlay dt {
+	float:left;
+	margin-right:5px;
+}
+div.more-overlay p {
+	font-size:1.1em;
+}
+
+
+div.more-overlay a.close-window {
+	float:right;
+}
+

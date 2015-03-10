@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<title>Alere HTML Framework - Heathwise Knowledgebase Article</title>
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="cmn/css/global.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/modules.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/article.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/sign-in_register.css" type="text/css" media="all">
+	<!-- 
+		Integration Note:
+			Generally you would only include a single skin style sheet which overrides
+			all the default in global.css and modules.css as necessary.
+			
+			For debug/demo purposes all the style sheets are include here so that they can
+			be toggled using the style sheet switcher (to see the style sheet switch add ?debug=1)
+	-->
+	<link rel="stylesheet" href="cmn/css/skins/ge.css" type="text/css" media="all" title="ge">
+	<link rel="stylesheet alternate" href="cmn/css/skins/cisco.css" type="text/css" media="all" title="cisco">
+	<link rel="stylesheet alternate" href="cmn/css/skins/fedex.css" type="text/css" media="all" title="fedex">
+	<link rel="stylesheet alternate" href="cmn/css/skins/blue-cross.css" type="text/css" media="all" title="blue-cross">
+	<!--[if IE]>
+		<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="cmn/css/global_ie.css" type="text/css" media="all">
+	<![endif]-->
+	</head>
+<body>	<div class="container">
+		<div class="utility span-31">
+					<strong class="welcome">Hello, Suzanne.</strong>
+		<ul>
+			<li class="home"><a href="/">Home</a></li>
+			<li class="messages"><a href="#">Messages: <strong>2</strong></a></li>
+			<li><a href="#">Account</a></li>
+			<li><a href="#">Feedback</a></li>
+			<li><a href="#">Logout</a></li>
+		</ul>
+		<div class="help"><a href="#">Help</a></div>		</div>
+		<div class="header">
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+			<div class="header-bg"> <!-- for skinning purposes only, background for header -->
+							<h2 class="logo"><a href="/">GE</a></h2>
+				
+				<!-- 
+					Main Menu Nav
+					Integration Notes:
+						- The first menu item should have class="first"
+						- the last menu item should have class="last"
+						- JavaScript is used to show / hide sub menus. If JS is not available, fall back landing pages should be provided to guide the user to subsections
+				-->
+				<ul id="top-nav" class="nav top">
+					<li class="first">
+						<a href="#">Healthy Living</a>
+						<div class="top-nav-sub two-col">
+							<ul>
+								<li><a href="#">Food and Recipes</a></li>
+								<li><a href="#">Stress Management</a></li>
+								<li><a href="#">Nutrition</a></li>
+								<li><a href="#">Weight Management</a></li>
+								<li><a href="#">Fitness &amp; Activity</a></li>
+								<li><a href="#">Smoking Cessation</a></li>
+							</ul>
+							<h5>Tools</h5>
+							<ul>
+								<li><a href="#">Progress Tracker</a></li>
+								<li><a href="#">Fitness Planner</a></li>
+								<li><a href="#">Meal Planner</a></li>
+								<li><a href="#">Walking Challenge</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">Diseases &amp; Conditions</a>
+						<div class="top-nav-sub two-col">
+							<ul>
+								<li><a href="#">Allergies</a></li>
+								<li><a href="#">Depression</a></li>
+								<li><a href="#">Arthritis</a></li>
+								<li><a href="#">Diabetes</a></li>
+								<li><a href="#">Asthma</a></li>
+								<li><a href="#">Digestive Disorders</a></li>
+								<li><a href="#">Cancer</a></li>
+								<li><a href="#">Fibromyalgia</a></li>
+								<li><a href="#">Cholesterol</a></li>
+								<li><a href="#">High Blood Pressure</a></li>
+								<li><a href="#">Chronic Pain</a></li>
+								<li><a href="#">Osteoporosis</a></li>
+								<li><a href="#">Colds</a></li>
+								<li><a href="#">Reﬂux (GERD)</a></li>
+								<li><a href="#">Coronary Artery Disease</a></li>
+								<li><a href="#">Sleep disorders</a></li>
+								<li><a href="#">COPD</a></li>
+								<li><a href="#">Urinary/bladder problems</a></li>
+								<li><a href="#">Coronary Artery Disease</a></li>
+								<li class="all"><a href="#">All Conditions</a></li>
+							</ul>	
+							<h5>Other Resources</h5>
+							<ul>
+								<li><a href="#">Surgeries &amp; Procedures</a></li>
+								<li><a href="#">Symptom Checker</a></li>
+								<li><a href="#">Medications</a></li>
+								<li><a href="#">Health Tools</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">Personal &amp; Family Health</a>
+						<div class="top-nav-sub two-col">
+							<ul>
+								<li><a href="#">Women's Health</a></li>
+								<li><a href="#">Men's Health</a></li>
+								<li><a href="#">50+ Health</a></li>
+								<li><a href="#">Healthy Kids</a></li>
+								<li><a href="#">Home Care/First Aid</a></li>
+								<li><a href="#">Pregnancy</a></li>
+								<li><a href="#">Navigating Healthcare</a></li>
+								<li><a href="#">Supplements/Herbals</a></li>
+								<li><a href="#">Alternative Therapies</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">Tools &amp; Media</a>
+						<div class="top-nav-sub">
+							<ul>
+								<li><a href="#">Interactive Tools</a></li>
+								<li><a href="#">Trackers</a></li>
+								<li><a href="#">Quizzes/Assessments</a></li>
+								<li><a href="#">Calculators</a></li>
+								<li><a href="#">Video</a></li>
+								<li><a href="#">Audio</a></li>
+								<li><a href="#">Games</a></li>
+								<li><a href="#">Conversations</a></li>
+								<li><a href="#">Online Seminars</a></li>
+							</ul>
+						</div>	
+					</li>
+				</ul>
+				<form id="search">
+					<label for="search-query">Search</label>
+					<input type="text" name="search-query" title="Search" class="example-text" id="search-query">
+					<input type="submit" name="search-submit" value="" id="search-submit">
+				</form>			</div>
+			<div class="module-cap-bottom"></div> <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+		<div class="content">
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+			<div class="breadcrumb-bar">
+				<ol>
+					<li><a href="#">Medical Resources</a> ></li>
+					<li>Interactions></li>
+					<li class="selected">ALOE</li>
+			
+				<ul>
+		      <li class="email"><a href="#">Email</a></li>
+					<li class="print"><a href="#">Print</a></li>
+					<li class="font-sizer">
+						<a class="decrease" href="#" title="Decrease font-size">A</a>
+						<a class="increase" href="#" title="Increase font-size">A</a>
+					</li>
+				</ul>
+			</div>
+			<div class="sidebar span-7">
+				<div class="module home-btn">
+					<a href="#">Home</a>
+				</div>
+				
+	
+			</div>
+			<div class="main-well article span-17">				
+			<p align=left>
+			  <H1>ALOE</h1>
+
+<Synonym List="ALOE SPICATA BAKER;KIDACHIROKAE;ALOE DAVYANA SCHONL;CAPE ALOE;LUHUI;1,8-DIHYDROXY-3-(HYDROXYMETHYL)-9,10-ANTHRACENEDIONE;10-(1',5'-ANHYDROGLUCOSYL) ALOE-EMODIN-9-ANTHRONE;ALOE AFRICANA MILLER;ALOE ARBORESCENS MILL;ALOE ARBORESCENS VAR. NATALENSIS BERGER;ALOE BAINESII TH.DYER;CURACAO ALOE;ALOE COOPERI BAKER;ZA'BILA;BARBARLOIN;BARBADOS ALOE;ALOIN;ALOE CAPENSIS;ALOE VERA L. ;ALOE EMODIN;ALOE SPECIES;ALOE PERRYI BAKER;ALOE FEROX MILL. ;ALOE FEROX LAM. ;ALOE VULGARIS;ALOE BARBADENSIS MILLER;SAVILA;GHEE-GUAR-KA-PATHTHA;INKALANE;ISIPHUKUTWANE;ISIPHUTHUMANA;JELLY LEEK;KIDACHIAROE;ZANZIBAR ALOE;KXOPHANE;MEDICINE PLANT;MUSABBAR;VENUZUELA-ALOE;PLANT OF LIFE;TRUE ALOE;SOCOTRINE ALOE;NATAL ALOE;ERRET">
+
+<p class="blurb">(Aloe vera, Aloe perfoliata, Aloe arborescens natalenis, Aloe ferox,Aloe africana, Aloe spicata)</p>
+<a href="#GENERAL">GENERAL INFORMATION</a>
+<br><a href="#PRESCRIPTION">PRESCRIPTION (RX) MEDICINE</a>
+<br><a href="#OVER-THE-COUNTER">NONPRESCRIPTION (OVER-THE-COUNTER) MEDICINE</a>
+<br><a href="#DIETARY">DIETARY SUPPLEMENTS</a>
+<br><a href="#FOOD:">FOOD</a>
+<br><a href="#ALCOHOL:">ALCOHOL</a>
+<br><a href="#TOBACCO:">TOBACCO</a>
+<br><a href="#REFERENCE:">REFERENCES</a>
+
+
+<p><a NAME="GENERAL"></a><h2>GENERAL INFORMATION:</h2>
+
+<p>
+The use of herbs, vitamins, minerals and other dietary supplements is becomingvery popular. As more people use dietary supplements, more interactionsare reported. Some of these interactions may be very harmful; others mayonly be reported in animals or in the laboratory at this time.
+</p>
+<p>Keep in mind that this document may not include every interaction thatis known. Although much research has been done to cover as many interactionsas possible, you should still talk to your healthcare provider before takingdietary supplements. Even if a medicine, supplement, or food is not listedbelow, an interaction is still possible. This is also true for interactionswith alcohol and tobacco.</p>
+<p>This information is an educational aid only. It is not intended as medicaladvice for individual conditions or treatments. Talk to your healthcareprovider before following any medical regimen to see if it is safe andeffective for you.
+</p>
+<p>This document contains interaction information only. If you would likeother information about this supplement, such as correct dose or side effects,talk to your healthcare provider.</p>
+
+<h2>INTERACTIONS WITH:</h2>
+<p><a NAME="PRESCRIPTION"></a><h3>PRESCRIPTION MEDICINE:</h3>
+<p class="blurb">The following medicine used to thin the blood and prevent blood clots (anticoagulant):</p>
+<drugname>warfarin (Coumadin(R))</drugname>
+<p>HARMFUL EFFECT:</p>
+<p>Using aloe gel and warfarin may cause you to bleed more easily.</p>
+<p>PROOF:</p>
+<p>This interaction has not been studied and is not proven.&nbsp; Based upon the way that aloe interacts with other medicines, it is thought that this interaction may be possible (3).</p>
+<p>WHAT TO DO:</p>
+<p>Using aloe gel together with warfarin may cause an increased risk of certain side effects. If you are using both medicines together, your doctor may change the dose or how often you use one or both of the medicines. It is important to tell your doctor and pharmacist about all other medicines that you are using. Call your doctor if you have blood in your urine; have black, bloody, or sticky bowel movements; have blood in your vomit; have a nosebleed that lasts longer than 15 minutes; have new or unusual bruising; feel weak or dizzy. Do not stop using your medicines without talking to your doctor first.</p>
+<p>The following medicine used to treat heart failure and certain heart rhythm problems (also called digitalis):</p>
+<h2>digoxin (Lanoxicaps(R), Lanoxin(R))</h2>
+<p>HARMFUL EFFECT:</p>
+<p>Taking aloe and digoxin may cause the amount of digoxin in your blood to be too high and you may have more side effects.</p><p>PROOF:</p>
+<p>This interaction has not been studied and is not proven, but it is possiblethat it may occur based on the information available aboutherbs and drugs (1).</p>
+<p>WHAT TO DO:</p>
+<p>Using aloe together with digoxin may cause an increased risk of certain sideeffects, but using both drugs may be the best treatment for you. If you areusing both medicines together, your doctor may change the dose or how oftenyou use one or both of the medicines. It is important to tell your doctorand pharmacist about all other medicines that you are using. Call your doctorif you have chest pain or discomfort, have unusual heartbeats, feel dizzy,feel weak, feel lightheaded, or have nausea and vomiting. Do not stop usingyour medicines without talking to your doctor first.</p>
+<p>The following medicine used to make you lose consciousness (fall asleep) before having surgery (called anesthesia):</p>
+<h2>sevoflurane (Ultane(R))</h2>
+<p>HARMFUL EFFECT:</p>
+<p>Taking aloe vera and receiving sevoflurane during anesthesia may increase the risk of bleeding.</p>
+<p>PROOF:</p>
+<p>This interaction has not been studied and is not proven, but it is possible that it may occur based on the information available about drugs and herbs (2).</p>
+<p>WHAT TO DO:</p>
+<p>Let your doctor know if you are taking herbal supplements that contain aloe vera before your surgery. Avoid taking aloe vera at least one week before surgery. </p>
+<h2><a NAME="OVER-THE-COUNTER"></a>
+NONPRESCRIPTION (OVER-THE-COUNTER)MEDICINE:</h2>
+<p>At the time this document was written, no interactions between aloe and nonprescription (over-the-counter) medicine were found.<h2><a NAME="DIETARY"></a>DIETARY SUPPLEMENTS:</h2>
+<p>At the time this document was written, no interactions between aloe and dietary supplements were found.</p>
+<h2><a NAME="FOOD:"></a>FOOD:</h2> 
+<p>At the time this document was written, no interactions between aloe and food were found.
+<h2><a NAME="ALCOHOL:"></a>ALCOHOL:</h2>
+<p>At the time this document was written, no interactions between aloe and alcohol were found.</p>
+<h2><a NAME="TOBACCO:"></a>TOBACCO:</h2>
+<p>At the time this document was written, no interactions between aloe and tobacco were found.</p>
+
+			
+
+              <div class="footnote">
+                <p><cite>REFERENCES: </cite></p>
+                  <cite>
+                  <ol>
+                    <li>Blumenthal M, Busse WR, Goldberg A et al (eds):&nbsp; The CompleteGerman Commission E Monographs, 1st ed.&nbsp; American Botanical Council,Austin, TX; 1998:80-81.</li>
+                    <li>Lee A, Chui PT, Aun CST et al: Possible interaction between sevofluraneand Aloe vera. Ann Pharmacother 2004; 38:1651-1654. </li>
+                    <li>Product Information: COUMADIN(R) oral tablets, IV injection, warfarin sodium   oral tablets, IV injection. Bristol-Myers Squibb Company, Princeton, NJ, 2007.  </li>
+
+                  </ol>                  
+                  </cite>
+                
+                <p>The information contained in the Micromedex products above is intended as an   educational aid only. It is not intended as medical advice for individual   conditions or treatment. It is not a substitute for a medical exam, nor does it   replace the need for services provided by medical professionals. Talk to your   doctor, nurse or pharmacist before taking any prescription or over the counter   drugs (including any herbal medications or supplements) or following any   treatment or regimen. Only your doctor, nurse or pharmacist can provide you with   advice on what is safe and effective for you.</p>
+                <p>The Pharmaceutical Content contains information about prescription and   over-the-counter medications available in the United States. While many of the   pharmaceutical products in the database are available outside of the United   States, some products may not be available outside of the United States. In   addition, while all prescription medications and most over-the-counter   medications in the database are approved by the US Food and Drug Administration   (FDA), some over-the-counter medications do not fall under the jurisdiction of   the FDA and therefore do not have or require FDA approval.</p>
+                <p>The Herbal Medicine Content contains information about herbal therapies and   other dietary supplements, which are not regulated as drugs in the United States   by the FDA. Additionally, the manufacture and distribution of herbal substances   are regulated as foods rather than those in the pharmaceutical industry. Because   of these differences in the regulation of the herbal and supplement industry,   you need to discuss use of these substances with your doctor, nurse or   pharmacist.</p>
+                <p>The use of the Micromedex products is at your sole risk. These products are   provided "AS IS" and "as available" for use, without warranties of any kind,   either express or implied. Web Site Providers and Micromedex make no   representation or warranty as to the accuracy, reliability, timeliness,   usefulness or completeness of any of the information contained in the products.   Additionally, WEB SITE PROVIDERS AND MICROMEDEX MAKE NO REPRESENTATION OR   WARRANTIES AS TO THE OPINIONS OR OTHER SERVICE OR DATA YOU MAY ACCESS, DOWNLOAD   OR USE AS A RESULT OF USE OF THE MICROMEDEX PRODUCTS. ALL IMPLIED WARRANTIES OF   MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE OR USE ARE HEREBY EXCLUDED.   Web Site Providers and Micromedex do not assume any responsibility or risk for   your use of the Micromedex products. Please read the Terms of Use posted on this   web site for additional information and further definition of terms used in this   section.</p>
+                  <p>Copyright © 2009 MICROMEDEX Thomson Healthcare. All rights reserved. Information is for Authorized End User's use only and may not be sold, redistributed or otherwise used for commercial purposes.
+</p>
+
+                <p class="copyright">&nbsp;</p>
+				</div>
+			</div>
+			<div class="alt-sidebar span-6 last">
+				<div class="recommend-btn">
+				<a href="#">Recommend this article <span>435 recommendations</span></a></div>
+			</div>
+			<div class="module-cap-bottom"></div>  <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+		<div class="footer">
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+				<div class="footer-bg"><!-- for skinning purposes only, footer background -->
+					<div class="alere">
+						<p class="powered-by">Powered by</p>
+						<h3>Alere</h3>
+						<p>&copy; 2009 Alere. All rights reserved. Alere is a trademark of the Inverness Medical group of companies.</p>
+					</div>
+				</div>
+			<div class="module-cap-bottom"></div> <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+	</div>
+	<!-- Leave Scripts at the bottom to make sure they don't block the initial paint -->
+	<script src="cmn/js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="cmn/js/jquery-delegate.js"></script>
+	<script src="cmn/js/jquery_example/jquery.example.min.js"></script>
+	<script src="cmn/js/global.js"></script>
+	</body>
+</html>

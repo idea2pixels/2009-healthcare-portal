@@ -1,0 +1,9 @@
+/* -- Logo -- */
+div.header h2.logo a{
+	background-image: url('../../img/skins/fedex/logo.png');
+}
+
+/* -- News Header --*/
+div.sidebar div.module.news h2 {
+	background-image: url('../../img/skins/fedex/news.png');
+}

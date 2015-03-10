@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<title>Alere HTML Framework - HPA Article</title>
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="cmn/css/global.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/modules.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/article.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/sign-in_register.css" type="text/css" media="all">
+	<!-- 
+		Integration Note:
+			Generally you would only include a single skin style sheet which overrides
+			all the default in global.css and modules.css as necessary.
+			
+			For debug/demo purposes all the style sheets are include here so that they can
+			be toggled using the style sheet switcher (to see the style sheet switch add ?debug=1)
+	-->
+	<link rel="stylesheet" href="cmn/css/skins/ge.css" type="text/css" media="all" title="ge">
+	<link rel="stylesheet alternate" href="cmn/css/skins/cisco.css" type="text/css" media="all" title="cisco">
+	<link rel="stylesheet alternate" href="cmn/css/skins/fedex.css" type="text/css" media="all" title="fedex">
+	<link rel="stylesheet alternate" href="cmn/css/skins/blue-cross.css" type="text/css" media="all" title="blue-cross">
+	<!--[if IE]>
+		<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="cmn/css/global_ie.css" type="text/css" media="all">
+	<![endif]-->
+	</head>
+<body>	<div class="container">
+		<div class="utility span-31">
+					<strong class="welcome">Hello, Suzanne.</strong>
+		<ul>
+			<li class="home"><a href="/">Home</a></li>
+			<li class="messages"><a href="#">Messages: <strong>2</strong></a></li>
+			<li><a href="#">Account</a></li>
+			<li><a href="#">Feedback</a></li>
+			<li><a href="#">Logout</a></li>
+		</ul>
+		<div class="help"><a href="#">Help</a></div>		</div>
+		<div class="header">
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+			<div class="header-bg"> <!-- for skinning purposes only, background for header -->
+							<h2 class="logo"><a href="/">GE</a></h2>
+				
+				<!-- 
+					Main Menu Nav
+					Integration Notes:
+						- The first menu item should have class="first"
+						- the last menu item should have class="last"
+						- JavaScript is used to show / hide sub menus. If JS is not available, fall back landing pages should be provided to guide the user to subsections
+				-->
+				<ul id="top-nav" class="nav top">
+					<li class="first">
+						<a href="#">Healthy Living</a>
+						<div class="top-nav-sub two-col">
+							<ul>
+								<li><a href="#">Food and Recipes</a></li>
+								<li><a href="#">Stress Management</a></li>
+								<li><a href="#">Nutrition</a></li>
+								<li><a href="#">Weight Management</a></li>
+								<li><a href="#">Fitness &amp; Activity</a></li>
+								<li><a href="#">Smoking Cessation</a></li>
+							</ul>
+							<h5>Tools</h5>
+							<ul>
+								<li><a href="#">Progress Tracker</a></li>
+								<li><a href="#">Fitness Planner</a></li>
+								<li><a href="#">Meal Planner</a></li>
+								<li><a href="#">Walking Challenge</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">Diseases &amp; Conditions</a>
+						<div class="top-nav-sub two-col">
+							<ul>
+								<li><a href="#">Allergies</a></li>
+								<li><a href="#">Depression</a></li>
+								<li><a href="#">Arthritis</a></li>
+								<li><a href="#">Diabetes</a></li>
+								<li><a href="#">Asthma</a></li>
+								<li><a href="#">Digestive Disorders</a></li>
+								<li><a href="#">Cancer</a></li>
+								<li><a href="#">Fibromyalgia</a></li>
+								<li><a href="#">Cholesterol</a></li>
+								<li><a href="#">High Blood Pressure</a></li>
+								<li><a href="#">Chronic Pain</a></li>
+								<li><a href="#">Osteoporosis</a></li>
+								<li><a href="#">Colds</a></li>
+								<li><a href="#">Reﬂux (GERD)</a></li>
+								<li><a href="#">Coronary Artery Disease</a></li>
+								<li><a href="#">Sleep disorders</a></li>
+								<li><a href="#">COPD</a></li>
+								<li><a href="#">Urinary/bladder problems</a></li>
+								<li><a href="#">Coronary Artery Disease</a></li>
+								<li class="all"><a href="#">All Conditions</a></li>
+							</ul>	
+							<h5>Other Resources</h5>
+							<ul>
+								<li><a href="#">Surgeries &amp; Procedures</a></li>
+								<li><a href="#">Symptom Checker</a></li>
+								<li><a href="#">Medications</a></li>
+								<li><a href="#">Health Tools</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">Personal &amp; Family Health</a>
+						<div class="top-nav-sub two-col">
+							<ul>
+								<li><a href="#">Women's Health</a></li>
+								<li><a href="#">Men's Health</a></li>
+								<li><a href="#">50+ Health</a></li>
+								<li><a href="#">Healthy Kids</a></li>
+								<li><a href="#">Home Care/First Aid</a></li>
+								<li><a href="#">Pregnancy</a></li>
+								<li><a href="#">Navigating Healthcare</a></li>
+								<li><a href="#">Supplements/Herbals</a></li>
+								<li><a href="#">Alternative Therapies</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">Tools &amp; Media</a>
+						<div class="top-nav-sub">
+							<ul>
+								<li><a href="#">Interactive Tools</a></li>
+								<li><a href="#">Trackers</a></li>
+								<li><a href="#">Quizzes/Assessments</a></li>
+								<li><a href="#">Calculators</a></li>
+								<li><a href="#">Video</a></li>
+								<li><a href="#">Audio</a></li>
+								<li><a href="#">Games</a></li>
+								<li><a href="#">Conversations</a></li>
+								<li><a href="#">Online Seminars</a></li>
+							</ul>
+						</div>	
+					</li>
+				</ul>
+				<form id="search">
+					<label for="search-query">Search</label>
+					<input type="text" name="search-query" title="Search" class="example-text" id="search-query">
+					<input type="submit" name="search-submit" value="" id="search-submit">
+				</form>			</div>
+			<div class="module-cap-bottom"></div> <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+		<div class="content">
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+			<div class="breadcrumb-bar">
+				<ol>
+					<li><a href="#">Healthy Living</a> ></li>
+					<li><a href="#">Food &amp; Nutrition</a> ></li>
+					<li><a href="#">Recipes</a> ></li>
+					<li class="selected">Breakfast</li>
+				</ol>
+				<ul>
+					<li class="email"><a href="#">Email</a></li>
+					<li class="print"><a href="#">Print</a></li>
+					<li class="font-sizer">
+						<a class="decrease" href="#" title="Decrease font-size">A</a>
+						<a class="increase" href="#" title="Increase font-size">A</a>
+					</li>
+				</ul>
+			</div>
+			<div class="sidebar span-7">
+				<div class="module home-btn">
+					<a href="#">Home</a>
+				</div>
+				
+				<div class="module alt-nav">
+					<h4>Recipes</h4>
+					<ul class="alt">
+						<li><a href="#">Program Info</a></li>
+						<li><a href="#">Lorem Ipsum</a></li>
+						<li><a href="#">Lorem Ipsum</a></li>
+						<li class="selected last"><a href="#">Breakfast</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-well article span-17">				
+				<h1>A Quick Healthy Breakfast</h1>
+				<p class="author">by <a href="#">Ed Edelson</a>, September 17, 2008</p>
+				<img src="cmn/img/tmp/article_image.png" width="204" height="153" alt="Article Image">
+				<p class="abstract">The pancake makeover employs quick-cooking oats to increase the	nutritional value without compromisingon convenience.</p>
+				<p>Pancakes made from most mixes aren't what you'd call nutritional all-stars. They are usually low in fiber and quit high in sodium. Topped with additional butter and maple syrup, the fat and calories climb even higher. This pancake makeover employs quick-cooking oats to increase the nutritional value without compromising on convenience. In addition, the oats provide added dietary fiber, which experts note may play a role in reducing risk of colorectal cancer.</p>
+				<h4>Ingredients:</h4>
+				<ul>
+					<li>1 cup plain low-fat yogurt</li>
+					<li>1 cup low-fat milk</li>
+					<li>1 tsp. vanilla</li>
+					<li>2 tbsp. canola oil</li>
+					<li>1/2 cup dried cranberries</li>
+					<li>Cooking spray</li>
+					<li>Powdered sugar (optional)</li>
+					<li>Juice of 1 lemon (optional)</li>
+					<li>1/2 cup all-purpose flour</li>
+					<li>1/4 cup whole-wheat flour</li>
+					<li>1/4 tsp. salt</li>
+					<li>1 tabsp. sugar</li>
+					<li>1/2 tsp. baking powder</li>
+					<li>3/4 tsp. baking soda</li>
+					<li>3/4 cup quick-cooking (not instant) oats</li>
+					<li>2 egg whites, lightly beaten</li>
+				</ul>
+				<h4>Preparation</h4>
+				<ol>
+					<li>Preheat the oven to 200 degrees.</li>
+					<li>In a medium bowl, sift together all-purpose and whole-wheat flours. Add the remaining dry ingredients and mix well.</li>
+					<li>In a separate bowl, beat the egg whites, yogurt, milk, vanilla and oil. Add the wet ingredients to the dry ingredients, making sure not to over-mix. Stir in the cranberries. For the very best results, allow the batter to rest, covered in the refrigerator, for 30 minutes.</li>
+				</ol>
+				<p class="nutritional-details">
+					Makes 5 servings.<br>
+					per serving: 260 calories, 8g total fat (1g saturated fat, 39g carbohydrate, 9g protein, 3g dietary fiber, 440mg sodium.
+				</p>
+				<div class="footnote">
+					<p class="last-reviewed">Last Reviewed April 2009</p>					
+					<a href="#" class="more-info">There's more on CRP at the American Heart Association.</a>
+					<cite>SOURCES: Erica S. Spatz, M.D., internist and fellow, Robert Wood Johnson Clinical Scholars program, Yale University, New Haven, Conn; Timothy J. Gardner, M.D., president, American Heart Association, and medical director, Center for Heart and Vascular Health, Christiana Health Care System, New Castle, Del.; Suzanne Steinbaum, M.D., director of women and heart disease, Lenox Hill Hospital, New York City; Jan. 13, 2009, Circulation: Cardiovascular Quality and Outcomes</cite> 
+					<p class="copyright">copyright &copy; 2009 ScoutNews, LLC. All rights reserved.</p>
+				</div>
+			</div>
+			<div class="alt-sidebar span-6 last">
+				<div class="recommend-btn">
+					<a href="#">Recommend this article <span>435 recommendations</span></a>
+				</div>
+				<h5>Topics in this Article</h5>
+				<ul>
+					<li><a href="#">Pancakes</a></li>
+					<li><a href="#">Fiber</a></li>
+					<li><a href="#">Butter</a></li>
+					<li><a href="#">Whole wheat flour</a></li>
+				</ul>
+				<h5>Related Recipes</h5>			
+				<ul>
+					<li><a href="#">Blueberry-Filled Dutch Pancake</a></li>
+					<li><a href="#">Pancake Fruit Tacos</a></li>
+					<li><a href="#">Banana-Walnut Oatmeal</a></li>
+					<li><a href="#">Blueberry Granola Bars</a></li>
+				</ul>
+			</div>
+			<div class="module-cap-bottom"></div>  <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+		<div class="footer">
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+				<div class="footer-bg"><!-- for skinning purposes only, footer background -->
+					<div class="alere">
+						<p class="powered-by">Powered by</p>
+						<h3>Alere</h3>
+						<p>&copy; 2009 Alere. All rights reserved. Alere is a trademark of the Inverness Medical group of companies.</p>
+					</div>
+				</div>
+			<div class="module-cap-bottom"></div> <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+	</div>
+	<!-- Leave Scripts at the bottom to make sure they don't block the initial paint -->
+	<script src="cmn/js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="cmn/js/jquery-delegate.js"></script>
+	<script src="cmn/js/jquery_example/jquery.example.min.js"></script>
+	<script src="cmn/js/global.js"></script>
+	</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<title>Alere HTML Framework</title>
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="cmn/css/incentives.css" type="text/css" media="all">
+	
+	<link rel="stylesheet" href="cmn/css/global.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/modules.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/article.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/sign-in_register.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/hpa.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/hpa-test.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/search.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/bioIQ.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/incentives.css" type="text/css" media="all">
+	<!-- 
+		Integration Note:
+			Generally you would only include a single skin style sheet which overrides
+			all the default in global.css and modules.css as necessary.
+			
+			For debug/demo purposes all the style sheets are include here so that they can
+			be toggled using the style sheet switcher (to see the style sheet switch add ?debug=1)
+	-->
+	<link rel="stylesheet" href="cmn/css/skins/ge.css" type="text/css" media="all" title="ge">
+	<link rel="stylesheet alternate" href="cmn/css/skins/cisco.css" type="text/css" media="all" title="cisco">
+	<link rel="stylesheet alternate" href="cmn/css/skins/fedex.css" type="text/css" media="all" title="fedex">
+	<link rel="stylesheet alternate" href="cmn/css/skins/blue-cross.css" type="text/css" media="all" title="blue-cross">
+	<!--[if IE]>
+		<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="cmn/css/global_ie.css" type="text/css" media="all">
+	<![endif]-->
+	</head>
+<body>	<div class="container">
+
+
+		<div class="content">
+
+			<div class="sidebar span-7">
+
+				<div class="module alt-nav">
+					<h5>
+					<ol>
+					<li>This shows the HLP Meal Planner.</li>
+					<li>Next step: content team to write final copy.</li>
+					<li>Next step: annotated specs.</li>
+
+					</ol>
+					</h5>				
+				</div>
+
+				<!-- End Sub Nav -->
+			
+			</div>
+			<div class="main-well span-21">
+
+
+
+				<h1 class="what-next">Start view...</h1>
+				<!--
+					Integration Note: 
+						All modules should be included here
+				-->
+
+
+
+
+				<!-- Included from: cmn/inc/modules/generic_main_with_subtext.inc.php-->
+				<div class="module">
+					<img class="picture" src="cmn/img/modules/tmp/module-a-picture2-mealplanner.png" width="118" height="118" alt="Module A Picture">
+					<h2>Get a Personal Meal Plan!</h2>
+					<p>Tell us about your eating habits and you'll get healthy, easy to prepare meal ideas customized just for you. <a>Get your meal plan now!</a></p>
+					<ul class="utility-nav">
+						<li class="first"><a href="#">More like this</a></li>
+						<li class="dont-show">
+							<a href="#">Don't show again</a>
+							<div class="dont-show-confirm">
+								<h5>Don't show again</h5>
+								<p>"Click "Remove" if you don’t want this option to appear for you in the future.</p>
+								<br>
+								<span><a class="keep" title="Keep" href="#">Keep</a> | <a href="#" title="Remove">Remove</a></span>
+								</p>
+							</div>
+						</li>
+						<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+					</ul>
+					<a href="#" class="action-button"><strong><em>Get Meal Plan!</em></strong></a>
+					
+					<div class="more">
+						<h5>What is the Meal Planner?</h5>
+						<p>Our Meal Planner provides the information and support you need to start making positive changes in the way you eat. A nutrient analysis for the entire meal is provided.</p>
+
+						<h5>What is the nutrition philosophy?</h5>
+						<p>Cutting back on high-fat, overly processed foods in favor of lean protein, fruit, vegetables, grains and other whole foods greatly reduces risk of diet-related diseases. The Meal Planner can help you make healthier choices without sacrificing the joy of eating.</p>
+					</div>
+				</div>
+
+
+				<h1 class="what-next">Engaged view...</h1>
+
+
+				<!-- Included from: cmn/inc/modules/meal_planner.inc.php-->
+				<div class="module b meal-planner">
+					<img class="icon" src="cmn/img/modules/tmp/module-b-icon-eat.png" width="35" height="26" alt="Module Icon">
+					<h2>Today's Meal Plan</h2>
+					<a class="btn prev" href="#" title="Yesterday">Yesterday</a>
+					<ol>
+						<li class="first">
+							<h5>Breakfast</h5>
+							<ul>
+								<li><a href="#">Egg and Cheese Sandwich</a></li>
+							</ul>
+						</li>
+						<li>
+							<h5>Lunch</h5>
+							<ul>
+								<li><a href="#">Sandwich: Tuna Pita</a></li>
+							</ul>
+						</li>
+						<li>
+							<h5>Dinner</h5>
+							<ul>
+								<li><a href="#">Fish: Salmon with Honey Mustard Glaze</a></li>
+							</ul>
+						</li>
+						<li class="last">
+							<h5>Snacks</h5>
+							<ul>
+								<li><a href="#">Daily Snacks</a></li>
+							</ul>
+						</li>
+					</ol>
+					<a class="btn next" title="Tomorrow" href="#">Tomorrow</a>
+					
+					<ul class="utility-nav">
+						<li class="first"><a href="#">More like this</a></li>
+						<li class="dont-show">
+							<a href="#">Show this later</a>
+							<div class="dont-show-confirm">
+								<h5>Show this later</h5>
+								<p>Don't want to see your meal plan now? We'll remind you again next week!</p>
+								<br>
+								<span><a class="keep" title="Keep" href="#">Keep</a> | <a href="#" title="Show later">Show later</a></span>
+								</p>
+							</div>
+						</li>
+						<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+					</ul>
+					<a href="#" class="action-button alt"><strong><em>View All Meals</em></strong></a>
+					<div class="more">
+						<h5>What is the Meal Planner?</h5>
+						<p>Our Meal Planner provides the information and support you need to start making positive changes in the way you eat. A nutrient analysis for the entire meal is provided.</p>
+
+						<h5>What is the nutrition philosophy?</h5>
+						<p>Cutting back on high-fat, overly processed foods in favor of lean protein, fruit, vegetables, grains and other whole foods greatly reduces risk of diet-related diseases. The Meal Planner can help you make healthier choices without sacrificing the joy of eating.</p>
+					</div>
+				</div>
+
+				<br><br><br><br><br>
+
+				
+			</div>
+
+
+			<div class="module-cap-bottom"></div>  <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+		
+	</div>
+	<!-- Leave Scripts at the bottom to make sure they don't block the initial paint -->
+	<script src="cmn/js/jquery-1.3.2.min.js"></script>
+	<script src="cmn/js/jcarousel/lib/jquery.jcarousel.js"></script>
+	<script src="cmn/js/jquery_example/jquery.example.min.js"></script>
+	<script src="cmn/js/global.js"></script>
+	</body>
+</html>

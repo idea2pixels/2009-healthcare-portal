@@ -1,0 +1,161 @@
+/* ************************************************************************ */
+/* 
+	This file will contain CSS that clients can use to over-ride 
+	Healthwise's CSS.
+*/
+/* ************************************************************************ */
+
+/* ************************************************************************ */
+/* Custom areas
+*/
+
+/* This gives all areas a default background and border to easier identify 
+   them for development purposes */
+.HwCustom  
+{
+	background: #f0f0f0; 
+	border: dashed 1px #373737;
+	font-size: 12px;
+	color: #cccccc;
+}
+
+/* These are the custom areas. Some have a height defined to make them easier to 
+   identify for development purposes. Remove height specification to make boxes 
+   grow with content. */
+#HwCustomHeader { height: 108px; }
+#HwCustomSearchLeft { width: 346px; } /* 1px border applied above grows the box by two pixels */
+#HwCustomSearchRight { width: 346px; } /* 1px border applied above grows the box by two pixels */
+#HwCustomSidebar { height: 500px; }
+#HwCustomNavigationTop { height: 20px; }
+#HwCustomNavigationBottom { height: 300px; }
+#HwCustomContentTop { height: 20px; }
+#HwCustomContentBottom { height: 20px; }
+#HwCustomFooter { height: 20px; }
+
+
+/* ************************************************************************ */
+/* Layout
+*/
+
+/* ---- Change to two column layout ---- */
+/*
+#HwColumnSidebar1 { display: none; }
+#HwColumnContent { width: 700px; }
+#HwContentWrapper { margin-left: 0; }
+*/
+
+/* ---- Center align page within browser ---- */
+/*
+#HwContainer { margin: 0 auto; }  
+body { text-align: center; }
+*/
+
+/* ---- Swap sidebar columns ---- */
+/* 
+#HwColumnSidebar1 { float: right; }
+#HwColumnSidebar2 { float: left; }
+*/
+
+/* ---- Hide navigation area ---- */
+/*
+#HwNavigationWrapper { display: none; }
+*/
+
+/* ---- Hide search container ---- */
+/*
+#HwSearchWrapper { display: none; }
+*/
+
+/* ---- Align search box to the right on the page ---- */
+/* (to align left, swap the definitions of the two selectors below) */
+/*
+#HwCustomSearchRight { display: none; }
+#HwCustomSearchLeft { width: 695px; }
+*/
+
+
+/* ************************************************************************ */
+/* Background Color
+*/
+
+/* ---- Change base background color (goes into content area and footer) ---- */
+/*
+#HwContainer { background-color: #aaccbb; }
+*/
+
+/*
+#HwHeader, #HwContainer, #HwContentWrapper, #HwSearch, #HwNavigationWrapper, 
+#HwFooter, .HwContent, #HwHeader, 
+#HwListIndex h3, #HwListIndex div div, .HwListSection h3,
+.HwLandingBrowse, .HwLandingLinks, .HwLandingBrowseContent, .HwLandingQuickLinks, 
+.HwLandingBrowseWrapper, .HwLandingBrowse h3, .HwLandingLinks h3, .HwLandingLinksContent,
+.HwCategoryList, .HwCategoryList h3, .HwCategoryBorder, .HwCategoryListContent,
+.HwActionsetContent, .HwActionsetInner, .HwQuiz, .HwQuizQuestions, .HwQuizQuestionsInner, .HwQuiz h4,
+.HwQuizAnswer div
+{
+	background: None;
+	background-color: #dddddd;
+}
+*/
+
+/* ---- Faux columns ---- */
+/* 
+#HwMain { background: url(../custom/images/columns.png) repeat-y left top; } 
+*/
+
+
+/* ************************************************************************ */
+/* Fonts
+	Fonts are specified throughout the product using relative meassures
+	(em and %). The default body font is 75% which is equivalent to 12px 
+    on most browsers. Note that if changing the body font size to, say, 
+	100% or 16px, all other fonts will change too because they are defined
+	relative to the body size. The reason for this is to allow font scaling
+	in the browser.
+*/
+
+/* --- Change body font --- */
+/*
+body { font-size: 60%; }
+body { font-family: Courier, Sans-Serif; }
+*/
+
+
+/* --- Change relative font sizes --- */
+/*
+h1 { font-size:1.33em; }
+.HwContentTitle h1 { font-size: 2.17em; }
+h3,h4 { font-size:1.17em; }
+#HwPopoutHeaderTitle, #HwTooltipHeaderTitle { font-size:1.33; }
+#HwPopoutHeaderClose a { font-size:.75em; }
+.HwContentInformation {	font-size: 0.83em; }
+.HwDisclaimer {	font-size: 0.83em; }
+.HwCopyright { font-size: 0.83em; }
+*/
+
+
+/* ************************************************************************ */
+/* Icon Links
+	To display icons before links, padding-left must be 0 and and padding-right should be .5em.
+*/
+/*
+.HwLinkCalculator img,
+.HwLinkDefinition img,
+.HwLinkExternal img,
+.HwLinkMultiMedia img
+{
+	padding-right.25em;
+	padding-left:0;
+}
+*/
+
+#HwCustomSearchRight { width: 298px;   } /* 1px border applied above grows the box by two pixels */
+#HwCustomSearchLeft { width: 218px; }
+#HwSearch { float: right; background-color: #f0f0f0; width:480px;}
+
+.HwSearchHeader { display:inline; float:left; width:70px; }
+.HwSearchHeader img { position: relative; top: 5px; left: 6px; }
+.HwSearchContent { background: none; float:right; width:380px; padding-left:0; right: 6px;}
+.HwSearchContent dt { left: 19px; }
+.HwSearchContent dt input { width:275px; }
+

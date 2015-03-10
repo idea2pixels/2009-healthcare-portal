@@ -1,0 +1,10 @@
+/* -- Logo -- */
+div.header h2.logo a{
+	background-image: url('../../img/skins/cisco/logo.png');
+}
+
+/* -- News Header --*/
+div.sidebar div.module.news h2 {
+	height:26px;
+	background-image: url('../../img/skins/cisco/news.png');
+}

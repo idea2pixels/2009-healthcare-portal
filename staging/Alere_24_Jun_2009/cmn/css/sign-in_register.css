@@ -1,0 +1,309 @@
+/*----------------------------
+	Sign-in/Register Page
+ ----------------------------*/
+
+div.login div.sign-in {
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #e5e5e5;
+	margin-top:60px;
+	margin-bottom:150px;
+	padding:15px;
+	background:#fff url('../img/skins/default/sidebar_module_bg.png') repeat-y;	
+}
+
+div.login div.register,
+div.login div.why-register {
+	margin-top:60px;
+	margin-bottom:150px;
+	padding:15px;
+}
+
+div.login fieldset legend {
+	font-size: 2em;
+	margin-bottom:5px;
+	color:#185986;
+	font-weight:bold;
+}
+
+div.login fieldset p {
+	margin-right:20px;
+	margin-bottom:5px;
+}
+
+div.login form p.form-help {
+	margin:3px 0 0 91px;
+	clear:both;
+}
+
+div.login label {
+	font-weight:bold;
+	clear:both;
+	width:90px;
+	float:left;
+	font-size:1.1em;
+	display:block;
+	margin-bottom:-2px;
+	margin-top:13px;
+}
+
+div.login input, 
+div.login select {
+	width:125px;
+	margin-top:12px;
+}
+
+div.login div.register input, 
+div.login div.register select {
+	width:155px;
+}
+
+div.login button {
+	margin-top:20px;
+	margin-bottom:15px;
+	float:right;
+}
+
+/* Why Register */
+div.login div.why-register h3 {
+	font-size:1.5em;
+	font-weight:bold;
+	color:#ed8b20;
+	margin-top:2em;
+}
+
+div.login div.why-register ul {
+	margin-right:0;
+}
+
+div.login div.why-register li {
+	font-size:1.3em;
+	margin-bottom:15px;
+	color:#ed8b20;
+}
+
+div.login div.why-register li span {
+	color:#666;
+}
+
+/*----------------------------
+	Registration Page
+ ----------------------------*/
+div.registration {
+	position:relative;
+}
+
+div.registration h1 {
+	margin-bottom:5px;
+	font-size:2.4em;
+	font-weight:bold;
+	color:#185986;
+}
+
+div.registration p.relation-to {
+	font-size:1.4em;
+	font-weight:bold;
+}
+
+div.registration p {
+	font-size:1.3em;
+}
+
+div.registration p a {
+	text-decoration:underline;
+}
+
+div.registration form#registration {
+	width:50em;
+	margin:auto;
+}
+
+/* -- Help Button --*/
+div.registration div.help a {
+	position:absolute;	
+	background:transparent url('../img/skins/default/icon_sprite.png') no-repeat scroll right -80px;
+	display:block;
+	right:90px;
+	top:50px;
+	padding:3px 25px 3px 0;
+	color:#666666;
+	font-weight:bold;
+}
+
+div.registration div.fieldset {
+	border-top:1px dotted #bcbcbc;
+	padding-top:6px;
+	margin-bottom:20px;
+}
+
+div.registration legend {
+	font-size:1.5em;
+	font-weight:bold;
+}
+
+/* -- Labels -- */
+div.registration form#registration label,
+div.registration div.gender span {
+	position:relative;
+	font-weight:bold;
+	font-size:1.1em;
+	float:left;
+	clear:left;
+	display:block;
+	width:15em;
+	text-align:right;
+	margin-right:10px;
+	margin-top:1em;
+	line-height:2.7em;
+}
+
+
+
+/* -- pushdown everything below telephone number field --*/
+div.registration form#registration input#telephone_number {
+	margin-bottom:3em;
+}
+
+/* -- username/password feedback --*/
+div.registration form#registration label.has-feedback {
+	margin-bottom:2.5em;
+	position:relative;
+}
+
+div.registration form#registration label.has-feedback span {
+	position:absolute;
+	top:2.6em;
+	display:block;
+	width:200px;
+	left:16em;
+	padding-left:19px;
+	text-align:left;
+	color:#22bc08;
+	background:transparent url('../img/skins/default/icon_sprite.png') no-repeat scroll left -1799px;
+	
+}
+
+
+/* -- More info label -- */
+div.registration form#registration label em {
+	top:0;
+	display:block;
+	position:absolute;
+	width:;
+	color:#666;
+	font-size:11px;
+	font-style:normal;
+	font-weight:normal;
+	width:14em;
+	text-align:left;
+	left:37.8em;
+	line-height:1.2em;
+}
+
+div.registration form#registration input, 
+div.registration form#registration select {
+	font-size:1.2em;
+	padding:3px;
+	float:left;
+	width:18em;
+	margin-top:1em;	
+}
+
+/* -- Gender Radio Buttons -- */
+div.registration form#registration div.gender {
+	clear:both;
+}
+
+div.registration form#registration div.gender input {
+	float:left;
+	width:auto;
+	margin-top:1.7em;
+	margin-right:4px;
+}
+
+div.registration form#registration div.gender label {
+	float:left;
+	clear:none;
+	line-height:2.7em;
+	width:auto;
+}
+
+/*-- Terms of Use -- */
+div.registration form#registration div.terms {
+	border:1px solid #bcbcbc;
+	border-right:;
+	padding:10px;
+	height:14em;
+	overflow:auto;
+	width:43.4em;
+	font:arial;
+	font-size:1.1em;
+	margin-bottom:15px;
+}
+
+/*-- Terms of Use Checkbox -- */
+div.registration form#registration div.agree-to-terms {
+	float:none;
+	clear:both;
+	overflow:hidden;
+	text-align:right;
+	margin-bottom:15px;
+}
+div.registration form#registration div.agree-to-terms label {
+	display:inline;
+	float:none;
+	clear:none;
+	margin:0;
+	width:auto;
+	line-height:100%;
+	font-size:1.2em;
+	font-weight:normal;
+}
+
+div.registration form#registration div.agree-to-terms input {
+	float:none;
+	width:auto;
+	display:inline;
+	margin:-2px 3px 0 0;
+	vertical-align:middle;
+	margin-right:3px;
+	margin-top:-2px;
+}
+
+div.registration div.security p {
+	font-size:1.2em;
+}
+
+div.registration a.printable-version {
+	font-size:1.1em;
+	float:right;
+	display:block;
+	margin-top:-1em;
+	margin-bottom:1em;
+}
+
+div.registration form#registration button {
+	float:right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

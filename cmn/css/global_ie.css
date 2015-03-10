@@ -1,0 +1,85 @@
+* html div, 
+* html li, 
+div.module,
+div.main-well div.module.meal-planner ol, 
+div.main-well div.module.meal-planner ol ul,
+form,
+ul.pagination,
+div.saved { 
+	zoom:1;
+}
+
+div.header form input#search-query {
+	border:0;
+	background-position:right -476px;
+}
+
+div.header ul.top li {
+	font-size:1.2em;
+}
+
+/* Fixes issue where nav drop downs are hidden behind content div */
+*div.content { z-index:-1; }
+
+/* Tighten up spacing for bad font rendering in IE */
+div.recommend-btn a { letter-spacing:-.1em; }
+
+div.sidebar { height:500px; }
+div.main-well div.module.meal-planner ol { height:90px; }
+div.main-well div.module.meal-planner ol li { display:inline; }
+
+/* Bullets render much smaller in IE, bump 'em up */
+div.image-carousel ol li a {
+	font-size:2.3em;
+	padding:0;
+	letter-spacing:.5em;
+}
+
+div.header h3 {
+	padding:0;
+}
+
+/* Tighten up letter spacing for IE */
+h1, h2 {
+	letter-spacing:-1px;
+}
+
+div.main-well h2.module-header {
+	letter-spacing:0;
+}
+
+/* Fixes collapsing height on login page */
+div.content.login {
+	height:500px;
+}
+
+/* Fixes extra padding issue with action buttons in IE 6 */
+.action-button, 
+.action-button em,
+.action-button strong {
+	display:inline-block;
+}
+
+/* Fixes IE6 which adds lineheight to empty divs */
+div.module-cap-top {
+	line-height:0px;
+	width:925px;
+}
+div.module-cap-bottom {
+	line-height:0px;
+	width:925px;
+}
+
+
+* html div.hpa-landing h1 {
+	display:inline-block;
+}
+
+*div.hpa-test div.buttons button {
+	margin-right:5em;
+}
+
+* html div.registration div.field {
+	float:none;
+	zoom:1;
+}

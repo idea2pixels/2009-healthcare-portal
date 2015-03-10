@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<title>Alere HTML Framework - Heathwise Knowledgebase Article</title>
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="cmn/css/global.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/modules.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/article.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/sign-in_register.css" type="text/css" media="all">
+	<!-- 
+		Integration Note:
+			Generally you would only include a single skin style sheet which overrides
+			all the default in global.css and modules.css as necessary.
+			
+			For debug/demo purposes all the style sheets are include here so that they can
+			be toggled using the style sheet switcher (to see the style sheet switch add ?debug=1)
+	-->
+	<link rel="stylesheet" href="cmn/css/skins/ge.css" type="text/css" media="all" title="ge">
+	<link rel="stylesheet alternate" href="cmn/css/skins/cisco.css" type="text/css" media="all" title="cisco">
+	<link rel="stylesheet alternate" href="cmn/css/skins/fedex.css" type="text/css" media="all" title="fedex">
+	<link rel="stylesheet alternate" href="cmn/css/skins/blue-cross.css" type="text/css" media="all" title="blue-cross">
+	<!--[if IE]>
+		<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="cmn/css/global_ie.css" type="text/css" media="all">
+	<![endif]-->
+	</head>
+<body>	<div class="container">
+		<div class="utility span-31">
+					<strong class="welcome">Hello, Suzanne.</strong>
+		<ul>
+			<li class="home"><a href="/">Home</a></li>
+			<li class="messages"><a href="#">Messages: <strong>2</strong></a></li>
+			<li><a href="#">Account</a></li>
+			<li><a href="#">Feedback</a></li>
+			<li><a href="#">Logout</a></li>
+		</ul>
+		<div class="help"><a href="#">Help</a></div>		</div>
+		<div class="header">
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+			<div class="header-bg"> <!-- for skinning purposes only, background for header -->
+							<h2 class="logo"><a href="/">GE</a></h2>
+				
+				<!-- 
+					Main Menu Nav
+					Integration Notes:
+						- The first menu item should have class="first"
+						- the last menu item should have class="last"
+						- JavaScript is used to show / hide sub menus. If JS is not available, fall back landing pages should be provided to guide the user to subsections
+				-->
+				<ul id="top-nav" class="nav top">
+					<li class="first">
+						<a href="#">Healthy Living</a>
+						<div class="top-nav-sub two-col">
+							<ul>
+								<li><a href="#">Food and Recipes</a></li>
+								<li><a href="#">Stress Management</a></li>
+								<li><a href="#">Nutrition</a></li>
+								<li><a href="#">Weight Management</a></li>
+								<li><a href="#">Fitness &amp; Activity</a></li>
+								<li><a href="#">Smoking Cessation</a></li>
+							</ul>
+							<h5>Tools</h5>
+							<ul>
+								<li><a href="#">Progress Tracker</a></li>
+								<li><a href="#">Fitness Planner</a></li>
+								<li><a href="#">Meal Planner</a></li>
+								<li><a href="#">Walking Challenge</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">Diseases &amp; Conditions</a>
+						<div class="top-nav-sub two-col">
+							<ul>
+								<li><a href="#">Allergies</a></li>
+								<li><a href="#">Depression</a></li>
+								<li><a href="#">Arthritis</a></li>
+								<li><a href="#">Diabetes</a></li>
+								<li><a href="#">Asthma</a></li>
+								<li><a href="#">Digestive Disorders</a></li>
+								<li><a href="#">Cancer</a></li>
+								<li><a href="#">Fibromyalgia</a></li>
+								<li><a href="#">Cholesterol</a></li>
+								<li><a href="#">High Blood Pressure</a></li>
+								<li><a href="#">Chronic Pain</a></li>
+								<li><a href="#">Osteoporosis</a></li>
+								<li><a href="#">Colds</a></li>
+								<li><a href="#">Reﬂux (GERD)</a></li>
+								<li><a href="#">Coronary Artery Disease</a></li>
+								<li><a href="#">Sleep disorders</a></li>
+								<li><a href="#">COPD</a></li>
+								<li><a href="#">Urinary/bladder problems</a></li>
+								<li><a href="#">Coronary Artery Disease</a></li>
+								<li class="all"><a href="#">All Conditions</a></li>
+							</ul>	
+							<h5>Other Resources</h5>
+							<ul>
+								<li><a href="#">Surgeries &amp; Procedures</a></li>
+								<li><a href="#">Symptom Checker</a></li>
+								<li><a href="#">Medications</a></li>
+								<li><a href="#">Health Tools</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">Personal &amp; Family Health</a>
+						<div class="top-nav-sub two-col">
+							<ul>
+								<li><a href="#">Women's Health</a></li>
+								<li><a href="#">Men's Health</a></li>
+								<li><a href="#">50+ Health</a></li>
+								<li><a href="#">Healthy Kids</a></li>
+								<li><a href="#">Home Care/First Aid</a></li>
+								<li><a href="#">Pregnancy</a></li>
+								<li><a href="#">Navigating Healthcare</a></li>
+								<li><a href="#">Supplements/Herbals</a></li>
+								<li><a href="#">Alternative Therapies</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">Tools &amp; Media</a>
+						<div class="top-nav-sub">
+							<ul>
+								<li><a href="#">Interactive Tools</a></li>
+								<li><a href="#">Trackers</a></li>
+								<li><a href="#">Quizzes/Assessments</a></li>
+								<li><a href="#">Calculators</a></li>
+								<li><a href="#">Video</a></li>
+								<li><a href="#">Audio</a></li>
+								<li><a href="#">Games</a></li>
+								<li><a href="#">Conversations</a></li>
+								<li><a href="#">Online Seminars</a></li>
+							</ul>
+						</div>	
+					</li>
+				</ul>
+				<form id="search">
+					<label for="search-query">Search</label>
+					<input type="text" name="search-query" title="Search" class="example-text" id="search-query">
+					<input type="submit" name="search-submit" value="" id="search-submit">
+				</form>			</div>
+			<div class="module-cap-bottom"></div> <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+		<div class="content">
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+			<div class="breadcrumb-bar">
+				<ol>
+					<li>Medical Resources></li>
+					<a href="#">Supplimental Therapies</a> >
+					<li class="selected">ALOE</li></ol>
+				<ul>
+<li class="email"><a href="#">Email</a></li>
+					<li class="print"><a href="#">Print</a></li>
+					<li class="font-sizer">
+						<a class="decrease" href="#" title="Decrease font-size">A</a>
+						<a class="increase" href="#" title="Increase font-size">A</a>
+					</li>
+				</ul>
+			</div>
+			<div class="sidebar span-7">
+				<div class="module home-btn">
+					<a href="#">Home</a>
+				</div>
+				
+	
+			</div>
+			<div class="main-well article span-17">				
+			<p align=left>
+			  <H1>ALOE</h1>
+
+
+						<p><strong>What is it? </strong>Aloe is an herbal medicine used in skin ointments and creams   to treat wounds, burns, or other skin problems. Aloe by mouth is used to treat   constipation (hard bowel movements).   
+			  <p>Other names for aloe include: Aloe vera.</p>
+                        <p>Ask your doctor, nurse, or pharmacist if you need more information about this   medicine or if any information in this leaflet concerns you. </p>
+               
+              <p><strong>Before Using: </strong>Tell your doctor if you ...   
+                        <UL>
+                          <LI>are taking medicine or are allergic to any medicine (prescription or   over-the-counter (OTC) or dietary supplement)   
+                          <LI>are pregnant or plan to become pregnant while using this medicine   
+                          <LI>are breast feeding   
+                          <LI>have any other health problems, such as high blood pressure or heart or   blood vessel disease </LI>
+                        </UL>
+                
+                        <p><strong>Dosage:</strong> Talk with your caregiver about how much aloe you should take. The   amount depends on the strength of the medicine and the reason you are taking   aloe. If you are using this medicine without instructions from your caregiver,   follow the directions on the label. Do not take more aloe or take it more often   than what is written on the directions.                         
+              
+                        <p><strong>To store this medicine:</strong> Keep all medicine locked up and away from   children. Store medicine away from heat and direct light. Do not store your   medicine in the bathroom, near the kitchen sink, or in other damp places. Heat   or moisture may cause the medicine to break down and not work the way it should   work. Throw away medicine that is out of date or that you do not need. Never   share your medicine with others.                         
+               
+              <p><strong>Drug and Food Interactions:</strong> Do not take aloe without talking to your   doctor first if you are taking:   
+<UL>
+                          <LI>Digoxin (Lanoxin(R))(3)   
+                          <LI>Sevoflurane (Ultane(R))(7)   
+                          <LI>Warfarin (Coumadin(R))(8)</LI>
+                        </UL>
+                     
+<p><strong>Warnings:</strong> </p>
+                        <ul>
+                          <LI>Before taking aloe, tell your doctor if you are pregnant or breast feeding   
+                          <LI>Do not take aloe by mouth if you have bowel problems of any kind (recent   abdominal or bowel surgery or bowel blockage)   
+                          <LI>Do not take aloe by mouth if you have nausea or vomiting   
+                          <LI>Do not take aloe by mouth if you have abdominal (stomach) pain that your a   doctor has not treated   
+                          <LI>Children under age 12 years should not take aloe </LI>
+                        </ul>
+               
+              <p>Side Effects: </strong>Call your doctor right away if you have any of these side   effects:  
+                        <UL>
+                          <LI>Allergic reaction: Itching or hives, swelling in your face or hand, swelling   or tingling in your mouth or throat, chest tightness, trouble breathing, or   rash.  
+                          <LI>Chest pain or discomfort or unusual heartbeats</LI>
+                        </UL>
+                        <strong>
+                        <p>Other Possible Side Effects: </strong>You may have the following side effects, but   this medicine may also cause other side effects. Tell your doctor if you have   side effects that you think are caused by this medicine.   
+                        <UL>
+                          <LI>Fever, chills, or low back pain   
+                          <LI>Dizziness, weakness  
+                          <LI>Itching, redness, pain, or a rash when aloe gel is used on the skin   
+                          <LI>Nausea, vomiting, stomach pain, or diarrhea if you take aloe by mouth   
+                          <LI>Weight loss</LI>
+                        </UL>
+                          
+
+                <div class="footnote">
+     <p>© 1974 - 2005 Thomson MICROMEDEX. All rights reserved. The AltCareDex(R) System   Vol. 124 expires 6/2005 </p>
+          
+                  <p><cite>REFERENCES: </cite></p>
+                  <cite>
+                  <ol>
+                    <li> Bisset NG (ed): Herbal Drugs and Phytopharmaceuticals.   CRC Press, Boca Raton, FL; 1994.</li>
+                    <li> McGuffin M, Hobbs C, Upton R et al (eds):   Aloe. American Herbal Products Association's Botanical Safety Handbook. CRC   Press, Boca Raton, FL; 1997. </li>
+                    <li> Blumenthal M, Busse WR, Goldberg A et al   (eds): Aloe. The Complete German Commission E Monographs, 1st ed. The American   Botanical Council, Austin, TX; 1998. </li>
+                    <li> Leung AY: Encyclopedia of Common   Natural Ingredients Used in Food, Drugs and Cosmetics. Wiley, New York, NY;   1980.</li>
+                    <li> Reynolds JEF (ed): Martindale: The Extra Pharmacopoeia, 28th   edition. The Pharmaceutical Press, London, England; 1982.</li>
+                    <li> Morrow DM,   Rapaport MJ &amp; Strick R: Hypersensitivity to aloe. Arch Dermatol 1980;   1126:1064-1065.</li>
+                    <li> Lee A, Chui PT, Aun CST et al: Possible interaction   between sevoflurane and Aloe vera. Ann Pharmacother 2004; 38:1651-1654. </li>
+                    <li>   Product Information: COUMADIN(R) oral tablets, IV injection, warfarin sodium   oral tablets, IV injection. Bristol-Myers Squibb Company, Princeton, NJ,   2007.  </li></ol>                   
+                  </cite>
+                
+                  <p>The information contained in the Micromedex products above is intended as an   educational aid only. It is not intended as medical advice for individual   conditions or treatment. It is not a substitute for a medical exam, nor does it   replace the need for services provided by medical professionals. Talk to your   doctor, nurse or pharmacist before taking any prescription or over the counter   drugs (including any herbal medications or supplements) or following any   treatment or regimen. Only your doctor, nurse or pharmacist can provide you with   advice on what is safe and effective for you.</p>
+                  <p>The Pharmaceutical Content contains information about prescription and   over-the-counter medications available in the United States. While many of the   pharmaceutical products in the database are available outside of the United   States, some products may not be available outside of the United States. In   addition, while all prescription medications and most over-the-counter   medications in the database are approved by the US Food and Drug Administration   (FDA), some over-the-counter medications do not fall under the jurisdiction of   the FDA and therefore do not have or require FDA approval.</p>
+                  <p>The Herbal Medicine Content contains information about herbal therapies and   other dietary supplements, which are not regulated as drugs in the United States   by the FDA. Additionally, the manufacture and distribution of herbal substances   are regulated as foods rather than those in the pharmaceutical industry. Because   of these differences in the regulation of the herbal and supplement industry,   you need to discuss use of these substances with your doctor, nurse or   pharmacist.</p>
+                  <p>The use of the Micromedex products is at your sole risk. These products are   provided "AS IS" and "as available" for use, without warranties of any kind,   either express or implied. Web Site Providers and Micromedex make no   representation or warranty as to the accuracy, reliability, timeliness,   usefulness or completeness of any of the information contained in the products.   Additionally, WEB SITE PROVIDERS AND MICROMEDEX MAKE NO REPRESENTATION OR   WARRANTIES AS TO THE OPINIONS OR OTHER SERVICE OR DATA YOU MAY ACCESS, DOWNLOAD   OR USE AS A RESULT OF USE OF THE MICROMEDEX PRODUCTS. ALL IMPLIED WARRANTIES OF   MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE OR USE ARE HEREBY EXCLUDED.   Web Site Providers and Micromedex do not assume any responsibility or risk for   your use of the Micromedex products. Please read the Terms of Use posted on this   web site for additional information and further definition of terms used in this   section.</p>
+                  <p>Copyright © 2009 MICROMEDEX Thomson Healthcare. All rights reserved. Information is for Authorized End User's use only and may not be sold, redistributed or otherwise used for commercial purposes.
+</p>
+
+                <p class="copyright">&nbsp;</p>
+				</div>
+			</div>
+			<div class="alt-sidebar span-6 last">
+				<div class="recommend-btn">
+				<a href="#">Recommend this article <span>435 recommendations</span></a></div>
+			</div>
+			<div class="module-cap-bottom"></div>  <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+		<div class="footer">
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+				<div class="footer-bg"><!-- for skinning purposes only, footer background -->
+					<div class="alere">
+						<p class="powered-by">Powered by</p>
+						<h3>Alere</h3>
+						<p>&copy; 2009 Alere. All rights reserved. Alere is a trademark of the Inverness Medical group of companies.</p>
+					</div>
+				</div>
+			<div class="module-cap-bottom"></div> <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+	</div>
+	<!-- Leave Scripts at the bottom to make sure they don't block the initial paint -->
+	<script src="cmn/js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="cmn/js/jquery-delegate.js"></script>
+	<script src="cmn/js/jquery_example/jquery.example.min.js"></script>
+	<script src="cmn/js/global.js"></script>
+	</body>
+</html>

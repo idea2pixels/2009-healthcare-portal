@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<title>Alere HTML Framework</title>
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="cmn/css/incentives.css" type="text/css" media="all">
+	
+	<link rel="stylesheet" href="cmn/css/global.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/modules.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/article.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/sign-in_register.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/hpa.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/hpa-test.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/search.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/bioIQ.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/landing.css" type="text/css" media="all">
+
+	<!-- 
+		Integration Note:
+			Generally you would only include a single skin style sheet which overrides
+			all the default in global.css and modules.css as necessary.
+			
+			For debug/demo purposes all the style sheets are include here so that they can
+			be toggled using the style sheet switcher (to see the style sheet switch add ?debug=1)
+	-->
+	<link rel="stylesheet" href="cmn/css/skins/ge.css" type="text/css" media="all" title="ge">
+	<link rel="stylesheet alternate" href="cmn/css/skins/cisco.css" type="text/css" media="all" title="cisco">
+	<link rel="stylesheet alternate" href="cmn/css/skins/fedex.css" type="text/css" media="all" title="fedex">
+	<link rel="stylesheet alternate" href="cmn/css/skins/blue-cross.css" type="text/css" media="all" title="blue-cross">
+	<!--[if IE]>
+		<link rel="stylesheet" href="css/blueprint/blueprint/ie.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="cmn/css/global_ie.css" type="text/css" media="all">
+	<![endif]-->
+    
+    	<link href="cmn/css/jNice.css" rel="stylesheet" type="text/css" />
+         <link rel="stylesheet" href="cmn/css/thickbox.css" type="text/css" />
+	</head>
+<body>	
+
+<!--<div class="modal-dialog">
+		<h2>Are you sure you want to navigate away from this page?</h2>
+		<p>If you don’t complete your wellness assessement, then you won’t earn
+		credits towards your incentives.</p>
+		<p>If you want to come back later, your answers will be saved.</p>
+		<div class="buttons">
+			<span class="action-button alt light"><strong><em>Return and Finish</em></strong></span>
+			<span class="action-button alt light"><strong><em>Save and Exit</em></strong></span>
+		</div>
+	</div> -->
+    
+    
+    
+	<div class="container">
+		<div class="utility span-31">
+					<strong class="welcome">Hello, Suzanne.</strong>
+		<ul>
+			<li class="home"><a href="/">Home</a></li>
+			<li><a href="#">Logout</a></li>
+		</ul>
+		<div class="help"><a href="#">Help</a></div>		</div>
+		<div class="header">
+			<div class="module-cap-top"><!-- for skinning purposes only, rounded corder cap --></div>
+			<div class="header-bg hpa"> <!-- for skinning purposes only, background for header -->
+							<h2 class="logo"><a href="/">GE</a></h2>
+				<h3>Health and Wellness Assessment</h3>			</div>
+			<div class="module-cap-bottom"><!-- for skinning purposes only, rounded corder cap --></div> 
+		</div>
+		<div class="content hpa-test">
+			<div class="module-cap-top"><!-- for skinning purposes only, rounded corder cap --></div>
+			<div class="span-7 sidebar">
+				<h3>Your Progress:</h3>
+				<!-- 
+					Integration Note:
+					Progress bar completion can be set inline using the style="width:x" property. Valid values are 0 - 100%
+				-->
+				<div class="progress-bar">
+					<span style="width:80%">You're 80% complete!</span> 
+				</div>
+				<p>Keep going! You're well on your way.</p>
+			</div>
+			<div class="span-23 last">
+				<div class="breadcrumb-bar utils-only">
+					<ul>
+						<li class="font-sizer">
+							<a class="decrease" href="#" title="Decrease font-size">A</a>
+							<a class="increase" href="#" title="Increase font-size">A</a>
+						</li>
+					</ul>
+					<form id="language-selection">
+						<label for="change_language">Change Language</label>
+						<select name="change_language" id="change_language" style=" width:100px;">
+							<option value="option1">English</option>
+							<option value="option2">Español</option>
+						</select>
+					</form>
+				</div>			
+			</div>
+			<div class="span-20 main-well">
+				
+				<h1>Biometrics</h1>
+				<form>
+					<div class="form-element">
+						<label for="hip">Hip <span>inches</span></label>
+						<input type="text" name="hip" id="hip">
+						<a href="#" id="btn-help-hip" class="form-field-help" title="Need Help?">Help</a>					</div>
+								
+			  <div class="form-element">
+						<label for="resting_pulse">Resting Pulse <span>beats per minute (bpm)</span></label>
+						<input type="text" name="resting_pulse" id="resting_pulse">
+						<a href="#" class="form-field-help" title="Need Help?">Help</a>					</div>
+			
+			  <div class"span-21"><div class="form-element">
+						
+                        
+                        <label for="blood_pressure_over">Blood Pressure</label>
+						<input type="text" name="blood_pressure_over" id="blood_pressure_over"> / <input type="text" name="blood_pressure_under" value="" id="blood_pressure_under">
+						<a href="#" id="btn-help-blood-pressure" class="form-field-help" title="Need Help?">Help</a>		
+                        </div>			
+                        </div>
+	
+					<div class="form-element">
+						<label for="total_cholesterol">Total Cholesterol</label>
+						<input type="text" name="total_cholesterol" id="total_cholesterol">
+						<a href="#" class="form-field-help" title="Need Help?">Help</a>					</div>
+
+			  <div class="form-element">
+						<label for="hdl">HDL (High-Density Lipoprotein)</label>
+						<input type="text" name="hdl" id="hdl">
+						<a href="#" class="form-field-help" title="Need Help?">Help</a>					</div>
+					
+			  <div class="form-element">
+						<label for="ldl">LDL (Low-Density Lipoprotein)</label>
+						<input type="text" name="ldl" id="ldl">
+						<a href="#" class="form-field-help" title="Need Help?">Help</a>					</div>
+					
+			  <div class="form-element">
+						<label for="triglycerides">Triglycerides</label>
+						<input type="text" name="triglycerides" id="triglycerides">
+						
+						<label class="checkbox push-1" for="fasted_tri">Fasted at least 9 hours?</label>
+                        <input class="checkbox" type="checkbox" name="fasted_tri" id="fasted_tri">
+						<a href="#" class="form-field-help" title="Need Help?">Help</a>					</div>
+					
+			  <div class="form-element">
+						<label for="glucose">Glucose</label>
+						<input type="text" name="glucose" id="glucose">
+						
+						<label class="checkbox push-1" for="fasted_glu">Fasted at least 9 hours?</label>	
+                        <input class="checkbox" type="checkbox" name="fasted_glu" id="fasted_glu">	
+						<a href="#" class="form-field-help" title="Need Help?">Help</a>					</div>
+					
+			  <div class="form-element">
+						<label for="hemoglobin_a1c">Hemoglobin A1c</label>
+						<input type="text" name="hemoglobin_a1c" id="hemoglobin_a1c">
+						<a href="#" class="form-field-help" title="Need Help?">Help</a>					</div>
+					
+			  <div class="form-element">
+						<label for="body_fat">Body Fat</label>
+						<input type="text" name="body_fat" id="body_fat">
+						<a href="#" class="form-field-help" title="Need Help?">Help</a>					</div>
+					
+			  <div class="form-element text">
+						<p class="label">Body Mass Index</p>
+						<p class="value">23.5</p>
+					</div>					
+					
+			  <div class="buttons">
+						<button class="reset" type="submit"><span class="action-button alt reverse"><strong><em>Previous</em></strong></span></button>
+						<!-- <button class="reset" type="submit"><span class="action-button alt light"><strong><em>Save and Enter Later</em></strong></span></button> -->
+                        <a href="popup.html?keepThis=true&amp;TB_iframe=true&amp;height=220&amp;width=58em;" title="" class="thickbox"><button class="reset" type="submit"><span class="action-button alt light"><strong><em>Save and Enter Later</em></strong></span></button></a>
+						<button class="reset last" type="submit"><span class="action-button alt"><strong><em>Next</em></strong></span></button>
+					</div>
+				</form>
+			</div>
+			<div class="module-cap-bottom"><!-- for skinning purposes only, rounded corder cap --></div>
+		</div>
+		<div class="footer">
+			<div class="module-cap-top"><!-- for skinning purposes only, rounded corder cap --></div>
+				<div class="footer-bg"><!-- for skinning purposes only, footer background -->
+					<ul>
+						<li class="first"><a href="#">About Alere</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Editorial Policy</a></li>
+					</ul>
+					<div class="alere">
+						<p class="powered-by">Powered by</p>
+						<h3>Alere</h3>
+						<p>&copy; 2009 Alere. All rights reserved. Alere is a trademark of the Inverness Medical group of companies.</p>
+					</div>
+					
+					<div class="certification">
+						<img src="cmn/img/footer/urac-logo.png" width="78" height="73" alt="URAC">
+						<img src="cmn/img/footer/hon-code-logo.png" width="49" height="72" alt="HON Code">
+						<p>
+							We comply with the <a href="#">HONcode standard for the trustworthy health</a> information: <a href="#">verify here</a>
+						</p>
+					</div>
+				</div>
+			<div class="module-cap-bottom"><!-- for skinning purposes only, rounded corder cap --></div> 
+		</div>
+	</div>
+	<!-- Leave Scripts at the bottom to make sure they don't block the initial paint -->
+	<script src="cmn/js/jquery.js"></script>
+	<script src="cmn/js/jcarousel/lib/jquery.jcarousel.js"></script>
+	<script src="cmn/js/jquery_example/jquery.example.min.js"></script>
+	<script src="cmn/js/global.js"></script>
+     <script src="cmn/js/thickbox-compressed.js" type="text/javascript"></script>
+    	<script type="text/javascript" src="cmn/js/jquery.jNice.js"></script>
+	</body>
+</html>

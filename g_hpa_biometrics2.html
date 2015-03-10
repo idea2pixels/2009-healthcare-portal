@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<title>Alere HTML Framework</title>
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/print.css" type="text/css" media="print">
+
+<!-- CUSTOM STYLES -->	
+	<link rel="stylesheet" href="cmn/css/global.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/hpa-test.css" type="text/css" media="all">
+    <link rel="stylesheet" href="cmn/css/hpa.css" type="text/css" media="all">
+
+	<link rel="stylesheet" href="cmn/css/skins/fedex.css" type="text/css" media="all">
+	<!--[if IE]>
+		<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="cmn/css/global_ie.css" type="text/css" media="all">
+	<![endif]-->
+	
+     <!-- STYLES FOR FORMS -->
+
+	<link href="cmn/css/jNice.css" rel="stylesheet" type="text/css" />
+    
+    
+    
+    <!-- JS FOR RADIO BUTTON STYLING -->
+    <script type="text/javascript" src="cmn/js/jquery-latest-version.js"></script>
+	<script type="text/javascript" src="cmn/js/jquery.jNice.js"></script>
+ 
+	<script type="text/javascript">
+	<!--
+	$(function(){
+		var $a = $('<a>Add Option</a>');
+		$('body').append($a);
+		$a.click(function(){
+			var element = $('#select2')[0];
+			var myNewOption = new Option("My Option", "123", true);
+			element.options[element.options.length] = myNewOption;
+			$.jNice.SelectUpdate(element);
+		});
+	});
+	
+	-->
+	</script>
+    
+    <!-- Metric Value Initialization -->
+    <script type="text/javascript">
+		$(document).ready(function(){
+			$('.intl').hide('fast');
+			$('.m-intl').hide('fast');
+		});
+		
+		
+		$(function() {
+			// shows the slickbox on clicking the noted link
+ 			$('#show .jNiceRadio').click(function() {
+			$('.standard').hide('fast');
+			$('.intl').show('fast');			
+			return false;
+ 			});
+			
+			$('#hide .jNiceRadio').click(function() {
+			$('.intl').hide('fast');
+			$('.standard').show('fast');			
+			return false;
+ 			});
+			
+			$('#m-show .jNiceRadio').click(function() {
+			$('.m-standard').hide('fast');
+			$('.m-intl').show('fast');			
+			return false;
+ 			});
+			
+			$('#m-hide .jNiceRadio').click(function() {
+			$('.m-intl').hide('fast');
+			$('.m-standard').show('fast');			
+			return false;
+ 			});
+			
+		});
+	
+		
+	</script>
+    
+    <!-- Styles for Ligh-box -->
+    <link rel="stylesheet" href="cmn/css/thickbox.css" type="text/css" />
+    
+</head>
+
+<body>	
+	<div class="container">
+
+		<div class="utility span-31">
+					<strong class="welcome">Hello, Suzanne.</strong>
+		<ul>
+			<li class="home"><a href="/">Home</a></li>
+			<li><a href="#">Logout</a></li>
+		</ul>
+		<div class="help"><a href="#">Help</a></div>		</div>
+
+		<div class="header">
+			<div class="module-cap-top"><!-- for skinning purposes only, rounded corder cap --></div>
+			<div class="header-bg hpa"> <!-- for skinning purposes only, background for header -->
+				<h2 class="logo"><a href="/">blue healthcare</a></h2>
+				<h3>Health and Wellness Assessment</h3>			</div>
+			<div class="module-cap-bottom"><!-- for skinning purposes only, rounded corder cap --></div> 
+		</div>
+
+		<div class="content hpa-test">
+			<div class="module-cap-top"><!-- for skinning purposes only, rounded corder cap --></div>
+			<div class="span-7 sidebar">
+				<h3>Your Progress:</h3>
+				<!-- 
+					Integration Note:
+					Progress bar completion can be set inline using the style="width:x" property. Valid values are 0 - 100%
+				-->
+				<div class="progress-bar">
+					<span style="width:80%">You're 80% complete!</span> 
+				</div>
+
+				<p>Keep going! You're well on your way.</p>
+			</div>
+			<div class="span-23 last">
+				<div class="breadcrumb-bar utils-only">
+					<ul>
+						<li class="font-sizer">
+							<a class="decrease" href="#" title="Decrease font-size">A</a>
+							<a class="increase" href="#" title="Increase font-size">A</a>
+
+						</li>
+					</ul>
+					<form id="language-selection">
+						<label for="change_language">Change Language</label>
+						<select name="change_language" id="change_language">
+							<option value="option1">English</option>
+							<option value="option2">Español</option>
+
+						</select>
+					</form>
+				</div>			
+			</div>
+			<div class="span-20 main-well">
+				
+				<h1>Biometrics</h1>
+				
+                <form class="jNice">
+               		<div class="form-element">
+                		<div class="question">What units of measure fo you want to enter?</div>
+                    </div>
+                    <hr />
+                    <div class="span-21">
+                	<div class="form-element">
+                		<div class="span-10">
+                        <b>For your height and weight?</b>
+                    	<a href="#" id="btn-help-measure-units" class="form-field-help" title="Need Help?">Help</a>
+                        </div>
+                		 <div class="span-10">&nbsp;</div>
+                         <div class="span-10">
+                         <div class="span-2 prepend-1" id="hide">
+                        	<input type="radio" name="radiom1" value="0" id="radiom1_0" checked />
+                        </div>
+                        <div class="span-4">
+                        	<label>Feet/Inches and Pounds</label>
+                        </div>
+                       
+                        </div>
+                        <div class="span-10">
+                        <div class="span-2" id="show">
+                        	<input type="radio" name="radiom1" value="1" id="radiom1_1" />
+                        </div>
+                        
+                        <div class="span-4">
+                        	<label>Centimeters and Kilograms</label>
+                        </div>
+          		    	
+                        </div>
+          				
+ 					</div> 
+                  	<div class="form-element">
+                		<div class="span-10">
+                            <b>For your blood work values?</b>
+                            <a href="#" id="btn-help-blood-values" class="form-field-help" title="Need Help?">Help</a>
+                         </div>
+                         <div class="span-10">&nbsp;</div>
+                         <div class="span-10">
+                         <div class="span-2 prepend-1" id="m-hide">
+                	 	 	<input type="radio" name="radiom2" value="0" id="radiom2_0" checked />
+                         </div>
+           				 <div class="span-6">
+                        	<label>mg/dL (Conventional Units)</label>
+                         </div>
+                         </div>
+                 		<div class="span-10">
+                        <div class="span-2" id="m-show">
+                        	<input type="radio" name="radiom2" value="1" id="radiom2_1" />
+                        </div>
+          				<div class="span-6">
+                        <label>mmol/L (Standard International Units)</label>
+                        </div>
+                        </div>
+ 					</div> 
+                 	</div>
+					</form>
+                
+                    <hr />
+                    
+                    <form>
+                  		<div class="form-element">
+                		<div class="question">Please enter your biometric information below:</div>
+                    </div>
+                        <div class="span-20 form-element">
+                            <div class="span-9"><label for="height">Height</label>
+                            
+                            <input type="text" name="height" id="height"></div>
+                            <div class="span-4 standard">inches</div>
+                            <div class="span-4 intl">Centimeters</div>
+                            
+                            <a href="#" id="btn-help-height" class="form-field-help" title="Need Help?">Help</a>
+                        </div>
+                                    
+                
+                        <div class="span-20 form-element">
+                            <div class="span-9">
+                                <label for="weight">Weight</label>
+                                <input type="text" name="weight" id="weight">
+                            </div>
+                            <div class="span-4 standard">lbs.</div>
+                            <div class="span-4 intl">kilos.</div>
+                            
+                            <a href="#" id="btn-help-height" class="form-field-help" title="Need Help?">Help</a>
+                        </div>
+                        
+                           <div class="span-20 form-element">
+                            <div class="span-9">
+                                <label for="waist">Waist</label>
+                                <input type="text" name="waist" id="waist">
+                            </div>
+                            <div class="span-4 standard">inches</div>
+                            <div class="span-4 intl">centimeters</div>
+                            
+                            <a href="#" id="btn-help-waist" class="form-field-help" title="Need Help?">Help</a>
+                        </div>
+                    	  <div class="span-20 form-element">
+                            <div class="span-9">
+                                <label for="neck">Neck Circumference</label>
+                                <input type="text" name="neck" id="neck">
+                            </div>
+                            <div class="span-4 standard">inches</div>
+                            <div class="span-4 intl">centimeters</div>
+                            
+                            <a href="#" id="btn-help-neck" class="form-field-help" title="Need Help?">Help</a>
+                        </div>
+                	   <div class="span-20 form-element">
+                  		<div class="span-6">
+						<label for="blood_pressure_over">Blood Pressure (systolic/diastolic)</label></div>
+                        <div class="span-3">                      
+                        <input type="text" name="blood_pressure_over" id="blood_pressure_over"></div>
+                        <div class="span-1"> / </div>
+                        <div class="span-4"><input type="text" name="blood_pressure_under" value="" id="blood_pressure_under"></div>
+						
+                        <a href="#" id="btn-help-blood-pressure" class="form-field-help" title="Need Help?">Help</a>
+					</div>
+                  
+                 
+                    <form>
+                    
+					<div class="form-element">
+						<div class="span-9">
+                        <label for="total_cholesterol">Total Cholesterol</label>
+						<input type="text" name="total_cholesterol" id="total_cholesterol">
+ 						</div>
+                            <div class="span-4 m-standard">mg/dL</div>
+                            <div class="span-4 m-intl">mmol/L</div>
+						<a href="#" id="btn-help-t_cholesterol" class="form-field-help" title="Need Help?">Help</a>
+					</div>
+
+					<div class="span-20 form-element">
+                            <div class="span-9">
+                                <label for="hdl_cholesterol">HDL Cholesterol</label>
+                                <input type="text" name="hdl_cholesterol" id="hdl_cholesterol">
+                            </div>
+                            <div class="span-4 m-standard">mg/dL</div>
+                            <div class="span-4 m-intl">mmol/L</div>
+                            
+                            <a href="#" id="btn-help-t_cholesterol" class="form-field-help" title="Need Help?">Help</a>
+                        </div>
+
+					
+					<div class="span-20 form-element">
+                            <div class="span-9">
+                                <label for="ldl_cholesterol">LDL Cholesterol</label>
+                                <input type="text" name="ldl_cholesterol" id="ldl_cholesterol">
+                            </div>
+                            <div class="span-4 m-standard">mg/dL</div>
+                            <div class="span-4 m-intl">mmol/L</div>
+                            
+                            <a href="#" id="btn-help-ldl_cholesterol" class="form-field-help" title="Need Help?">Help</a>
+                        </div>
+					
+				           
+                    <div class="form-element">
+						<div class="span-9">
+                        <label for="triglycerides">Triglycerides</label>
+
+						<input type="text" name="triglycerides" id="triglycerides">
+						
+                        </div>
+                        <div class="span-2 m-standard">mg/dL</div>
+                        <div class="span-2 m-intl">mmol/L</div>
+                        <div class="span-8">
+                        <input class="checkbox" type="checkbox" name="fasted_tri" id="fasted_tri">
+						<label class="checkbox" for="fasted_tri">Fasted at least 9 hours?</label> 
+                        </div>
+						<a href="#" class="form-field-help" title="Need Help?">Help</a>
+					</div>
+					
+					<div class="form-element">
+						<div class="span-9">
+    	                    <label for="glucose">Blood Glucose</label>
+							<input type="text" name="glucose" id="glucose">
+                        </div>
+						<div class="span-2 m-standard">mg/dL</div>
+                        <div class="span-2 m-intl">mmol/L</div>
+                        <div class="span-8">
+                     	    <input class="checkbox" type="checkbox" name="fasted_glu" id="fasted_glu">
+							<label class="checkbox" for="fasted_glu">Fasted at least 9 hours?</label>
+                        </div>		
+						<a href="#" class="form-field-help" title="Need Help?">Help</a>
+					</div>
+					
+					<div class="form-element">
+						<label for="hemoglobin_a1c">Hemoglobin A1c</label>
+						<input type="text" name="hemoglobin_a1c" id="hemoglobin_a1c">
+
+						<a href="#" class="form-field-help" title="Need Help?">Help</a>
+					</div>
+					
+					<div class="form-element">
+						<label for="body_fat">Body Fat</label>
+						<input type="text" name="body_fat" id="body_fat">
+						<a href="#" class="form-field-help" title="Need Help?">Help</a>
+					</div>
+
+					<div class="form-element text">
+						<p class="label">Body Mass Index</p>
+						<p class="value">23.5</p>
+					</div>
+                    
+                    
+                    
+                    </form>
+                    <hr />
+                    <form class="jNice">
+                        
+                       
+                       <div class="form-element">
+                	
+                	
+                	<div class="question">Do you have any of the following symptoms?
+                    </div><a href="#" id="btn-help-hip" class="form-field-help" title="Need Help?">Help</a>
+					
+                   	<div class="span-12 append-1" id="q2">Frequent Urination?</div>
+                	<div class="span-4">
+                    	<div class="span-2"><input type="radio" name="yn1" value="1" id="yesNo1_1" /></div>
+          				<div class="span-1"><label>Yes</label></div>
+                    </div>
+			        <div class="span-2 pull-1"><input type="radio" name="yn1" value="0" id="yesNo1_2" checked /></div>
+                    <div class="span-1"><label>No</label></div>
+          			
+                    	<div class="span-12 append-1" id="q3">Excessive thirst?</div>
+                	<div class="span-4">
+                    	<div class="span-2"><input type="radio" name="yn2" value="1" id="yesNo2_1" /></div>
+          				<div class="span-1"><label>Yes</label></div>
+                    </div>
+			        <div class="span-2 pull-1"><input type="radio" name="yn2" value="0" id="yesNo2_2" checked /></div>
+                    <div class="span-1"><label>No</label></div>
+                    
+                    	<div class="span-12 append-1" id="q4">Extreme hunger?</div>
+                	<div class="span-4">
+                    	<div class="span-2"><input type="radio" name="yn3" value="1" id="yesNo3_1" /></div>
+          				<div class="span-1"><label>Yes</label></div>
+                    </div>
+			        <div class="span-2 pull-1"><input type="radio" name="yn3" value="0" id="yesNo3_2" checked /></div>
+                    <div class="span-1"><label>No</label></div>
+                    
+                    	<div class="span-12 append-1" id="q5">Unusual weight loss?</div>
+                	<div class="span-4">
+                    	<div class="span-2"><input type="radio" name="yn4" value="1" id="yesNo4_1" /></div>
+          				<div class="span-1"><label>Yes</label></div>
+                    </div>
+			        <div class="span-2 pull-1"><input type="radio" name="yn4" value="0" id="yesNo4_2" checked /></div>
+                    <div class="span-1"><label>No</label></div>
+                    
+                    	<div class="span-12 append-1" id="q6">Increased fatigue?</div>
+                	<div class="span-4">
+                    	<div class="span-2"><input type="radio" name="yn5" value="1" id="yesNo5_1" /></div>
+          				<div class="span-1"><label>Yes</label></div>
+                    </div>
+			        <div class="span-2 pull-1"><input type="radio" name="yn5" value="0" id="yesNo5_2" checked /></div>
+                    <div class="span-1"><label>No</label></div>
+                    
+                    	<div class="span-12 append-1" id="q7">Irritability?</div>
+                	<div class="span-4">
+                    	<div class="span-2"><input type="radio" name="yn6" value="1" id="yesNo6_1" /></div>
+          				<div class="span-1"><label>Yes</label></div>
+                    </div>
+			        <div class="span-2 pull-1"><input type="radio" name="yn6" value="0" id="yesNo6_2" checked /></div>
+                    <div class="span-1"><label>No</label></div>
+                     
+                     	<div class="span-12 append-1" id="q8">Blurry vision?</div>
+                	<div class="span-4">
+                    	<div class="span-2"><input type="radio" name="yn7" value="1" id="yesNo7_1" /></div>
+          				<div class="span-1"><label>Yes</label></div>
+                    </div>
+			        <div class="span-2 pull-1"><input type="radio" name="yn7" value="0" id="yesNo7_2" checked/></div>
+                    <div class="span-1"><label>No</label></div>
+ 			  
+                
+                </div>
+				 <div class="form-element">
+                            <div class="span-12 append-1" id="q1">
+                                Do you think you have a greater than average amount of muscle 
+                                mass as a result of the activity you do on and off your job?
+                            </div>
+                            <div class="span-4">
+                                <div class="span-2">
+                                	<input type="radio" name="yn0" value="1" id="yesNo0_1" />
+                                </div>
+                                <div class="span-1">
+                                	<label>Yes</label>
+                                </div>
+                            </div>
+                            <div class="span-2 pull-1">
+                               	<input type="radio" name="yn0" value="0" id="yesNo0_2" checked/>
+                            </div>
+                            <div class="span-1">
+                               	<label>No</label>
+                             </div>
+                             <div class="span-1">
+                           		<a href="#" id="btn-help-q1" class="form-field-help" title="Need Help?">Help</a>
+                        	 </div>
+                         </div>
+                  		
+                        
+                        </form>
+                  					
+					
+                    
+                    <form>
+					<div class="buttons span-21">
+						<div class="span-3 append-3">
+                        	<a href="g_hpa_questionnaire_2.html"><span class="action-button alt reverse"><strong><em>Previous</em></strong></span></a>
+                        </div>
+						<div class="span-7">
+                        	     <a href="popup.html?keepThis=true&amp;TB_iframe=true&amp;height=220&amp;width=58em;" title="" class="thickbox"><button class="reset" type="submit"><span class="action-button alt light"><strong><em>Save and Enter Later</em></strong></span></button></a>
+                        </div>
+						<div class="span-5 prepend-1">
+							<a href="g_hpa_report.html"><span class="action-button alt"><strong><em>Finish!</em></strong></span></a>	
+                        </div>				
+                    </div>
+				</form>
+			</div>
+			<div class="module-cap-bottom"><!-- for skinning purposes only, rounded corder cap --></div>
+		</div>
+		<div class="footer">
+			<div class="module-cap-top"><!-- for skinning purposes only, rounded corder cap --></div>
+
+				<div class="footer-bg"><!-- for skinning purposes only, footer background -->
+					<ul>
+						<li class="first"><a href="#">About Alere</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Editorial Policy</a></li>
+
+					</ul>
+					<div class="alere">
+						<p class="powered-by">Powered by</p>
+						<h3>Alere</h3>
+						<p>&copy; 2009 Alere. All rights reserved. Alere is a trademark of the Inverness Medical group of companies.</p>
+					</div>
+					
+					<div class="certification">
+
+						<img src="cmn/img/footer/urac-logo.png" width="78" height="73" alt="URAC">
+						<img src="cmn/img/footer/hon-code-logo.png" width="49" height="72" alt="HON Code">
+						<p>
+							We comply with the <a href="#">HONcode standard for the trustworthy health</a> information: <a href="#">verify here</a>
+						</p>
+					</div>
+
+				</div>
+			<div class="module-cap-bottom"><!-- for skinning purposes only, rounded corder cap --></div> 
+		</div>
+	</div>
+	<!-- Leave Scripts at the bottom to make sure they don't block the initial paint -->
+<script src="cmn/js/jquery.js"></script>
+	<script src="cmn/js/jcarousel/lib/jquery.jcarousel.js"></script>
+	<script src="cmn/js/jquery_example/jquery.example.min.js"></script>
+	<script src="cmn/js/global.js"></script>
+     <script src="cmn/js/thickbox-compressed.js" type="text/javascript"></script>
+    	<script type="text/javascript" src="cmn/js/jquery.jNice.js"></script>
+</body>
+</html>

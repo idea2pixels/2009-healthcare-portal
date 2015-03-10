@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<title>Alere HTML Framework</title>
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="cmn/css/incentives.css" type="text/css" media="all">
+	
+	<link rel="stylesheet" href="cmn/css/global.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/modules.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/article.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/sign-in_register.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/hpa.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/hpa-test.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/search.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/bioIQ.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/incentives.css" type="text/css" media="all">
+
+	<link rel="stylesheet" href="cmn/css/skins/blue-cross.css" type="text/css" media="all">
+	<!--[if IE]>
+		<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="cmn/css/global_ie.css" type="text/css" media="all">
+	<![endif]-->
+	</head>
+<body>	<div class="container">
+
+		<div class="header">
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+			<div class="header-bg hpa"> <!-- for skinning purposes only, background for header -->
+							<h2 class="logo"><a href="tb_home-e.html">blue healthcare</a></h2>
+			</div>
+			<div class="module-cap-bottom"></div> <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+		<div class="content registration">
+			
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+			<div class="span-30 last">
+				<div class="breadcrumb-bar utils-only">
+					<ul>
+						<li class="font-sizer">
+							<a class="decrease" href="#" title="Decrease font-size">A</a>
+							<a class="increase" href="#" title="Increase font-size">A</a>
+						</li>
+					</ul>
+				</div>			
+			</div>
+			<form id="registration">
+				<h1>Register</h1>
+				<p class="relation-to">as a spouse of John Doe</p>
+				<p>Please fill in the fields below to create your profile. All fields are required. All information in your profile is confidential and will not be shared with your employer. If you already have a profile, <a href="#">please sign in</a>. </p>
+				<div class="help"><a href="#">Help</a></div>
+				<div class="fieldset">
+					<fieldset>
+					
+						<legend>About You</legend>
+					
+						<label for="first_name">First Name</label><input type="text" name="first_name"  id="first_name">
+						<label for="last_name">Last Name</label><input type="text" name="last_name"  id="last_name">
+					
+						<label for="birthdate">Birthdate</label>
+						<input type="text" name="birthdate" title="mm/dd/yyyy" class="example-text" id="birthdate">
+					
+						<label for="country">Country</label>
+						<select name="country" id="country">
+							<option value="option1">option1</option>
+							<option value="option2">option2</option>
+						</select>
+					
+						<label for="time_zone">Time Zone</label>
+						<select name="time_zone" id="time_zone">
+							<option value="option1">option1</option>
+							<option value="option2">option2</option>
+						</select>
+					
+						<label for="telephone_number">Telephone Number <em>Our health partners may contact you in relation to site activities. We won't use your telephone number for any other purpose.</em></label>
+						<input type="text" name="telephone_number"  id="telephone_number">
+		
+					</fieldset>
+				</div>
+				<div class="fieldset">
+					<fieldset>
+			
+						<legend>Profile Information</legend>
+					
+						<label class="has-feedback" for="user_name">Select User Name <em>May contain letters and numbers, but no characters. Good examples: jsmith, thomasjons, goodman25 </em><span class="username-availability">That’s available!</span></label>
+						<input type="text" name="user_name" id="user_name">
+					
+						<label for="email_address">Email Address <em>E.g. jsmith@domain.com</em></label>
+						<input type="text" name="email_address"  id="email_address">
+					
+						<label for="confirm_address">Confirm Address</label>
+						<input type="text" name="confirm_address" id="confirm_address">
+					
+						<label for="password">Selected a Password</label>
+						<input type="text" name="password"  id="password">
+					
+						<label  class="has-feedback" for="password_confirm">Confirm Password  <span class="password-matches">That matches!</span></label>
+						<input type="text" name="password_confirm" id="password_confirm">
+				
+					</fieldset>
+				</div>
+				<div class="fieldset security">
+					<fieldset>
+						<legend>Security Information</legend>
+						<p>If you forget your password, we'll use your password question, email address, birth date and postal code to verify your identity.</p>
+						<label for="password_question">Password Question</label>
+						<select id="password_question">
+							<option value="option1">option1</option>
+							<option value="option2">option2</option>
+						</select>
+
+						<label for="password_question">Create Password Question <em>e.g. "What was my first pet’s name?"</em></label>
+						<input type="text" name="password_question"  id="password_question">
+
+						<label for="password_question_answer">Answer</label><input type="text" name="password_question_answer" id="password_question_answer">
+
+						<label for="password_question_hint">Password Question Hint</label><input type="text" name="password_question_hint"  id="password_question_hint">
+
+					</fieldset>
+				</div>
+				<div class="fieldset">
+					<fieldset>
+						<legend>Terms of Use</legend>
+						<a class="printable-version" href="#">Printable Version</a>
+						<div class="terms">
+							Matria Privacy Policy 
+							Privacy Policy for Matria 
+							Matria Health Enhancement Company and its affiliated companies (collectively, "Matria" or "We") are committed to being your most trusted source for content, products, and services related to wellness and personal growth through our Web 
+							site (the "Site"), and we take your trust very seriously. This privacy policy (the "Policy") explains what information We collect from the user of the Site ("you") and why We collect it. The core of our Policy is that Matria takes issues regarding privacy and
+							Matria Health Enhancement Company and its affiliated companies (collectively, "Matria" or "We") are committed to being your most trusted source for content, products, and services related to wellness and personal growth through our Web 
+							site (the "Site"), and we take your trust very seriously. This privacy policy (the "Policy") explains what information We collect from the user of the Site ("you") and why We collect it. The core of our Policy is that Matria takes issues regarding privacy and
+							Matria Health Enhancement Company and its affiliated companies (collectively, "Matria" or "We") are committed to being your most trusted source for content, products, and services related to wellness and personal growth through our Web 
+							site (the "Site"), and we take your trust very seriously. This privacy policy (the "Policy") explains what information We collect from the user of the Site ("you") and why We collect it. The core of our Policy is that Matria takes issues regarding privacy and
+						</div>
+						
+						<div class="agree-to-terms">
+							<input type="checkbox" name="terms_agree" id="terms_agree">
+							<label for="terms_agree">I agree to the Terms of Use</label>
+						</div>
+						
+						<button class="reset" type="submit"><span class="action-button alt"><strong><em>Register</em></strong></span></button>
+					</fieldset>
+				</div>
+			</form>
+		</p>
+		
+		
+			<div class="module-cap-bottom"></div>  <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+		<div class="footer">
+			<div class="module-cap-top"></div> <!-- for skinning purposes only, rounded corder cap -->
+				<div class="footer-bg"><!-- for skinning purposes only, footer background -->
+					<ul>
+						<li class="first"><a href="#">About Alere</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Editorial Policy</a></li>
+					</ul>
+					<div class="alere">
+						<p class="powered-by">Powered by</p>
+						<h3>Alere</h3>
+						<p>&copy; 2009 Alere. All rights reserved. Alere is a trademark of the Inverness Medical group of companies.</p>
+					</div>
+					
+					<div class="certification">
+						<img src="cmn/img/footer/urac-logo.png" width="78" height="73" alt="URAC">
+						<img src="cmn/img/footer/hon-code-logo.png" width="49" height="72" alt="HON Code">
+						<p>
+							We comply with the <a href="#">HONcode standard for the trustworthy health</a> information: <a href="#">verify here</a>
+						</p>
+					</div>
+				</div>
+			<div class="module-cap-bottom"></div> <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+	</div>
+	<!-- Leave Scripts at the bottom to make sure they don't block the initial paint -->
+	<script src="cmn/js/jquery-1.3.2.min.js"></script>
+	<script src="cmn/js/jcarousel/lib/jquery.jcarousel.js"></script>
+	<script src="cmn/js/jquery_example/jquery.example.min.js"></script>
+	<script src="cmn/js/global.js"></script>
+	</body>
+</html>

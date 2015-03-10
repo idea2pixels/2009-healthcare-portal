@@ -1,0 +1,249 @@
+
+
+
+div.search-container {
+	padding-left:20px;
+}
+
+div.search-container h1 {
+	font-size:1.8em;
+	font-weight:bold;
+	margin:0;
+	color:#005499;
+}
+
+div.search-container h2 {
+	font-size:1.4em;
+	font-weight:bold;
+	color:#005499;
+	margin:15px 0 0 0;
+	padding:0;
+}
+
+div.search-container ul {
+	margin-left:2;
+	font-size:12px;
+}
+
+div.search-container ul li {
+	list-style:none;
+	padding:3px 0 2px 13px;
+	background:transparent url('../img/skins/default/article_sprite.png') no-repeat 3px -625px;
+}
+
+div.search-container ol {
+	list-style:none;
+	margin-left:0;
+}
+
+div.search-container ol li {
+	font-size:1.2em;
+	margin:0 0 1.25em 0;
+}
+
+/*---Search Box--*/
+div.main-search {
+	font-size:1.0em;
+	text-align:left;
+	display:block;
+	padding:6px 0 5px 5px;
+	margin:20px 0;
+}
+
+div.main-search .ybox-longts {
+	border:1px solid #edd9b6;
+	background: #FFFFB7 url('../img/skins/default/module_gradients_bg.png') repeat-x;	
+	height:45px;
+	width:580px;
+}
+
+div.main-search h3 {
+	font-size:1.5em;
+	font-weight:bold;
+	margin:0;
+	padding-left:10px;
+}
+div.main-search h2 {
+	font-size:1.5em;
+	font-weight:bold;
+	margin:0;
+	color:#005499;
+	padding:0;
+}
+
+div.main-search .chooseByLetter {
+padding-top:10px;
+margin:0px 0 0 10px; 	
+color:#0084A9;
+font-size:14px;
+font-weight:bold;
+}
+
+div.main-search .chooseByLetter a.landed {
+	
+color:#222222;
+
+}
+
+div.main-search form#med-search {
+	 
+	float:left;
+	/*margin:-10px 0 0 0px;*/
+	right:15px;
+	height:25px;
+	display:block; 
+	position:relative;
+	margin:-10px 0 0 25px; 	
+	top:20px;
+}
+div.main-search form#med-search label {
+	width:300px;
+	float:left;
+	display:block;
+	font-size:13px;
+	color:#222222;
+	font-weight:bold;
+	
+}
+
+div.main-search form#med-search input#search-query1 {
+	width:240px;
+	height:25px;
+	outline:0;
+	margin:0;
+	border:0;
+	display:block;
+background:url('../img/skins/default/icon_sprite.png')  right -2838px; 
+	font-size:1.3em;
+}
+div.main-search form#med-search input#search-submit1 {
+	cursor:pointer;
+	display:block;
+	position:absolute;
+	right:0;
+	top:0;
+	border:0;
+	width:30px;
+	height:27px;
+	margin:0;
+	padding:0;
+	
+	background:url('../img/skins/default/icon_sprite.png') no-repeat right -332px; 
+	text-indent:-999px;
+}
+
+/* -- Search Results -- */
+
+div.search-results {
+	padding-left:15px;
+
+}
+
+
+div.search-results a {
+	font-size:1.3em;
+	font-weight:bold;
+	color:#005499;
+	margin:15px 0 0 0;
+	padding:0;
+}
+
+div.result_count {
+padding-left:15px;	
+}
+
+div.result_count h1 {
+	font-size:1.3em;
+	font-weight:bold;
+	color:#222222; 
+	padding-bottom:10px;
+	
+}
+
+/*************************************/
+/* BODY FORMATTING FOR SEARCH RESULT */
+/*************************************/
+
+/* TYPE=1 - PERCRIPTION MEDICATION *****************************/
+div.med {
+padding-left:15px;	
+}
+
+div.med b { /* KEEP THE BOLD FONT SIZE */
+	font-size:12px;
+	
+}
+div.med font { /* DEFAULT */
+	font-size:12px;
+	
+}
+div.med p b font { /* ALL HEADERS */
+	font-size:14px;
+	color:#005499;
+}
+
+/* TYPE=2 - SUPPLIMENTS ***************************************/
+div.supp { /*DEFAULT FONT SIZE */
+	padding-left:15px;	
+	font-size:12px;
+}
+div.supp p { /* OVERRIDE TEXT SIZE */
+	font-size:12px;
+	
+}
+div.supp b p { /* ALL HEADERS */
+
+	font-size:14px;
+	color:#005499;
+}
+
+
+
+/* TYPE=3 - HERBAL ***************************************/
+div.herb {
+padding-left:15px;	
+font-size:12px;
+}
+
+div.herb center { /*synonyms*/
+	float:left;
+	font-size:12px;
+	
+}
+div.herb center b { /*header*/
+	font-size:14px;
+	color:#005499;
+}
+
+div.herb a { /* ANCHOR LINKS */
+	
+	font-size:12px;
+	font-color:#0084A9;	
+	font-style:normal;
+	font-weight:bold;
+}
+
+div.herb b { /* SECONDARY HEADERS */
+	font-size:14px;
+	color:#005499;
+}
+
+/* TYPE=4 - ALTERNATIVE ***************************************/
+
+div.alt { /* DEFAULT */
+	padding-left:15px;	
+	font-size:12px;
+}
+
+div.alt b p{ /* SECONDARY HEADERS */
+	padding-top:10px;
+	font-size:14px;
+	color:#005499;
+}
+div.alt strong { /* HEADER */
+	padding-top:10px;
+	font-size:14px;
+	color:#005499;
+}
+
+

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<title>Alere HTML Framework</title>
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="cmn/css/incentives.css" type="text/css" media="all">
+	
+	<link rel="stylesheet" href="cmn/css/global.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/modules.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/article.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/sign-in_register.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/hpa.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/hpa-test.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/search.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/bioIQ.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/incentives.css" type="text/css" media="all">
+	<!-- 
+		Integration Note:
+			Generally you would only include a single skin style sheet which overrides
+			all the default in global.css and modules.css as necessary.
+			
+			For debug/demo purposes all the style sheets are include here so that they can
+			be toggled using the style sheet switcher (to see the style sheet switch add ?debug=1)
+	-->
+	<link rel="stylesheet" href="cmn/css/skins/ge.css" type="text/css" media="all" title="ge">
+	<link rel="stylesheet alternate" href="cmn/css/skins/cisco.css" type="text/css" media="all" title="cisco">
+	<link rel="stylesheet alternate" href="cmn/css/skins/fedex.css" type="text/css" media="all" title="fedex">
+	<link rel="stylesheet alternate" href="cmn/css/skins/blue-cross.css" type="text/css" media="all" title="blue-cross">
+	<!--[if IE]>
+		<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="cmn/css/global_ie.css" type="text/css" media="all">
+	<![endif]-->
+	</head>
+<body>	<div class="container">
+
+
+		<div class="content">
+
+			<div class="sidebar span-7">
+
+				<div class="module alt-nav">
+						<h5>
+						<ol>
+						<li>Would like to rework the carousel functioning of the "Pick an HLP" and expand it so that the title, image, text, credit value and "tell me more" change as you scroll through HLPs. </li>
+						<li>Next step: determine if we can rework carousel function</li>
+						<li>Next step: content team to write final copy.</li>
+						<li>Next step: annotated specs.</li>
+						</ol>
+						</h5>
+				</div>
+				<!-- End Sub Nav -->
+			
+			</div>
+			<div class="main-well span-21">
+
+
+
+
+					<h1 class="what-next">Start view (all HLPs)...<strong>NEW 5/8/09</strong></h1>
+					<!--
+						Integration Note: 
+							All modules should be included here
+					-->
+
+
+
+					<!-- Included from: cmn/inc/modules/program_checklist.inc.php-->
+					<div class="module program-checklist">
+						<h4><strong>5</strong> wellness credits</h4>
+
+						<img class="picture" src="cmn/img/modules/tmp/module-a-picture2-hlp.png" width="118" height="118" alt="Module A Picture">
+						<h2>Choose a Program!</h2>
+						<p>Browse our list of programs to help you reach your goals.  Click “Next Program” to view more.</p>
+						
+						<form>
+						<ul class="list-carousel">
+							<li>
+								<label>							
+								<a href="#"><strong>Get In Shape</strong></a><br>
+								Start today and get your own customized workout plan. <strong>Join 12 people enrolled in this program!</strong>
+
+								</label>
+							</li>
+							
+							<li>
+								<label>							
+									<a href="#"><strong>Weight Loss</strong></a><br>
+									Feel full on fewer calories with this easy-to-follow plan. <strong>Join 23 people enrolled in this program!</strong>
+								</label>
+							</li>                                                                                                             
+							
+							<li>
+								<label>
+								<a href="#"><strong>Healthier Diet</strong></a><br>
+								Get great-tasting meal ideas and tools to improve your eating habits. <strong>Join 43 people enrolled in this program!</strong>
+								</label>
+							</li>                                                                                               
+							
+							<li>
+								<label>							
+								<a href="#"><strong>Stress Relief</strong></a><br>
+								Get easy-to-follow strategies that can help you feel better and live healthier! <strong>Join 57 people enrolled in this program!</strong>
+								</label>
+							</li>                                                                                                               
+						</ul>                                                                                                             
+						<ul class="pagination list-carousel-pagination">
+							<li class="next"><a href="#" class="more next">Next Program &raquo;</a></li>
+							<li class="prev"><a href="#" class="more prev">&laquo; Previous Program</a></li>
+						</ul>
+						</form>
+
+
+						<ul class="utility-nav">
+							<li class="first"><a href="#">View all programs</a></li>
+							<li class="dont-show">
+								<a href="#">Show this later</a>
+								<div class="dont-show-confirm">
+									<h5>Show this later</h5>
+									<p>Not ready to start a program? We'll remind you again next week!</p><br>
+									
+									<span><a class="keep" title="Keep" href="#">Keep</a> | <a href="#" title="Remove">Show later</a></span>
+
+									
+									</p>
+								</div>
+
+							</li>
+							<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+						</ul>
+						<a href="#" class="action-button"><strong><em>Start Program</em></strong></a>
+
+						<div class="more">
+
+							<h5>See Results in Just Six Weeks</h5>
+							<p>Take control of your health with our personalized wellness programs. They can help you:</p>
+							<ul>
+								<li>Lose weight</li>
+								<li>Ease stress</li>
+								<li>Improve your diet</li>
+								<li>Reduce health risks</li>
+							</ul>
+
+						</div>
+					</div>
+
+
+
+
+
+				<h1 class="what-next">Start view (Action Plan)...</h1>
+
+				<!-- Included from: cmn/inc/modules/program_checklist.inc.php-->
+				<div class="module program-checklist">
+					<h4><strong>5</strong> wellness credits</h4>
+
+					<img class="picture" src="cmn/img/modules/tmp/module-a-picture2-hlp.png" width="118" height="118" alt="Module A Picture">
+					<h2>Choose a Program!</h2>
+					<p>Browse our list of programs to help you reach your goals.  Click “Next Program” to view more.</p>					
+					<form>
+						<ul class="list-carousel">
+							<li>
+								<label>							
+								<a href="#"><strong>Get In Shape</strong></a><br>
+								Start today and get your own customized workout plan. <strong>Join 12 people enrolled in this program!</strong>
+								<br><br>
+								<a href="#" class="favorited">This is one of three programs recommended just for you!</a>
+
+								</label>
+							</li>
+							
+							<li>
+								<label>							
+									<a href="#"><strong>Weight Loss</strong></a><br>
+									Feel full on fewer calories with this easy-to-follow plan. <strong>Join 23 people enrolled in this program!</strong>
+									<br><br>
+									<a href="#" class="favorited">This is one of three programs recommended just for you!</a>
+								</label>
+							</li>                                                                                                             
+							
+							<li>
+								<label>
+								<a href="#"><strong>Healthier Diet</strong></a><br>
+								Get great-tasting meal ideas and tools to improve your eating habits. <strong>Join 43 people enrolled in this program!</strong>
+								<br><br>
+								<a href="#" class="favorited">This is one of three programs recommended just for you!</a>
+								</label>
+							</li>                                                                                               
+							
+							<li>
+								<label>							
+								<a href="#"><strong>Stress Relief</strong></a><br>
+								Get easy-to-follow strategies that can help you feel better and live healthier! <strong>Join 57 people enrolled in this program!</strong>
+								</label>
+							</li>                                                                                                               
+						</ul>                                                                                                             
+					<ul class="pagination list-carousel-pagination">
+						<li class="next"><a href="#" class="more next">Next Program &raquo;</a></li>
+						<li class="prev"><a href="#" class="more prev">&laquo; Previous Program</a></li>
+					</ul>
+					</form>
+
+
+					<ul class="utility-nav">
+						<li class="first"><a href="#">View all programs</a></li>
+						<li class="dont-show">
+							<a href="#">Show this later</a>
+							<div class="dont-show-confirm">
+								<h5>Show this later</h5>
+								<p>Not ready to start a program? We'll remind you again next week!</p><br>
+								
+								<span><a class="keep" title="Keep" href="#">Keep</a> | <a href="#" title="Remove">Show later</a></span>
+
+								
+								</p>
+							</div>
+
+						</li>
+						<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+					</ul>
+					<a href="#" class="action-button"><strong><em>Start Program</em></strong></a>
+
+					<div class="more">
+
+						<h5>See Results in Just Six Weeks</h5>
+						<p>Take control of your health with our personalized wellness programs. They can help you:</p>
+						<ul>
+							<li>Lose weight</li>
+							<li>Ease stress</li>
+							<li>Improve your diet</li>
+							<li>Reduce health risks</li>
+						</ul>
+
+					</div>
+				</div>
+
+
+				
+				<h1 class="what-next">Engaged view...</h1>
+
+				<!-- Included from: cmn/inc/modules/program_checklist.inc.php-->
+				<div class="module program-checklist">
+					<h4><strong>5</strong> wellness credits</h4>
+					
+					<img class="picture" src="cmn/img/modules/tmp/module-a-picture6.png" width="118" height="118" alt="Module A Picture">
+					<h2>Weight Loss Program</h2>
+					<h2>Work on your To-Do List!</h2>
+					<p>Week 1: Get Started (5 To-Dos)</p>
+					
+					<form>
+					
+						<ul class="list-carousel">
+						<li>
+							<input type="checkbox">
+							<label>1 -
+							<a href="#">Start Losing Weight Today!</a> Five things you can do now to make this plan work for the long-term.</label>
+						</li>                                                                                                                 
+
+						<li>
+							<input type="checkbox">
+							<label>2 -
+							<a href="#">Diet Manager:</a> Ready to lose pounds? Enter your current weight, set your goal and get a personalized meal plan.
+							</label>
+						</li>                                                                                                                 
+						<li>
+							<input type="checkbox">
+							<label>3 -
+							<a href="#">Progress Tracker:</a> One of the keys to healthy weight loss is being aware of your diet. Start a food journal today!
+							</label>
+						</li>                                                                                                                 
+						<li>
+							<input type="checkbox">
+							<label>4 -
+							<a href="#">Why This Weight Loss Plan Works:</a> This common-sense plan will help you eat less high-fat, high calorie foods so you'll feel full on fewer calories.
+							</label>
+						</li>						
+						<li>
+							<input type="checkbox">
+							<label>5 -
+							<a href="#">What Does Your BMI Mean?</a> Your body mass index is 25.2, learn what that means to you and what to do about it.
+							</label>
+						</li>
+						
+						</ul>
+						<ul class="pagination list-carousel-pagination">
+							<li class="next"><a href="#" class="more next">Next To-Do &raquo;</a></li>
+							<li class="prev"><a href="#" class="more prev">&laquo; Previous To-Do</a></li>
+						</ul>
+					</form>                                                                                                               
+					
+					
+					
+					<ul class="utility-nav">
+						<li class="first">Enrolled in Weight Loss &nbsp;</li>
+						
+						<li class="dont-show">
+							<a href="#">Change program</a>
+							<div class="dont-show-confirm">
+								<h5>Change program</h5>
+								<p>Are you sure? If you start a new 6-week program, you won't be able to access your previous To-Do List.</p>
+								<br>
+								<span><a class="keep" title="Keep Reminder" href="#">Stay</a> | <a href="#" title="Remove">Change program</a></span>
+								</p>
+							</div>
+							
+						</li>
+						<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+					</ul>
+
+
+					
+					<div class="more">
+						<h5>Your Goals This Week:</h5>
+						<ul>
+							<li>Set a healthy weight loss goal.</li>
+							<li>Get your personalized meal plan.</li>
+							<li>Start keeping track of what you eat in your food journal!</li>
+						</ul>
+					</div>
+					<a href="hlp_home.html" class="action-button alt"><strong><em>View All To-Dos</em></strong></a>
+					
+				</div>
+
+
+
+		
+		
+		<h1 class="what-next">Engaged view (completed to-dos)...</h1>
+
+		<!-- Included from: cmn/inc/modules/program_checklist.inc.php-->
+		<div class="module program-checklist">
+			<h4><strong>5</strong> wellness credits</h4>
+			
+			<img class="picture" src="cmn/img/modules/tmp/module-a-picture6.png" width="118" height="118" alt="Module A Picture">
+			<h2>Weight Loss Program</h2>
+			<h2>You completed your To-Dos!</h2>
+			<br>
+			<p class="sub-copy"></p>
+			<form>
+
+						
+					<ul class="list-carousel">
+						<li>
+							<label>
+								<strong>Coming next week:</strong> Get a custom workout plan. <i>Starts Thursday 04/30/09.</i>
+								<br><br>
+								Scroll below to go back to your To-Dos!
+							</label>
+						</li>
+
+						<li>
+							<input type="checkbox" checked="checked">
+							<label>1 -
+							<a href="#">Start Losing Weight Today!</a> Five things you can do now to make this plan work for the long-term.</label>
+						</li>                                                                                                                 
+
+						<li>
+							<input type="checkbox" checked="checked">
+							<label>2 -
+							<a href="#">Diet Manager:</a> Ready to lose pounds? Enter your current weight, set your goal and get a personalized meal plan.
+							</label>
+						</li>                                                                                                                 
+						<li>
+							<input type="checkbox" checked="checked">
+							<label>3 -
+							<a href="#">Progress Tracker:</a> One of the keys to healthy weight loss is being aware of your diet. Start a food journal today!
+							</label>
+						</li>                                                                                                                 
+						<li>
+							<input type="checkbox" checked="checked">
+							<label>4 -
+							<a href="#">Why This Weight Loss Plan Works:</a> This common-sense plan will help you eat less high-fat, high calorie foods so you'll feel full on fewer calories.
+							</label>
+						</li>
+						<li>
+							<input type="checkbox" checked="checked">
+							<label>5 -
+							<a href="#">What Does Your BMI Mean?</a> Your body mass index is 25.2, learn what that means to you and what to do about it.
+							</label>
+						</li>
+					</ul>
+					
+					<ul class="pagination list-carousel-pagination">
+						<li class="next"><a href="#" class="more next">Next To-Do &raquo;</a></li>
+						<li class="prev"><a href="#" class="more prev">&laquo; Previous To-Do</a></li>
+					</ul>
+				</form>
+				
+				<ul class="utility-nav">
+					<li class="first">Enrolled in Weight Loss &nbsp;</li>
+					
+					<li class="dont-show">
+						<a href="#">Change program</a>
+						<div class="dont-show-confirm">
+							<h5>Change program</h5>
+							<p>Are you sure? If you start a new 6-week program, you won't be able to access your previous To-Do List.</p>
+							<br>
+							<span><a class="keep" title="Keep Reminder" href="#">Stay</a> | <a href="#" title="Remove">Change program</a></span>
+							</p>
+						</div>
+					</li>
+					<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+				</ul>
+			
+			<div class="more">
+				<h5>Your Goals This Week:</h5>
+				<ul>
+					<li>Set a healthy weight loss goal.</li>
+					<li>Get your personalized meal plan.</li>
+					<li>Start keeping track of what you eat in your food journal!</li>
+				</ul>
+			</div>
+			<a href="hlp_home.html" class="action-button alt"><strong><em>View All To-Dos</em></strong></a>
+			
+		</div>
+
+
+
+
+				<h1 class="what-next">Engaged view (Take Final Assessment)...</h1>
+
+
+				<!-- Included from: cmn/inc/modules/generic_main.inc.php-->
+				<div class="module">
+					<h4><strong>5</strong> wellness credits</h4>
+					<img class="picture" src="cmn/img/modules/tmp/module-a-picture2.png" width="118" height="118" alt="Module A Picture">
+					<h2>Complete Your Program!</h2>
+					<h2>Just one more thing to do!</h2>
+					<p>You’re at the finish line! To complete the Weight Loss Program just <a href="#">fill out this questionnaire.</a> You'll get a personalized scorecard and suggestions for next steps.</p>
+					<ul class="utility-nav">
+						<li class="first">Enrolled in Weight Loss &nbsp;</li>
+						<li class="dont-show">
+							<a href="#">Show this later</a>
+							<div class="dont-show-confirm">
+								<h5>Show this later</h5>
+								<p>Not ready to take your assessment yet? We'll remind you again next week!</p>
+								<br>
+								<span><a class="keep" title="Keep Reminder" href="#">Keep</a> | <a href="#" title="Remove">Show later</a></span>
+								</p>
+							</div>
+
+						</li>
+						<li class="tell-more"><a href="#" class="tell-me-more">Learn more</a></li>
+					</ul>
+					
+					<div class="more">
+						<p>Your program scorecard tells you how you did compared to what you told us when you started your program. When you're done you can take a new program, retake your current program or move on to a maintenance mode.</p>
+					</div>
+					<a href="#" class="action-button"><strong><em>Get Your Scorecard</em></strong></a>
+				</div>
+
+
+				<h1 class="what-next">Completed view...</h1>
+
+
+				<div class="message">
+					<p class="welcome-message">
+						Congratulations Suzanne! You've completed the Weight Loss Program!
+					</p>
+				</div>
+
+				<div class="progress-module">
+					<h1>You just earned <span>5 credits!</span></h1>
+					<h3>You're getting close to reaching your incentive!</h3>
+					<h4>You've now earned 45 out of 50 credits. Stay with it!</h4>
+					<!-- 
+						Integration Note:
+						Progress bar completion can be set inline using the style="width:x" property for the progress bar and the style="left:x" for the "You" label. Valid values are 0 - 100%
+					-->
+					<div class="progress-bar">
+						<span class="zero-percent-label">0</span>
+						<span class="hundred-percent-label">50</span>
+						<span class="bar" style="width:90%">You're 90% complete!</span> 
+						<span class="progress-label" style="left:90%">You</span>
+						<p class="rate-challenge"><span>Did this program work for you?</span> <a href="#" class="yes">Yes</a> <a href="#" class="no">No</a></p>
+					</div>
+				</div>
+				<a href="#" class="action-button"><strong><em>Join a New Program!</em></strong></a>
+				
+				<br><br><br><br><br><br>
+				
+			</div>
+
+
+			<div class="module-cap-bottom"></div>  <!-- for skinning purposes only, rounded corder cap -->
+		</div>
+		
+	</div>
+	<!-- Leave Scripts at the bottom to make sure they don't block the initial paint -->
+	<script src="cmn/js/jquery-1.3.2.min.js"></script>
+	<script src="cmn/js/jcarousel/lib/jquery.jcarousel.js"></script>
+	<script src="cmn/js/jquery_example/jquery.example.min.js"></script>
+	<script src="cmn/js/global.js"></script>
+	</body>
+</html>

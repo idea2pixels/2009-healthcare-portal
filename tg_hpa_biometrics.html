@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<title>Alere HTML Framework</title>
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="cmn/css/blueprint/blueprint/print.css" type="text/css" media="print">
+
+<!-- CUSTOM STYLES -->	
+	<link rel="stylesheet" href="cmn/css/global.css" type="text/css" media="all">
+	<link rel="stylesheet" href="cmn/css/hpa-test.css" type="text/css" media="all">
+
+	<link rel="stylesheet" href="cmn/css/skins/fedex.css" type="text/css" media="all">
+	<!--[if IE]>
+		<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="cmn/css/global_ie.css" type="text/css" media="all">
+	<![endif]-->
+	</head>
+<body>	
+	<div class="container">
+
+		<div class="utility span-31">
+					<strong class="welcome">Hello, Suzanne.</strong>
+		<ul>
+			<li class="home"><a href="/">Home</a></li>
+			<li><a href="#">Logout</a></li>
+		</ul>
+		<div class="help"><a href="#">Help</a></div>		</div>
+
+		<div class="header">
+			<div class="module-cap-top"><!-- for skinning purposes only, rounded corder cap --></div>
+			<div class="header-bg hpa"> <!-- for skinning purposes only, background for header -->
+				<h2 class="logo"><a href="/">blue healthcare</a></h2>
+				<h3>Health and Wellness Assessment</h3>			</div>
+			<div class="module-cap-bottom"><!-- for skinning purposes only, rounded corder cap --></div> 
+		</div>
+
+		<div class="content hpa-test">
+			<div class="module-cap-top"><!-- for skinning purposes only, rounded corder cap --></div>
+			<div class="span-7 sidebar">
+				<h3>Your Progress:</h3>
+				<!-- 
+					Integration Note:
+					Progress bar completion can be set inline using the style="width:x" property. Valid values are 0 - 100%
+				-->
+				<div class="progress-bar">
+					<span style="width:80%">You're 80% complete!</span> 
+				</div>
+
+				<p>Keep going! You're well on your way.</p>
+			</div>
+			<div class="span-23 last">
+				<div class="breadcrumb-bar utils-only">
+					<ul>
+						<li class="font-sizer">
+							<a class="decrease" href="#" title="Decrease font-size">A</a>
+							<a class="increase" href="#" title="Increase font-size">A</a>
+
+						</li>
+					</ul>
+					<form id="language-selection">
+						<label for="change_language">Change Language</label>
+						<select name="change_language" id="change_language">
+							<option value="option1">English</option>
+							<option value="option2">Español</option>
+
+						</select>
+					</form>
+				</div>			
+			</div>
+			<div class="span-20 main-well">
+				
+				<h1>Biometrics</h1>
+				<form>
+					<div class="form-element">
+						<label for="hip">Hip <span>inches</span></label>
+
+						<input type="text" name="hip" id="hip">
+						<a href="#" id="btn-help-hip" class="form-field-help" title="Need Help?">Help</a>
+					</div>
+								
+					<div class="form-element">
+						<label for="resting_pulse">Resting Pulse <span>beats per minute (bpm)</span></label>
+						<input type="text" name="resting_pulse" id="resting_pulse">
+						<a href="#" class="form-field-help" title="Need Help?">Help</a>
+
+					</div>
+			
+					<div class="form-element">
+						<label for="blood_pressure_over">Blood Pressure</label>
+						<input type="text" name="blood_pressure_over" id="blood_pressure_over"> / 
+						<input type="text" name="blood_pressure_under" value="" id="blood_pressure_under">
+						<a href="#" id="btn-help-blood-pressure" class="form-field-help" title="Need Help?">Help</a>
+					</div>
+					<div id="help-blood-pressure" class="more-overlay">
+
+						<dl>
+							<dt>Desirable:</dt>
+							<dd>less than 120/80</dd>
+							<dt>Borderline High:</dt>
+							<dd>120/80—139/89</dd>
+							<dt>High:</dt>
+
+							<dd>greater than 130/89</dd>
+						</dl>
+						<p>Each time your heart beats, it pumps blood through your arteries. This 
+						creates pressure in them. Your blood pressure consists of two numbers. The
+						first or upper number is your systolic blood pressure. It represents the
+						pressure in your arteries while your heart is beating. The second or lower
+						number is your diastolic blood pressure. It represents the pressure in your
+						heart is resting between beats. Your blood pressure can change minute to
+						minute, for example, when you change your posture or when you exercise.
+						If your first measure of systolic or diastolic blood pressure is high, your 
+						doctor may take several readings before deciding whether your blood 
+						pressure is a health concern. </p>
+					</div>
+					<div class="form-element">
+						<label for="total_cholesterol">Total Cholesterol</label>
+						<input type="text" name="total_cholesterol" id="total_cholesterol">
+
+						<a href="#" class="form-field-help" title="Need Help?">Help</a>
+					</div>
+
+					<div class="form-element">
+						<label for="hdl">HDL (High-Density Lipoprotein)</label>
+						<input type="text" name="hdl" id="hdl">
+						<a href="#" class="form-field-help" title="Need Help?">Help</a>
+					</div>
+
+					
+					<div class="form-element">
+						<label for="ldl">LDL (Low-Density Lipoprotein)</label>
+						<input type="text" name="ldl" id="ldl">
+						<a href="#" class="form-field-help" title="Need Help?">Help</a>
+					</div>
+					
+					<div class="form-element">
+						<label for="triglycerides">Triglycerides</label>
+
+						<input type="text" name="triglycerides" id="triglycerides">
+						<input class="checkbox" type="checkbox" name="fasted_tri" id="fasted_tri">
+						<label class="checkbox" for="fasted_tri">Fasted at least 9 hours?</label>
+						<a href="#" class="form-field-help" title="Need Help?">Help</a>
+					</div>
+					
+					<div class="form-element">
+						<label for="glucose">Glucose</label>
+
+						<input type="text" name="glucose" id="glucose">
+						<input class="checkbox" type="checkbox" name="fasted_glu" id="fasted_glu">
+						<label class="checkbox" for="fasted_glu">Fasted at least 9 hours?</label>		
+						<a href="#" class="form-field-help" title="Need Help?">Help</a>
+					</div>
+					
+					<div class="form-element">
+						<label for="hemoglobin_a1c">Hemoglobin A1c</label>
+						<input type="text" name="hemoglobin_a1c" id="hemoglobin_a1c">
+
+						<a href="#" class="form-field-help" title="Need Help?">Help</a>
+					</div>
+					
+					<div class="form-element">
+						<label for="body_fat">Body Fat</label>
+						<input type="text" name="body_fat" id="body_fat">
+						<a href="#" class="form-field-help" title="Need Help?">Help</a>
+					</div>
+
+					<div class="form-element text">
+						<p class="label">Body Mass Index</p>
+						<p class="value">23.5</p>
+					</div>					
+					
+					<div class="buttons span-21">
+						<div class="span-7">
+                        	<button class="reset" type="submit"><span class="action-button alt reverse"><strong><em>Previous</em></strong></span></button>
+                        </div>
+						<div class="span-7">
+                        	<button class="reset" type="submit"><span class="action-button alt light"><strong><em>Save and Enter Later</em></strong></span></button>
+                        </div>
+						<div class="span-5 prepend-1">
+							<a href="g_hpa_questionnaire_1.html"><span class="action-button alt"><strong><em>Next</em></strong></span></a>	
+                        </div>				
+                    </div>
+				</form>
+			</div>
+			<div class="module-cap-bottom"><!-- for skinning purposes only, rounded corder cap --></div>
+		</div>
+		<div class="footer">
+			<div class="module-cap-top"><!-- for skinning purposes only, rounded corder cap --></div>
+
+				<div class="footer-bg"><!-- for skinning purposes only, footer background -->
+					<ul>
+						<li class="first"><a href="#">About Alere</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Editorial Policy</a></li>
+
+					</ul>
+					<div class="alere">
+						<p class="powered-by">Powered by</p>
+						<h3>Alere</h3>
+						<p>&copy; 2009 Alere. All rights reserved. Alere is a trademark of the Inverness Medical group of companies.</p>
+					</div>
+					
+					<div class="certification">
+
+						<img src="cmn/img/footer/urac-logo.png" width="78" height="73" alt="URAC">
+						<img src="cmn/img/footer/hon-code-logo.png" width="49" height="72" alt="HON Code">
+						<p>
+							We comply with the <a href="#">HONcode standard for the trustworthy health</a> information: <a href="#">verify here</a>
+						</p>
+					</div>
+
+				</div>
+			<div class="module-cap-bottom"><!-- for skinning purposes only, rounded corder cap --></div> 
+		</div>
+	</div>
+	<!-- Leave Scripts at the bottom to make sure they don't block the initial paint -->
+	<script src="cmn/js/jquery.js"></script>
+	<script src="cmn/js/jcarousel/lib/jquery.jcarousel.js"></script>
+	<script src="cmn/js/jquery_example/jquery.example.min.js"></script>
+
+	<script src="cmn/js/global.js"></script>
+	</body>
+</html>
